@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en" class="start-html">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LogicYield</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="shortcut icon"
+      href="./assets/img/favicon.ico"
+      type="image/x-icon"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;1,400&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="start-body">
+    <header class="header">
+      <div class="header__logo logo">
+        <a href="index.html" class="logo__link"></a>
+        <img src="assets/img/logo.svg" alt="logo" class="logo__img" />
+      </div>
+      <div class="header__menu menu">
+        <button class="menu__icon">
+          <span></span>
+        </button>
+      </div>
+      <nav class="header__nav nav">
+        <li class="nav__item">
+          <a href="products.html" class="nav__link link"
+            ><img
+              src="assets/img/product-icon.svg"
+              alt=""
+              class="nav-icon"
+            />Продукты</a
+          >
+          <ul class="nav__menu">
+            <li class="menu__item">
+              <a href="products.html" class="menu__link">DotPulse-RSC</a>
+            </li>
+            <li class="menu__item">
+              <a href="products-lua.html" class="menu__link">UVYield</a>
+            </li>
+          </ul>
+        </li>
+        <li class="nav__item nav__item-soft">
+          <a href="soft.html" class="nav__link nav__link-soft link"
+            ><img
+              src="assets/img/soft-icon.svg"
+              alt=""
+              class="nav-icon"
+            />Софт</a
+          >
+          <ul class="nav__menu nav__menu-soft">
+            <li class="menu__item">
+              <a href="soft.html#DotPulse" class="menu__link">DotPulse</a>
+            </li>
+            <li class="menu__item">
+              <a href="soft.html#UVYield" class="menu__link">UVYield</a>
+            </li>
+            <li class="menu__item">
+              <a href="soft.html#SaltYield" class="menu__link">SaltYield</a>
+            </li>
+            <li class="menu__item">
+              <a href="soft.html#VideoYield" class="menu__link">VideoYield</a>
+            </li>
+            <li class="menu__item">
+              <a href="soft.html#SpectraYield" class="menu__link"
+                >SpectraYield
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li class="nav__item">
+          <a href="skills.html" class="nav__link link"
+            ><img
+              src="assets/img/team-icon.svg"
+              alt=""
+              class="nav-icon"
+            />Команда</a
+          >
+          <ul class="nav__menu">
+            <li class="menu__item">
+              <a href="skills.html" class="menu__link">Наши навыки</a>
+            </li>
+            <li class="menu__item">
+              <a href="about.html" class="menu__link">О нас</a>
+            </li>
+            <li class="menu__item">
+              <a href="project.html" class="menu__link"
+                >Перспективные проекты</a
+              >
+            </li>
+          </ul>
+        </li>
+        <li class="nav__item">
+          <a href="contacts.html" class="nav__link link"
+            ><img
+              src="assets/img/contacts-icon.svg"
+              alt=""
+              class="nav-icon"
+            />Контакты</a
+          >
+        </li>
+        <div class="header__lang"></div>
+      </nav>
+    </header>
+    <main class="main start-main">
+      <img src="./assets/img/up.svg" alt="" class="up" style="opacity: 0;"/>
+      <div class="main__content start__content">
+        <div class="video__container">
+          <div class="video__placeholder">
+            <img src="./assets/img/loader.svg" alt="loader" class="video__loader">
+            <div class="video__text">Пожалуйста, подождите. Вас ждёт интересное видео</div>
+          </div>
+          <video
+            src="assets/video/video-1.mp4"
+            playsinline
+            muted
+            alt="team"
+            class="main__video video-1 video-active"
+          ></video>
+          <video
+            src="assets/video/video-2.mp4"
+            playsinline
+            muted
+            alt="team"
+            class="main__video video-2"
+          ></video>
+        </div>
+
+        <div class="main__text">
+          <h1 class="main__title title">LogicYield</h1>
+          <p class="main__desc desc">Inspired by industry</p>
+        </div>
+      </div>
+    </main>
+    <script src="script/main.js"></script>
+    <script src="script/start.js"></script>
+  </body>
+</html>
