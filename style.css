@@ -417,7 +417,8 @@ a {
   gap: 15px;
 }
 .gallery__img {
-  width: 3.91vw;
+  /* width: 3.91vw; */
+  width: 10vw;
 } 
  .cards__item .swiper {
   display: flex;
@@ -582,6 +583,27 @@ tr {
 }
 .close__img {
   width: 100%;
+}
+
+.swiper {
+  width: 500px;
+  height: 300px;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  /* background: #fff; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 /* Soft */
@@ -1437,10 +1459,10 @@ tr {
   .swiper-button-next:after {
     color: #fff;
   }
-  .swiper {
+  /* .swiper {
     margin-left: auto;
     margin-right: auto;
-  }
+  } */
   .product__peculiarities {
     padding-top: 2vh;
     padding-left: 8%;
