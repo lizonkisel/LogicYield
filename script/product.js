@@ -4,11 +4,12 @@ import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs
 
 const swiper = new Swiper(".mySwiper", {
   slidesPerView: 1,
-  // spaceBetween: 30,
-  // loop: true,
+  loop: true,
+  spaceBetween: 30,
   pagination: {
     el: ".swiper-pagination",
-    dynamicBullets: true,
+    clickable: true,
+    // dynamicBullets: true,
   },
   navigation: {
     nextEl: ".swiper-button-next",
