@@ -983,12 +983,12 @@ tr {
 .form__legend {
   width: 80%;
   font-weight: 600;
-  font-size: 30px;
+  font-size: 24px;
 }
 .form__input {
   width: 80%;
   background: #292929;
-  font-size: 24px;
+  font-size: 20px;
   padding: 10px;
   border-radius: 10px;
   color: #ffff;
@@ -996,14 +996,14 @@ tr {
 }
 .form__textarea {
   resize: none;
-  height: 250px;
+  height: 200px;
   font-family: "Open Sans", sans-serif;
 }
 .checkbox__label {
   background: 0;
   padding: 0;
   white-space: nowrap;
-  font-size: 1.25vw;
+  font-size: 14px;
   color: rgba(255, 255, 255, 0.486);
   margin-left: 15px;
   padding: 5px;
@@ -1080,15 +1080,19 @@ tr {
   gap: 20px;
 }
 .map__title {
-  font-size: 30px;
+  font-size: 24px;
 }
 .address__title {
   margin-bottom: 10px;
 }
 .address__text {
   margin-bottom: 5px;
-  display: inline-block;
 }
+
+.address__title:last-of-type {
+  margin-top: 20px;
+}
+
 .map__tel,
 .map__email {
   color: #ffff;
@@ -1099,6 +1103,7 @@ tr {
   width: 70%;
   height: 300px;
   margin-bottom: 20px;
+  border-radius: 10px;
 }
 
 @media screen and (max-width: 1300px) {
