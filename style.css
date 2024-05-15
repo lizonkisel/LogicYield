@@ -699,6 +699,11 @@ tr {
   display: flex;
   gap: 3vw;
 }
+
+.about__participants {
+  margin: 48px 0 0 0;
+}
+
 .about__participants,
 .about__publications {
   width: 50%;
@@ -831,11 +836,22 @@ tr {
   top: 100%;
 } */
 .participants__desc {
-  font-size: 1.05vw;
+  font-size: 16px;
+  line-height: 20px;
+  margin: 24px 0 24px 0;
 }
+
+.participants__desc:first-of-type {
+  margin: 0 0 24px 0;
+}
+
+.participants__desc:last-of-type {
+  margin: 24px 0 0 0;
+}
+
 .publications__title {
-  margin-bottom: 2.8vh;
-  font-size: 1.56vw;
+  margin-bottom: 20px;
+  font-size: 20px;
 }
 .publications__carsd {
   display: flex;
@@ -877,7 +893,7 @@ tr {
 }
 .about__text {
   display: inline-block;
-  font-size: 1.56vw;
+  font-size: 18px;
   text-align: center;
   width: 100%;
 }
