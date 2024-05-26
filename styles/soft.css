@@ -20,26 +20,49 @@
 }
 
 .cards__item {
-  /* width: 90vw; */
   height: 60vh;
   background: #2b5c24;
   border-radius: 20px;
-  padding: 30px;
-  position: relative;
+  padding: 36px 72px 36px 72px;
+  /* position: relative; */
   display: flex;
   align-self: center;
+  align-items: center;
   gap: 50px;
 }
 .card__title {
-  font-size: 1.88vw;
+  font-size: 24px;
+  margin: 0 0 20px 0;
 }
+
+.card__desc {
+  font-size: 16px;
+  margin: 0 0 16px 0;
+}
+
+.card__subtitle {
+  font-size: 20px;
+  margin: 12px 0 12px 0;
+}
+
 .card__list {
-  font-size: 1.41vw;
+  font-size: 16px;
+  line-height: 20px;
 }
-.card__title-phone {
-  display: none;
-}
+
 .card__list__item {
   list-style: disc;
-  margin-left: 2%;
+  margin: 8px 0 8px 20px;
+}
+
+.card__list__item:first-of-type {
+  margin: 0 0 8px 20px;
+}
+
+.card__list__item:last-of-type {
+  margin: 8px 0 0 20px;
+}
+
+.card__title-phone {
+  display: none;
 }
