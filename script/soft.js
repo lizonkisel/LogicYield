@@ -1,6 +1,17 @@
 "use strict";
 
-import Swiper from "https://unpkg.com/swiper@7/swiper-bundle.esm.browser.min.js";
+import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs'
+
+const swiper = new Swiper(".mySwiper1", {
+    slidesPerView: 1,
+    spaceBetween: 30,
+    loop: true,
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
+popup();
 
 window.addEventListener("DOMContentLoaded", () => {
     const popup = () => {
@@ -32,18 +43,5 @@ window.addEventListener("DOMContentLoaded", () => {
         })
        
     }
-    var swiper = new Swiper(".mySwiper1", {
-        slidesPerView: 1,
-        spaceBetween: 30,
-        loop: true,
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-        },
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-      });
-    popup();
+
 })

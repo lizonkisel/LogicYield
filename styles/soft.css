@@ -1,0 +1,45 @@
+.soft-main {
+  padding-bottom: 90px;
+}
+.soft-title {
+  border-bottom: 2px solid #3d8e30;
+  width: 90%;
+  padding: 10px;
+}
+
+.mySwiper1 {
+  width: 80vw;
+}
+
+.swiper-wrapper {
+  width: 80vw;
+}
+
+.cards {
+  margin-top: 28px;
+}
+
+.cards__item {
+  /* width: 90vw; */
+  height: 60vh;
+  background: #2b5c24;
+  border-radius: 20px;
+  padding: 30px;
+  position: relative;
+  display: flex;
+  align-self: center;
+  gap: 50px;
+}
+.card__title {
+  font-size: 1.88vw;
+}
+.card__list {
+  font-size: 1.41vw;
+}
+.card__title-phone {
+  display: none;
+}
+.card__list__item {
+  list-style: disc;
+  margin-left: 2%;
+}
