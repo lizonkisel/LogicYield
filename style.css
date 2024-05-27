@@ -419,7 +419,7 @@ a {
 /* .gallery__img {
   width: 3.91vw;
 }  */
- .cards__item .swiper {
+ /* .cards__item .swiper {
   display: flex;
   max-width: 35%;
   min-width: 35%;
@@ -450,7 +450,7 @@ a {
 }
 .swiper {
   display: none;
-}
+} */
 /* .product__peculiarities {
   padding-top: 11vh;
   padding-left: 8%;

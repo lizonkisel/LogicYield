@@ -7,12 +7,19 @@
   padding: 10px;
 }
 
-.mySwiper1 {
+/* Основная галерея */
+
+.mySwiperMain {
   width: 80vw;
 }
 
-.swiper-wrapper {
+.mySwiperMain > .swiper-wrapper {
   width: 80vw;
+}
+
+.swiper-button-prev:after,
+.swiper-button-next:after {
+  color: #fff;
 }
 
 .cards {
@@ -65,4 +72,31 @@
 
 .card__title-phone {
   display: none;
+}
+
+/* Галерея внутри карточки */
+
+.cards__item .swiper {
+  max-width: 35%;
+  min-width: 35%;
+  height: 100%;
+  /* Не ясно, зачем тут flex. Но пока оставлю */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 !important;
+}
+
+.cards__item .swiper-slide{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* height: auto;
+  width: 100%; */
+}
+
+.cards__item .card__img{
+  display: flex;
+  width: 90%;
+  border-radius: 10px;
 }
