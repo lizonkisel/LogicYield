@@ -7,6 +7,7 @@
     <title>Document</title>
     <link rel="shortcut icon" href="./assets/img/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./styles/soft.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
@@ -16,7 +17,7 @@
     />
     <link
       rel="stylesheet"
-      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
   </head>
   <body id="body">
@@ -110,6 +111,7 @@
         <div class="header__lang"></div>
       </nav>
     </header>
+
     <main class="main product-main soft-main">
       <img src="./assets/img/up.svg" alt="" class="up">
       <div class="soft__popup">
@@ -121,284 +123,221 @@
         </div>
       </div>
       <h2 class="product__title soft-title main__title title">Софт</h2>
-      <div class="product__desc soft-desc">
-        <div class="desc__devcomm soft-devcomm">
-          <img src="assets/img/developer-3.png" alt="" class="devcomm__img" />
-          <div class="devcomm__text">
-            «На счету нашей команды несколько уникальных программных проектов
-            для производственных лабораторий и промышленности. »
-          </div>
-        </div>
-      </div>
-      <div class="soft__cards cards">
-        <div class="cards__item" id="DotPulse">
-          <h3 class="card__title-phone">DotPulse (в эксплуатации)</h3>
-          <div class="swiper mySwiper1">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <img
-                  src="assets/img/DotPulse_1.png"
-                  alt=""
-                  class="card__img card__img-active"
-                />
-              </div>
-              <div class="swiper-slide">
-                <img src="assets/img/DotPulse_2.png" alt="" class="card__img" />
-              </div>
-              <div class="swiper-slide">
-                <img src="assets/img/DotPulse_3.png" alt="" class="card__img" />
-              </div>
-              <div class="swiper-slide">
-                <img src="assets/img/DotPulse_4.png" alt="" class="card__img" />
-              </div>
-              <div class="swiper-slide">
-                <img src="assets/img/DotPulse_5.png" alt="" class="card__img" />
-              </div>
-            </div>
-            <div class="swiper-button-next swiper-button-next1"></div>
-            <div class="swiper-button-prev swiper-button-prev1"></div>
-          </div>
-          <div class="card__info">
-            <h3 class="card__title">DotPulse (в эксплуатации)</h3>
-            <ul class="card__list">
-              <li class="card__list__item">
-                анализ гранулометрического состава;
-              </li>
-              <li class="card__list__item">
-                статистический анализ изображений с гранулами или элиптическими
-                формами (цвет, сферичность, размеры осей, площадь);
-              </li>
-              <li class="card__list__item">
-                ведение базы измеренных образцов (изображения, расчеты);
-              </li>
-              <li class="card__list__item">
-                возможность работы в ручном и автоматическом режиме;
-              </li>
-              <li class="card__list__item">
-                возможность задавать пользователей и доступ по паролю;
-              </li>
-              <li class="card__list__item">
-                возможность портирования на сенсорные устройства.
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="cards__item" id="UVYield">
-          <h3 class="card__title-phone">UVYield (тестовая версия)</h3>
-          <div class="swiper mySwiper1">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <img
-                  src="assets/img/UVYield_1.jpg"
-                  alt=""
-                  class="card__img card__img-active"
-                />
-              </div>
-              <div class="swiper-slide">
-                <img
-                  src="assets/img/UVYield_2.png"
-                  alt=""
-                  class="card__img"
-                />
-              </div>
-              <div class="swiper-slide">
-                <img src="assets/img/UVYield_3.png" alt="" class="card__img" />
-              </div>
-              <div class="swiper-slide">
-                <img
-                  src="assets/img/UVYield_4.png"
-                  alt=""
-                  class="card__img"
-                />
-              </div>
-              <div class="swiper-slide">
-                <img src="assets/img/UVYield_5.png" alt="" class="card__img" />
+      <div class="cards">
+        <div class="swiper mySwiperMain">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="cards__item" id="DotPulse">
+                <h3 class="card__title-phone">DotPulse</h3>
+                <div class="swiper mySwiper2">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <img
+                        src="assets/img/soft/dotPulse/interface1.png"
+                        alt=""
+                        class="card__img card__img-active"
+                      />
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="assets/img/soft/dotPulse/interface2.png" alt="" class="card__img" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="assets/img/soft/dotPulse/interface3.png" alt="" class="card__img" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="assets/img/soft/dotPulse/interface4.png" alt="" class="card__img" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="assets/img/soft/dotPulse/KCl_split_recog.png" alt="" class="card__img" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="assets/img/soft/dotPulse/KCl_split_recog_2.png" alt="" class="card__img" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="assets/img/soft/dotPulse/image_for_calibration3.png" alt="" class="card__img" />
+                    </div>
+                  </div>
+                  <div class="swiper-pagination swiper-pagination2"></div>
+                  <!-- <div class="swiper-button-next swiper-button-next2"></div>
+                  <div class="swiper-button-prev swiper-button-prev2"></div> -->
+                </div>
+                <div class="card__info">
+                  <h3 class="card__title">DotPulse</h3>
+                  <p class="card__desc">Программа разработана для приборов «DotPulse». 
+                    В основе расчетов лежит оптическое изображение слоя гранул и 
+                    алгоритм сегментации каждой гранулы на изображении и аппроксимации ее эллипсом.
+                  </p>
+                  <h4 class="card__subtitle">ПО способно:</h4>
+                  <ul class="card__list">
+                    <li class="card__list__item">
+                      проводить расчет физических свойств гранул на изображении (линейные размеры, цвет, форма);
+                    </li>
+                    <li class="card__list__item">
+                      получать и отображать изображения с USB-камеры пробора «DotPulse» (включая высокоскоростные промышленные камеры);
+                    </li>
+                    <li class="card__list__item">
+                      проводить предварительную обработку изображений и использовать классические и нейросетевые алгоритмы для сегментации каждой гранулы;
+                    </li>
+                    <li class="card__list__item">
+                      создавать SQL базу данных изображений и рассчитанных свойств с возможностью импорта в *.csv;
+                    </li>
+                    <li class="card__list__item">
+                      выполнять анализ статических и динамических изображений гранул (в т.ч. в приборов, установленных над конвейерной лентой, течки или пересыпки гранул продукта).
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
-            <div class="swiper-button-next swiper-button-next1"></div>
-            <div class="swiper-button-prev swiper-button-prev1"></div>
-          </div>
-          <div class="card__info">
-            <h3 class="card__title">UVYield (тестовая версия)</h3>
-            <ul class="card__list">
-              <li class="card__list__item swiper-2">
-                анализ флуоресценции под действием УФ;
-              </li>
-              <li class="card__list__item">
-                расчет полноты и яркости свечения;
-              </li>
-              <li class="card__list__item">
-                ведение базы измеренных образцов (изображения, расчеты);
-              </li>
-              <li class="card__list__item">
-                возможность работы в ручном и автоматическом режиме;
-              </li>
-              <li class="card__list__item">
-                возможность задавать пользователей и доступ по паролю;
-              </li>
-              <li class="card__list__item">
-                возможность портирования на сенсорные устройства.
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="cards__item" id="SaltYield">
-          <h3 class="card__title-phone">SaltIndex (в разработке)</h3>
-          <div class="swiper mySwiper1">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <img
-                  src="assets/img/SaltIndex_1.png"
-                  alt=""
-                  class="card__img card__img-active"
-                />
+            <div class="swiper-slide">
+              <div class="cards__item" id="GOAAPI">
+                <h3 class="card__title-phone">GOAAPI</h3>
+                <!-- <div class="swiper mySwiper1">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <img
+                        src="assets/img/UVYield_1.jpg"
+                        alt=""
+                        class="card__img card__img-active"
+                      />
+                    </div>
+                    <div class="swiper-slide">
+                      <img
+                        src="assets/img/UVYield_2.png"
+                        alt=""
+                        class="card__img"
+                      />
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="assets/img/UVYield_3.png" alt="" class="card__img" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img
+                        src="assets/img/UVYield_4.png"
+                        alt=""
+                        class="card__img"
+                      />
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="assets/img/UVYield_5.png" alt="" class="card__img" />
+                    </div>
+                  </div> -->
+                  <!-- <div class="swiper-button-next swiper-button-next1"></div>
+                  <div class="swiper-button-prev swiper-button-prev1"></div>
+                </div> -->
+                <div class="card__info">
+                  <h3 class="card__title">GOAAPI</h3>
+                  <p class="card__desc">API для предоставления данных и использования нейросетевых 
+                    алгоритмов для анализа изображений гранул удобрений:
+                  </p>
+                  <ul class="card__list">
+                    <li class="card__list__item swiper-2">
+                      3447 изображений гранул 4 типов удобрений (ДАФ, NPK 15-15-15, NH4NO3, KCl);
+                    </li>
+                    <li class="card__list__item">
+                      возможность отделения гранул от фона с помощью нейросетевой модели;
+                    </li>
+                    <li class="card__list__item">
+                      определение каждой отдельной гранулы с ее свойствами (инстанс-сегментация) с помощью нейронных сетей;
+                    </li>
+                    <li class="card__list__item">
+                      возможность анализа гранул верхнего слоя гранул вне зависимости от нижних слоев и фона;
+                    </li>
+                  </ul>
+                </div>
               </div>
-              <div class="swiper-slide">
-                <img src="assets/img/SaltIndex_1.png" alt="" class="card__img" />
-              </div>
-            </div>
-            <div class="swiper-button-next swiper-button-next1"></div>
-            <div class="swiper-button-prev swiper-button-prev1"></div>
-          </div>
-          <div class="card__info">
-            <h3 class="card__title">SaltIndex (в разработке)</h3>
-            <ul class="card__list">
-              <li class="card__list__item">
-                теоретический расчет солевого индекса для минеральных удобрений;
-              </li>
-              <li class="card__list__item">
-                расчет по проводимости с использование базы данных измеренных
-                образцов;
-              </li>
-              <li class="card__list__item">составление отчетов;</li>
-              <li class="card__list__item">
-                возможность задавать пользователей и доступ по паролю;
-              </li>
-              <li class="card__list__item">
-                возможность портирования на сенсорные устройства.
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="cards__item" id="VideoYield">
-          <h3 class="card__title-phone">VideoYield (тестовая версия)</h3>
-          <div class="swiper mySwiper1">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <img
-                  src="assets/img/VideoYield_1.png"
-                  alt=""
-                  class="card__img card__img-active"
-                />
-              </div>
-              <div class="swiper-slide">
-                <img src="assets/img/VideoYield_2.png" alt="" class="card__img" />
-              </div>
-              <div class="swiper-slide">
-                <img
-                  src="assets/img/VideoYield_3.png"
-                  alt=""
-                  class="card__img"
-                />
-              </div>
-              <div class="swiper-slide">
-                <img src="assets/img/VideoYield_4.png" alt="" class="card__img" />
-              </div>
-              <div class="swiper-slide">
-                <img src="assets/img/VideoYield_5.png" alt="" class="card__img" />
-              </div>
-            </div>
-            <div class="swiper-button-next swiper-button-next1"></div>
-            <div class="swiper-button-prev swiper-button-prev1"></div>
-          </div>
-          <div class="card__info">
-            <h3 class="card__title">VideoYield (тестовая версия)</h3>
-            <ul class="card__list">
-              <li class="card__list__item">
-                возможность видео-мониторинга эксперимента (например, для
-                микроскопов);
-              </li>
-              <li class="card__list__item">запись и сжатие видео;</li>
-              <li class="card__list__item">
-                возможность сохранения изображений;
-              </li>
-              <li class="card__list__item">
-                мониторинг цвета, площадей и изменений;
-              </li>
-              <li class="card__list__item">
-                возможность маркирования расстояний на изображении;
-              </li>
-              <li class="card__list__item">
-                возможность задавать количество кадров в сек., мин., час.;
-              </li>
-              <li class="card__list__item">
-                возможность просмотра видео и фотографий.
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="cards__item" id="SpectraYield">
-          <h3 class="card__title-phone">DSpectra (в эксплуатации)</h3>
-          <div class="swiper mySwiper1">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <img
-              src="assets/img/SpectraYield_1.png"
-              alt=""
-              class="card__img card__img-active"
-            />
-              </div>
-              <div class="swiper-slide">
-                <img src="assets/img/SpectraYield_2.png" alt="" class="card__img" />
-              </div>
-              <div class="swiper-slide">
-                <img src="assets/img/SpectraYield_3.png" alt="" class="card__img" />
-              </div>
-              <div class="swiper-slide">
-                <img src="assets/img/SpectraYield_4.png" alt="" class="card__img" />
-              </div>
-              <div class="swiper-slide">
-                <img
-              src="assets/img/SpectraYield_5.png"
-              alt=""
-              class="card__img"
-            />
-              </div>
-              <div class="swiper-slide">
-                <img src="assets/img/SpectraYield_6.jpeg" alt="" class="card__img" />
-              </div>
-              <div class="swiper-slide">
-                <img src="assets/img/SpectraYield_7.png" alt="" class="card__img" />
+            </div>  
+            <div class="swiper-slide">
+              <div class="cards__item" id="NeuralSatellite">
+                <h3 class="card__title-phone">Нейросетевой анализ и мониторинг спутниковых снимков</h3>
+                <!-- <div class="swiper mySwiper1">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <img
+                        src="assets/img/SaltIndex_1.png"
+                        alt=""
+                        class="card__img card__img-active"
+                      />
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="assets/img/SaltIndex_1.png" alt="" class="card__img" />
+                    </div>
+                  </div>
+                  <div class="swiper-button-next swiper-button-next1"></div>
+                  <div class="swiper-button-prev swiper-button-prev1"></div>
+                </div> -->
+                <div class="card__info">
+                  <h3 class="card__title">Нейросетевой анализ и мониторинг спутниковых снимков</h3>
+                  <ul class="card__list">
+                    <li class="card__list__item">
+                      получение спутниковых данных из открытых источников (Google EE, Copernicus);
+                    </li>
+                    <li class="card__list__item">
+                      проведение классификации изображений;
+                    </li>
+                    <li class="card__list__item">
+                      построение временных рядов из наблюдений;
+                    </li>
+                    <li class="card__list__item">
+                      поиск и построение корреляций спутниковых снимков и результатов анализа наземных данных (дорожная сцена, лаборатории по РМ2.5, РМ10, промышленное производство);
+                    </li>
+                    <li class="card__list__item">
+                      возможность реализации API сервиса, в том числе для локальной установки.
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
-            <div class="swiper-button-next swiper-button-next1"></div>
-            <div class="swiper-button-prev swiper-button-prev1"></div>
+            <div class="swiper-slide">
+              <div class="cards__item" id="NeuralLicencePlate">
+                <h3 class="card__title-phone">Нейросетевой анализ номерных знаков автомобилей</h3>
+                <!-- <div class="swiper mySwiper1">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <img
+                        src="assets/img/VideoYield_1.png"
+                        alt=""
+                        class="card__img card__img-active"
+                      />
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="assets/img/VideoYield_2.png" alt="" class="card__img" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img
+                        src="assets/img/VideoYield_3.png"
+                        alt=""
+                        class="card__img"
+                      />
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="assets/img/VideoYield_4.png" alt="" class="card__img" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="assets/img/VideoYield_5.png" alt="" class="card__img" />
+                    </div>
+                  </div>
+                  <div class="swiper-button-next swiper-button-next1"></div>
+                  <div class="swiper-button-prev swiper-button-prev1"></div>
+                </div> -->
+                <div class="card__info">
+                  <h3 class="card__title">Нейросетевой анализ номерных знаков автомобилей</h3>
+                  <ul class="card__list">
+                    <li class="card__list__item">
+                      Определение положения номерного знака для вида от 1-го и от 3-го лица 
+                      (камеры мобильных телефонов, регистраторов и камер наблюдения)
+                    </li>
+                    <li class="card__list__item">проведение OCR анализа номерного знака для 
+                      получения текста и региона/страны выпуска;</li>
+                    <li class="card__list__item">
+                      возможность реализации API сервиса, в том числе для локальной установки.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="card__info">
-            <h3 class="card__title">DSpectra (в эксплуатации)</h3>
-            <ul class="card__list">
-              <li class="card__list__item">
-                анализ энергодисперсионной рентгеноспектральной информации;
-              </li>
-              <li class="card__list__item">
-                загрузка, сглаживание и разделения спектров;
-              </li>
-              <li class="card__list__item">
-                выделение характеристических линий элементов;
-              </li>
-              <li class="card__list__item">
-                расчет интенсивностей и площадей характеристических линий;
-              </li>
-              <li class="card__list__item">
-                построение линейной множественной регрессии;
-              </li>
-              <li class="card__list__item">составление отчетов;</li>
-              <li class="card__list__item">
-                возможность управления энергодисперсионными ренгеновскими
-                спектрометрами (при наличии спецификаций для протоколов).
-              </li>
-            </ul>
-          </div>
+          <div class="swiper-button-next swiper-button-next_main"></div>
+          <div class="swiper-button-prev swiper-button-prev_main"></div>
         </div>
       </div>
     </main>

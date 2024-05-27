@@ -419,7 +419,7 @@ a {
 /* .gallery__img {
   width: 3.91vw;
 }  */
- .cards__item .swiper {
+ /* .cards__item .swiper {
   display: flex;
   max-width: 35%;
   min-width: 35%;
@@ -442,7 +442,6 @@ a {
 }
 .swiper-wrapper{
   width: 100%;
-
 }
 .cards__item .card__img{
   display: flex;
@@ -451,7 +450,7 @@ a {
 }
 .swiper {
   display: none;
-}
+} */
 /* .product__peculiarities {
   padding-top: 11vh;
   padding-left: 8%;
@@ -584,47 +583,6 @@ tr {
   width: 100%;
 }
 
-/* Soft */
-.soft-main {
-  padding-bottom: 90px;
-}
-.soft-title {
-  border-bottom: 2px solid #3d8e30;
-  width: 90%;
-  padding: 10px;
-}
-.soft-desc {
-  justify-content: center;
-}
-
-.soft__cards {
-  display: flex;
-  flex-direction: column;
-  gap: 7vh;
-}
-.cards__item {
-  width: 90vw;
-  background: #2b5c24;
-  border-radius: 20px;
-  padding: 30px;
-  position: relative;
-  display: flex;
-  align-self: center;
-  gap: 50px;
-}
-.card__title {
-  font-size: 1.88vw;
-}
-.card__list {
-  font-size: 1.41vw;
-}
-.card__title-phone {
-  display: none;
-}
-.card__list__item {
-  list-style: disc;
-  margin-left: 2%;
-}
 /* Skills */
 
 .skills-main {
