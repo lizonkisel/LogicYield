@@ -31,15 +31,23 @@
   background: #2b5c24;
   border-radius: 20px;
   padding: 36px 72px 36px 72px;
+  box-sizing: content-box;
   /* position: relative; */
   display: flex;
   align-self: center;
   align-items: center;
-  gap: 50px;
+  justify-content: center;
+  gap: 48px;
 }
+
+.card__info {
+  /* overflow-y: scroll; */
+  max-width: 80%;
+}
+
 .card__title {
   font-size: 24px;
-  margin: 0 0 20px 0;
+  margin: 0 0 16px 0;
 }
 
 .card__desc {
