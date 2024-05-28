@@ -111,3 +111,19 @@
   max-height: 70%; */
   border-radius: 10px;
 }
+
+.swiper-pagination-bullet {
+  background-color: #111 !important;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #fff !important;
+}
+
+/* .swiper-button-prev:after {
+  color: #3d8e30 !important;
+}
+
+.swiper-button-next:after {
+  color: #3d8e30 !important;
+} */
