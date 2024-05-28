@@ -12,6 +12,20 @@ const swiper = new Swiper(".mySwiperMain", {
     },
   });
 
+  const swiper1 = new Swiper(".mySwiper1", {
+    slidesPerView: 1,
+    spaceBetween: 30,
+    loop: true,
+    // navigation: {
+    //   nextEl: ".swiper-button-next2",
+    //   prevEl: ".swiper-button-prev2",
+    // },
+    pagination: {
+        el: '.swiper-pagination1',
+        clickable: true,
+      },
+  });
+
   const swiper2 = new Swiper(".mySwiper2", {
     slidesPerView: 1,
     spaceBetween: 30,
@@ -22,6 +36,20 @@ const swiper = new Swiper(".mySwiperMain", {
     // },
     pagination: {
         el: '.swiper-pagination2',
+        clickable: true,
+      },
+  });
+
+  const swiper3 = new Swiper(".mySwiper3", {
+    slidesPerView: 1,
+    spaceBetween: 30,
+    loop: true,
+    // navigation: {
+    //   nextEl: ".swiper-button-next2",
+    //   prevEl: ".swiper-button-prev2",
+    // },
+    pagination: {
+        el: '.swiper-pagination3',
         clickable: true,
       },
   });
