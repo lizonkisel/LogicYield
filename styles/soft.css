@@ -98,5 +98,8 @@
 .cards__item .card__img{
   display: flex;
   width: 90%;
+  /* max-width: 90%;
+  min-width: 70%;
+  max-height: 70%; */
   border-radius: 10px;
 }
