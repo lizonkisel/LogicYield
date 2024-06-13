@@ -583,61 +583,7 @@ tr {
   width: 100%;
 }
 
-/* Skills */
-
-/* .skills-main {
-  display: flex;
-  flex-direction: column;
-}
-.skills-title {
-  margin-bottom: 4.64vh;
-}
-.skills-content {
-  width: 100vw;
-
-  display: flex;
-}
-.skills-list {
-  width: 100vw;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  padding-left: 5%;
-  padding-right: 5%;
-  gap: 30px;
-}
-.skills-item {
-  display: flex;
-  gap: 30px;
-  margin-bottom: 2%;
-}
-.skills-num {
-  min-width: 75px;
-  min-height: 75px;
-  max-width: 75px;
-  max-height: 75px;
-  border-radius: 50%;
-  background-color: #3d8e30;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 60px;
-}
-.skills-text {
-  width: 100%;
-}
-.skills-text__title {
-  margin-bottom: 5px;
-  font-size: 1.25vw;
-}
-.skills-text__desc {
-  font-size: 1.25vw;
-}
-.desc__item {
-  list-style: disc;
-  margin-left: 5%;
-} */
-
-/* Project */
+/* Project
 .project-title {
   font-weight: bold;
   font-size: 36px;
@@ -693,7 +639,7 @@ tr {
 }
 .project-item__text {
   font-size: 1.04vw;
-}
+} */
 
 @media screen and (max-width: 1300px) {
   .logo {
