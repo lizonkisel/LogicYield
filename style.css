@@ -585,7 +585,7 @@ tr {
 
 /* Skills */
 
-.skills-main {
+/* .skills-main {
   display: flex;
   flex-direction: column;
 }
@@ -635,7 +635,7 @@ tr {
 .desc__item {
   list-style: disc;
   margin-left: 5%;
-}
+} */
 
 /* Project */
 .project-title {
