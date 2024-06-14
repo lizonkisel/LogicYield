@@ -98,19 +98,19 @@
       </div>
 
       <h2 class="product__title main__title title">Продукты</h2>
-      <div class="product__name">Cистема оптического контроля сыпучих материалов “DotPulse”</div>
+      <div class="product__name">Датасет "Гранулометрический оптический анализ" (ГОА)</div>
 
       <div class="product__desc">
         <div>
-          <h3 class="peculiarities__title">Об устройстве</h3>
+          <!-- <h3 class="peculiarities__title">Об устройстве</h3> -->
           <p class="peculiarities__item">
-            Устройство предназначено для анализа сыпучих материалов с фракциями 
-            от 1 до 100 мм с получением оптико-электронных изображений.
+            Наша компания разработала и предоставляет для использования по открытой лицензии (MIT) 
+            датасет с изображениями гранул минеральных удобрений.
           </p>
           <p class="peculiarities__item">
-            Анализируемые физические свойства: линейный размер гранулы, форма 
-            гранулы и цвет гранулы (детектирование не менее 90% гранул, относительная 
-            погрешность между параллельными измерениями 3.3 % для фракции 2-5 мм)
+            На текущий момент в датасете представлены 4 типа минеральных удобрений 
+            (ДАФ, NPF 15-15-15, аммиачная селитра и KCl). Данные получены в промышленных 
+            условиях с использованием 2 вариантов исполнения нашего устройства “DotPulse”:
           </p>
         </div>
       </div>
@@ -118,160 +118,57 @@
     </div>
 
     <div class="product__peculiarities">
-        <div class="swiper mySwiper">
+        <ul class="peculiarities__info">
+          <!-- <h3 class="peculiarities__title">Особенности:</h3> -->
+          <li class="peculiarities__item">
+            Статический анализ гранул с автоматическим отбором пробы 
+            (ДАФ, NPK 15-15-15, KCl). Прибор оснащен цветной камерой с rolling shutter затвором.
+          </li>
+          <li class="peculiarities__item">
+            Динамический анализ гранул в потоке (KCl, аммиачная селитра). 
+            Прибор оснащен высокоскоростной цветной камерой с глобальным затвором.
+          </li>
+        </ul>
+
+        <div class="swiper mySwiper-GOA">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
-              <img src="assets/img/DotPulse/1.png" alt="" class="gallery__img">
+              <img src="assets/img/GOA/58-2-1_KCl-crush.jpg" alt="" class="gallery__img">
               <!-- Slide 1 -->
             </div>
             <div class="swiper-slide">
-              <img src="assets/img/DotPulse/2.jpg" alt="" class="gallery__img">
+              <img src="assets/img/GOA/9-1-4_DAP-BGS.jpg alt="" class="gallery__img">
               <!-- Slide 2 -->
             </div>
             <div class="swiper-slide">
-              <img src="assets/img/DotPulse/3.jpg" alt="DotPulse device" class="gallery__img">
+              <img src="assets/img/GOA/60-2-1_NH4NO3-prill.jpg" alt="DotPulse device" class="gallery__img">
               <!-- Slide 3 -->
             </div>
             <div class="swiper-slide">
-              <img src="assets/img/DotPulse/4.jpg" alt="DotPulse device" class="gallery__img">
+              <img src="assets/img/GOA/219-2-0_NPK-AG-SB.jpg" alt="DotPulse device" class="gallery__img">
               <!-- Slide 4 -->
             </div>
-            <div class="swiper-slide">
-              <img src="assets/img/DotPulse/5.png" alt="DotPulse device" class="gallery__img">
-              <!-- Slide 5 -->
-            </div>
-            <div class="swiper-slide">
-              <img src="assets/img/DotPulse/6.jpg" alt="DotPulse device" class="gallery__img">
-              <!-- Slide 6 -->
-            </div>
-            <div class="swiper-slide">
-              <img src="assets/img/DotPulse/7.jpg" alt="DotPulse device" class="gallery__img">
-              <!-- Slide 87 -->
-            </div>
-            <div class="swiper-slide">
-              <img src="assets/img/DotPulse/8.png" alt="DotPulse device" class="gallery__img">
-              <!-- Slide 8 -->
-            </div>
-            <div class="swiper-slide">
-              <img src="assets/img/DotPulse/9.jpg" alt="DotPulse device" class="gallery__img">
-              <!-- Slide 9 -->
-            </div>
-            <div class="swiper-slide">
-              <img src="assets/img/DotPulse/10.jpg" alt="DotPulse device" class="gallery__img">
-              <!-- Slide 10 -->
-            </div>
-            <div class="swiper-slide">
-              <img src="assets/img/DotPulse/11.jpg" alt="DotPulse device" class="gallery__img">
-              <!-- Slide 11 -->
-            </div>
-            <div class="swiper-slide">
-              <img src="assets/img/DotPulse/12.png" alt="DotPulse device" class="gallery__img">
-              <!-- Slide 12 -->
-            </div>
+
           </div>
-          <div class="swiper-pagination"></div>
-          <div class="swiper-button-next"></div>
-          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination swiper-pagination-GOA"></div>
+          <div class="swiper-button-next swiper-button-next-GOA"></div>
+          <div class="swiper-button-prev swiper-button-prev-GOA"></div>
         </div>
 
-        <ul class="peculiarities__info">
-            <h3 class="peculiarities__title">Особенности:</h3>
-            <li class="peculiarities__item">Создана для производственных условий.</li>
-            <li class="peculiarities__item">3 варианта исполнения ПАК: динамический анализ пробы в потоке; статический анализ 
-              с автоматическим отбором пробы; статический анализ пробы с ручным отбором.
-            </li>
-            <li class="peculiarities__item">Легкая замена ключевых частей, масса устройства в сборе не более 50 кг.</li>
-            <li class="peculiarities__item">Возможность подачи гранул и распределения в монослой с последующим 
-              удалением (остаточное количество гранул не более 1 шт).
-            </li>
-            <li class="peculiarities__item">Получена декларация соответствия требованиям технических регламентов 
-              Евразийского экономического союза (ТР ТС 004/2011 и ТР ТС 020/2011)
-            </li>
-            <li class="peculiarities__item">ПО зарегистрировано в реестре программ для ЭВМ 
-              (свидетельство № 2023668146 от 23.08.2023).
-            </li>
-        </ul>
     </div>
 
-    <div class="product__desc">
-      <div>
-        <h3 class="peculiarities__title">Испытания</h3>
-        <p class="peculiarities__item">
-          Прототип промышленного устройства прошел опытно-промышленные 
-          испытания на предприятиях АО “МХК “Еврохим””,  ПАО “Уралкалий”, АО “Аммоний”.
-        </p>
-        <p class="peculiarities__item">
-          Успешно проверена работа ПАК во всех 3 режимах (динамический, статический с 
-          ручным отбором пробы и статический с автоматическим отбором пробы).
-        </p>
-      </div>
+    <div class="datasetInfo__field">
+        <h3 class="datasetInfo__title">Информация о датасете</h3>
+        <div class="datasetInfo__items">
+          <img class="datasetInfo__item" src="assets/img/GOA/color_total.png" alt="">
+          <img class="datasetInfo__item" src="assets/img/GOA/violins_cranules_num.png" alt="">
+        </div>
     </div>
 
-    <div class="product__specifications">
+    <div class="product__specifications specifications__field">
         <!-- <div class="specifications__name">Cистема оптического контроля сыпучих материалов “DotPulse”</div> -->
         <h3 class="peculiarities__title specifications__title">Характеристики</h3>
-        <table class="specifications__table">
-            <thead>
-                <tr>
-                    <th class="th-left">Уровень автоматизации устройства</th>
-                    <th class="th-right">3 уровень, работа в качестве дата-сервера, система самодиагностики, расчет параметров </th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td class="td-left">Принцип измерения</td>
-                    <td class=td-right>оптический</td>
-                </tr>
-                <tr>
-                    <td class="td-left">Диапазон измерений, мм</td>
-                    <td class=td-right>1 – 10</td>
-                </tr>
-                <tr>
-                    <td class="td-left">Время измерения, мин</td>
-                    <td class=td-right>5</td>
-                </tr>
-                <tr>
-                    <td class="td-left">Тип образцов</td>
-                    <td class=td-right>гранулы минеральных удобрений</td>
-                </tr>
-                <tr>
-                    <td class="td-left">Масса образца, г</td>
-                    <td class=td-right>50 – 1000</td>
-                </tr>
-                <tr>
-                    <td class="td-left">Область анализа, д х ш, см</td>
-                    <td class=td-right>30х30</td>
-                </tr>
-                <tr>
-                    <td class="td-left">Измеряемые параметры</td>
-                    <td class=td-right>размер, площадь, сферичность, цвет</td>
-                </tr>
-                <tr>
-                    <td class="td-left">Масса прибора, кг</td>
-                    <td class=td-right>15</td>
-                </tr>
-                <tr>
-                    <td class="td-left">Масса системы отбора пробы, кг</td>
-                    <td class=td-right>50</td>
-                </tr>
-                <tr>
-                    <td class="td-left">Габариты прибора ш х д х в, м</td>
-                    <td class=td-right>0.5 х 0.5 х 0.6</td>
-                </tr>
-                <tr>
-                    <td class="td-left">Габариты системы отбора пробы ш х д х в, м</td>
-                    <td class=td-right>1 х 1 х 1.2</td>
-                </tr>
-                <tr>
-                    <td class="td-left">Рабочая система</td>
-                    <td class=td-right>Quad Core PC, Ubuntu 20.04</td>
-                </tr>
-                <tr>
-                    <td class="td-left">Программное обеспечение</td>
-                    <td class=td-right>DotPulse</td>
-                </tr>
-            </tbody>
-        </table>
+        <img class="specifications__item" src="assets/img/GOA/image_2024-05-20_13-28-34.png" alt="">
       </div>  
     </main>
     <footer class="footer">
@@ -291,6 +188,6 @@
           </nav>
     </footer>
     <script src="script/main.js"></script>
-    <script type="module" src="script/product.js" ></script>
+    <script type="module" src="script/product-dataset.js" ></script>
   </body>
 </html>
