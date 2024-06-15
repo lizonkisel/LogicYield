@@ -100,10 +100,22 @@
 .swiper-pagination-bullet {
   background-color: #fff !important;
   opacity: .7;
+  transition: all 0.5s ease;
+}
+
+.swiper-pagination-bullet:hover {
+  opacity: 1;
 }
 
 .swiper-pagination-bullet-active {
   background-color: #3d8e30 !important;
+  box-shadow: rgba(61, 142, 48, 1) 0px 7px 14px, rgba(61, 142, 48, 1) 0px 5px 5px;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  opacity: .6;
+  transition: all 0.5s ease;
 }
 
 .swiper-button-prev:after {
@@ -113,6 +125,20 @@
 .swiper-button-next:after {
   color: #3d8e30 !important;
 }
+
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+  opacity: 1;
+}
+
+.swiper-button-prev:hover {
+  text-shadow: #3d8e30 -7px 0 10px;
+}
+
+.swiper-button-next:hover {
+  text-shadow: #3d8e30 7px 0 10px;
+}
+
 
 .datasetInfo__field {
   padding: 8vh 8% 0 8%;
