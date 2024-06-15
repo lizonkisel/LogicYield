@@ -78,7 +78,8 @@
 }
 
 .swiper {
-width: 40vw;
+  width: 40vw;
+  border-radius: 20px;
 }
 
 .swiper-slide {
@@ -140,6 +141,7 @@ width: 40vw;
 
 .datasetInfo__item {
   width: 40%;
+  border-radius: 20px;
 }
 
 .specifications__field {
