@@ -79,8 +79,9 @@
 
 .swiper {
   width: 40vw;
-  border-radius: 20px;
+  padding-bottom: 30px !important; /* Чтобы навбар был под картинками */
 }
+
 
 .swiper-slide {
   text-align: center;
@@ -95,6 +96,7 @@
   width: 100%;
   /* height: 100%; */
   object-fit: contain;
+  border-radius: 20px;
 }
 
 .swiper-pagination-bullet {
@@ -114,6 +116,7 @@
 
 .swiper-button-prev,
 .swiper-button-next {
+  margin-top: -30px !important; /* Компенсировали смещение навбара */
   opacity: .6;
   transition: all 0.5s ease;
 }

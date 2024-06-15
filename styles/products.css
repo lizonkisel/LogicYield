@@ -77,9 +77,10 @@
     margin-bottom: 30px;
   }
 
-.swiper {
-  width: 60vw;
-}
+  .swiper {
+    width: 60vw;
+    /* padding-bottom: 30px !important; */
+  }
   
   .swiper-slide {
     text-align: center;
@@ -94,6 +95,7 @@
     width: 100%;
     /* height: 100%; */
     object-fit: contain;
+    border-radius: 20px;
   }
 
   /* .swiper-pagination-bullet {
