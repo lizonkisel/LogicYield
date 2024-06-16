@@ -14,6 +14,7 @@ const swiper = new Swiper(".mySwiperMain", {
         rotate: true,
         slideShadows: true,
     },
+    speed: 800,
     // onAny(eventName, ...args) {
     //     console.log('Event: ', eventName);
     //     console.log('Event data: ', args);
