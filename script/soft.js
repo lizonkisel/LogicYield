@@ -6,6 +6,20 @@ const swiper = new Swiper(".mySwiperMain", {
     slidesPerView: 1,
     spaceBetween: 30,
     loop: true,
+    // allowTouchMove: false,
+    effect: 'cards',
+    cardsEffect: {
+        perSlideOffset: 4,
+        perSlideRotate: 3,
+        rotate: true,
+        slideShadows: true,
+    },
+    // onAny(eventName, ...args) {
+    //     console.log('Event: ', eventName);
+    //     console.log('Event data: ', args);
+    //   },
+    grabCursor: true,
+    noSwipingClass: 'noSwipeGallery',
     navigation: {
       nextEl: ".swiper-button-next_main",
       prevEl: ".swiper-button-prev_main",
@@ -16,6 +30,10 @@ const swiper = new Swiper(".mySwiperMain", {
     slidesPerView: 1,
     spaceBetween: 30,
     loop: true,
+    // allowTouchMove: true,
+    autoplay: {
+        delay: 5000,
+    },
     // navigation: {
     //   nextEl: ".swiper-button-next2",
     //   prevEl: ".swiper-button-prev2",
@@ -34,6 +52,9 @@ const swiper = new Swiper(".mySwiperMain", {
     //   nextEl: ".swiper-button-next2",
     //   prevEl: ".swiper-button-prev2",
     // },
+    autoplay: {
+        delay: 5000,
+    },
     pagination: {
         el: '.swiper-pagination2',
         clickable: true,
@@ -48,6 +69,9 @@ const swiper = new Swiper(".mySwiperMain", {
     //   nextEl: ".swiper-button-next2",
     //   prevEl: ".swiper-button-prev2",
     // },
+    autoplay: {
+        delay: 5000,
+    },
     pagination: {
         el: '.swiper-pagination3',
         clickable: true,
