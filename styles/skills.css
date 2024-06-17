@@ -3,10 +3,6 @@
   flex-direction: column;
 }
 
-.skills-title {
-  margin-bottom: 4.64vh;
-}
-
 .skills-content {
   width: 100vw;
   display: flex;

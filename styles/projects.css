@@ -1,21 +1,15 @@
-.project-title {
-  font-weight: bold;
-  font-size: 36px;
-  line-height: 49px;
-}
-
 .project-subtitle {
   text-align: center;
   font-size: 16px;
-  line-height: 35px;
+  display: block;
+  margin: -12px 0 0 0;
 }
 
 .project-content {
-  display: flex;
+  /* display: flex;
   flex-direction: row;
-  width: 100vw;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between; */
 
   margin: 32px 0 0 0;
 }
@@ -24,9 +18,8 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 36px;
-
-  padding: 0 5% 0 5%;
 }
+
 .project-item {
   /* width: calc(100% / 4.2); */
   background: #2b5c24;
