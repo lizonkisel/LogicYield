@@ -4,7 +4,7 @@
 }
 
 .skills-content {
-  width: 100vw;
+  /* width: 100vw; */
   display: flex;
 }
 
@@ -12,8 +12,8 @@
   width: 100vw;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  padding-left: 5%;
-  padding-right: 5%;
+  /* padding-left: 5%;
+  padding-right: 5%; */
   margin: 20px 0 0 0;
   gap: 28px;
 }

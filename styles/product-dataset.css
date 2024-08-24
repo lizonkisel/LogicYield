@@ -39,6 +39,11 @@
   margin: 10px 0 0 0;
 }
 
+.peculiarities__desc {
+  font-size: 20px;
+  line-height: 28px;
+}
+
 .product__peculiarities {
   padding-top: 36px;
   padding-left: 3%;
@@ -50,6 +55,7 @@
 }
 
 .peculiarities__info {
+  /* width: 40vw; */
   display: flex;
   flex-direction: column;
   gap: 5px;
