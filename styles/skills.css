@@ -59,3 +59,24 @@
 .desc__item:last-child {
   margin-bottom: 0;
 }
+
+@media screen and (min-width: 1400px) {
+
+  .skills-list {
+    gap: 60px;
+  }
+  
+  .skills-text__title {
+    margin-bottom: 24px;
+    font-size: 28px;
+  }
+
+  .skills-text__desc {
+    font-size: 20px;
+  }
+
+  .desc__item {
+    margin-left: 20px;
+    margin-bottom: 12px;
+  }
+}

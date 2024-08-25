@@ -37,6 +37,16 @@ a {
   text-decoration: none;
 }
 
+.footer-team .nav__link {
+  padding: 0px;
+}
+.footer-team {
+  /* position: relative; */
+  position: fixed;
+  justify-content: center;
+  align-items: center;
+}
+
 /* First page */
 
 .header {
@@ -480,7 +490,11 @@ tr {
   width: 100%;
 }
 
-@media screen and (min-width: 1300px) {
+@media screen and (min-width: 1400px) {
+  .footer-team {
+    padding: 48px 0 72px 0;
+  }
+
   .index__title {
     font-size: 40px;
   }
@@ -930,23 +944,15 @@ tr {
     position: relative;
     padding-bottom: 34px;
   }
-  .project-item__titile {
+  .project-item__title {
     text-align: center;
     display: inline-block;
     height: 24.19%;
     font-size: 3.5vw;
   }
-  .project-text__title {
-    display: inline-block;
-    font-size: 3vw;
-    margin-bottom: 10px !important;
-  }
   .project-text__item {
     list-style: decimal;
     margin-left: 26px;
-    font-size: 3vw;
-  }
-  .project-item__text {
     font-size: 3vw;
   }
 
