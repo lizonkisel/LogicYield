@@ -6,11 +6,13 @@
 
 .about__desc {
   /* margin: 48px 0 0 0; */
+  overflow-y: auto;
 }
 
 .about__desc,
 .about__publications {
   width: 50%;
+  max-height: 32vw;
 }
 
 .about__text {
@@ -31,6 +33,7 @@
   margin-bottom: 20px;
   font-size: 20px;
 }
+
 .publications__cards {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -73,11 +76,39 @@
   width: 100%;
   margin: -44px 0 0 0;
 }
-.footer-about .nav__link {
-  padding: 0px;
-}
-.footer-about {
-  position: relative;
-  justify-content: center;
-  align-items: center;
+
+@media screen and (min-width: 1400px) {
+
+  .about__content {
+    gap: 72px;
+  }
+
+  .about__text {
+    font-size: 24px;
+    line-height: 28px;
+    margin: 20px 0 20px 0;
+  }
+
+  .about__text:first-of-type {
+    margin: 0 0 20px 0;
+  }
+  
+  .about__text:last-of-type {
+    margin: 20px 0 0 0;
+  }
+
+  .publications__title {
+    font-size: 28px;
+    margin-bottom: 32px;
+  }
+
+  .publications__cards {
+    gap: 32px;
+    margin: 32px 0 0 0;
+  }
+
+  .about__tagline {
+    font-size: 24px;
+    margin: -72px 0 0 0;
+  }
 }
