@@ -227,8 +227,8 @@
   }
 
   .peculiarities__item {
-    font-size: 28px;
-    line-height: 36px;
+    font-size: 24px;
+    line-height: 32px;
     margin: 8px 0 0 0;
   }
 
@@ -250,5 +250,51 @@
 
   .specifications__table {
     font-size: 20px;
+  }
+}
+
+@media screen and (min-width: 1790px) {
+  .peculiarities__item {
+    font-size: 28px;
+    line-height: 36px;
+  }
+}
+
+@media screen and (min-width: 2000px) {
+  .product__name {
+    font-size: 36px;
+    line-height: 44px;
+  }
+
+  .peculiarities__title {
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+
+  .swiper {
+    width: 30vw;
+    max-width: 700px;
+  }
+
+  .peculiarities__item {
+    font-size: 32px;
+    line-height: 40px;
+    margin: 12px 0 0 0;
+  }
+
+  .datasetInfo__title {
+    font-size: 32px;
+  }
+
+  .product__specifications {
+    padding-top: 72px;
+  }
+
+  .specifications__title {
+    margin-bottom: 44px;
+  }
+
+  .specifications__table {
+    font-size: 24px;
   }
 }

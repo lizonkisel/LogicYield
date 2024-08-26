@@ -67,7 +67,7 @@
 
   .specifications__title {
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 32px;
   }
 
   .swiper {
@@ -172,7 +172,7 @@
     padding-left: 10%;
   }
 
-@media screen and (min-width: 1400px) {
+@media screen and (min-width: 1399px) {
   .product__name {
     font-size: 32px;
     line-height: 36px;
@@ -203,8 +203,8 @@
   }
 
   .peculiarities__item {
-    font-size: 28px;
-    line-height: 36px;
+    font-size: 24px;
+    line-height: 32px;
     margin: 8px 0 0 0;
   }
 
@@ -222,5 +222,59 @@
 
   .td-right {
     padding-left: 3%;
+  }
+}
+
+@media screen and (min-width: 1500px) {
+  .swiper {
+    width: 90vw;
+  }
+}
+
+@media screen and (min-width: 1660px) {
+  .swiper {
+    width: 60vw;
+  }
+}
+
+@media screen and (min-width: 1790px) {
+  .peculiarities__item {
+    font-size: 28px;
+    line-height: 36px;
+  }
+}
+
+@media screen and (min-width: 2000px) {
+  .product__name {
+    font-size: 36px;
+    line-height: 44px;
+  }
+
+  .peculiarities__title {
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+
+  .swiper {
+    width: 50vw;
+    max-width: 700px;
+  }
+
+  .peculiarities__item {
+    font-size: 32px;
+    line-height: 40px;
+    margin: 12px 0 0 0;
+  }
+
+  .product__specifications {
+    padding-top: 72px;
+  }
+
+  .specifications__title {
+    margin-bottom: 44px;
+  }
+
+  .specifications__table {
+    font-size: 24px;
   }
 }
