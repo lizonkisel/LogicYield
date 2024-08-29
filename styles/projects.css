@@ -21,15 +21,38 @@
 }
 
 .project-item {
-  /* width: calc(100% / 4.2); */
   background: #2b5c24;
   border-radius: 20px;
   display: flex;
   flex-direction: column;
-  padding: 20px 28px 36px 28px;
+  padding: 24px 32px 40px 32px;
   gap: 16px;
+
+  min-height: 40vmin;
+  max-height: 50vmin;
+  overflow: auto;
+  scrollbar-color: #3D8E30 #111111;
+  scrollbar-width: thin;
   /* padding-bottom: 34px; */
 }
+
+
+/* Кажется, это нужно только для Safari */
+
+.project-item::-webkit-scrollbar {
+  width: 4px;               /* ширина scrollbar */
+}
+
+.project-item::-webkit-scrollbar-track {
+  background: #fff;        /* цвет дорожки */
+}
+.project-item::-webkit-scrollbar-thumb {
+  background-color: #3D8E30;    /* цвет плашки */
+  border-radius: 8px;       /* закругления плашки */
+  border: 1px solid #111111;  /* padding вокруг плашки */
+}
+
+
 .project-item__title {
   text-align: center;
   font-size: 16px;
@@ -38,8 +61,12 @@
 .project-text__item {
   list-style: decimal;
   margin-left: 20px;
-  font-size: 16px;
-  margin-top: 8px;
+  font-size: 1.8vmin;
+  margin-top: 16px;
+}
+
+.project-text__item:first-of-type {
+  margin-top: 4px;
 }
 
 
@@ -58,10 +85,46 @@
   }
 
   .project-item {
-    padding: 28px 36px 72px 36px;
+    padding: 28px 36px 60px 36px;
     gap: 20px;
-    max-height: 36vw;
-    overflow: auto;
+    max-height: 54vmin;
+  }
+
+  .project-item__title {
+    font-size: 20px;
+  }
+
+  .project-text__item {
+    margin-left: 28px;
+    font-size: 20px;
+  }
+}
+
+@media screen and (min-width: 1790px) {
+  .project-subtitle {
+    font-size: 24px;
+  }
+
+  .project-list {
+    gap: 52px;
+  }
+
+  .project-text__item {
+    margin-top: 20px;
+  }
+}
+
+@media screen and (min-width: 2000px) {
+  .project-subtitle {
+    font-size: 24px;
+  }
+
+  .project-list {
+    gap: 72px;
+  }
+
+  .project-item {
+    max-height: 60vmin;
   }
 
   .project-item__title {
@@ -69,8 +132,11 @@
   }
 
   .project-text__item {
-    margin-left: 28px;
-    font-size: 20px;
-    margin-top: 12px;
+    font-size: 24px;
+    margin-top: 24px;
+  }
+
+  .project-text__item:first-of-type {
+    margin-top: 8px;
   }
 }
