@@ -47,7 +47,7 @@
 }
 
 .skills-text__desc {
-  font-size: 16px;
+  font-size: 1.7vmin;
 }
 
 .desc__item {
@@ -71,12 +71,28 @@
     font-size: 28px;
   }
 
-  .skills-text__desc {
+  /* .skills-text__desc {
     font-size: 20px;
-  }
+  } */
 
   .desc__item {
     margin-left: 20px;
     margin-bottom: 12px;
+  }
+}
+
+@media screen and (min-width: 1790px) {
+  .skills-text__desc {
+    font-size: 24px;
+  }
+}
+
+@media screen and (min-width: 2000px) {
+  .skills-list {
+    gap: 72px;
+  }
+
+  .skills-text__desc {
+    font-size: 28px;
   }
 }
