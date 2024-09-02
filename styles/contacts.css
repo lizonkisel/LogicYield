@@ -18,6 +18,7 @@
 .main__map {
   /* width: 50vw; */
   /* height: 100%; */
+  max-height: 70vh;
 }
 .main__form {
   display: flex;
@@ -186,7 +187,7 @@
   }
 
   .address__title {
-    font-size: 32px;
+    font-size: 28px;
     line-height: 40px;
   
     margin-bottom: 20px;
@@ -200,5 +201,23 @@
   .map__email {
     margin-bottom: 8px;
     font-size: 20px;
+  }
+}
+
+@media screen and (min-width: 1790px) {
+  .map__title {
+    font-size: 32px;
+  }
+
+  .address__title {
+    font-size: 32px;
+  }
+  .address__text {
+    font-size: 28px;
+  }
+
+  .map__tel,
+  .map__email {
+    font-size: 24px;
   }
 }
