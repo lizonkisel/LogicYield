@@ -221,3 +221,46 @@
     font-size: 24px;
   }
 }
+
+@media screen and (max-width: 1024px) {
+  .contacts-main__content {
+    width: 100vw;
+    justify-content: start;
+    padding: 0;
+  }
+
+  .main__form,
+  .main__map {
+    width: 100vw;
+    padding: 15px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .map__frame {
+    width: 100%;
+  }
+  .map__address {
+    font-size: 4vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    width: 100%;
+  }
+
+  /* .form__legend {
+    text-align: center;
+  }
+  .form__input {
+    width: 100%;
+  }
+  .checkbox__label {
+    font-size: 3vw;
+  } 
+  
+  ._submit {
+    font-size: 4vw;
+  }
+  */
+}
