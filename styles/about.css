@@ -153,3 +153,32 @@
     margin-bottom: 36px;
   }
 }
+
+@media screen and (max-width: 1024px) {
+  .about__content{
+    flex-direction: column;
+  }
+  .about__title{
+    font-size: 5vw;
+  }
+  .about__desc, .about__publications{
+    width: 100%;
+  }
+  .about__text{
+    font-size: 3vw;
+  }
+
+  .publications__cards{
+    justify-content: center;
+  }
+  .publications__title{
+    font-size: 4vw;
+    text-align: center;
+  }
+  .publications__text{
+    font-size: 2vw;
+  }
+  .about__text{
+    font-size: 3vw;
+  }
+}

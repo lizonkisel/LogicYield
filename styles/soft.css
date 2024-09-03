@@ -178,3 +178,36 @@
     font-size: 16px;
   }
 }
+
+@media screen and (max-width: 1024px) {
+  .cards__item {
+    width: 90vw;
+    background: #2b5c24;
+    border-radius: 20px;
+    padding: 5%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+  }
+
+  .card__title {
+    font-size: 2vw;
+    display: none;
+  }
+  .card__title-phone {
+    display: inline;
+    font-size: 3vw;
+  }
+  .card__list {
+    font-size: 2.5vw;
+  }
+  .cards__item .swiper{
+    height: 40%;
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 100% !important;
+  }
+}
+

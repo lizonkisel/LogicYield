@@ -278,3 +278,40 @@
     font-size: 24px;
   }
 }
+
+@media screen and (max-width: 1024px) {
+  .product__desc {
+    padding-top: 5vh;
+    padding-left: 0;
+    padding-right: 0;
+    margin-bottom: 0;
+    display: flex;
+    gap: 5%;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .specifications__name {
+    font-size: 3.8vw;
+  }
+
+  .specifications__title {
+    font-size: 4vw;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .product__desc {
+    padding-top: 3vh;
+    padding-left: 8%;
+    padding-right: 8%;
+    margin-bottom: 5vh;
+    display: flex;
+    gap: 5%;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+}
