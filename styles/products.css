@@ -91,23 +91,6 @@
     border-radius: 20px;
   }
 
-  /* .swiper-pagination-bullet {
-    background-color: #fff !important;
-    opacity: .7;
-  }
-  
-  .swiper-pagination-bullet-active {
-    background-color: #3d8e30 !important;
-  }
-
-  .swiper-button-prev:after {
-    color: #3d8e30 !important;
-  }
-
-  .swiper-button-next:after {
-    color: #3d8e30 !important;
-  } */
-
   .swiper-pagination-bullet {
     background-color: #fff !important;
     opacity: .7;
@@ -280,6 +263,13 @@
 }
 
 @media screen and (max-width: 1024px) {
+
+  .product__peculiarities {
+    flex-direction: column;
+  }
+
+  /* Не проверено */
+
   .product__desc {
     padding-top: 5vh;
     padding-left: 0;
@@ -293,9 +283,13 @@
     width: 100%;
   }
 
+  /* Не проверено */
+
   .specifications__name {
     font-size: 3.8vw;
   }
+
+  /* Не проверено */
 
   .specifications__title {
     font-size: 4vw;
@@ -303,6 +297,42 @@
 }
 
 @media screen and (max-width: 900px) {
+
+  .swiper {
+    width: 80vw;
+    height: auto;
+  }
+
+  .swiper-slide {
+    display: flex !important;
+    width: 90%;
+  }
+
+  .swiper-slide img {
+    width: 80%;
+    align-self: center;
+  }
+
+  .swiper-button-prev {
+    margin-left: -1vw;
+  }
+
+  .swiper-button-next {
+    margin-right: -1vw;
+  }
+
+  .swiper-button-prev:hover,
+  .swiper-button-next:hover {
+    opacity: none;
+    text-shadow: none;
+  }
+
+  .swiper-pagination {
+    display: none;
+  }
+
+  /* Не проверено */
+
   .product__desc {
     padding-top: 3vh;
     padding-left: 8%;
@@ -313,5 +343,15 @@
     align-items: center;
     justify-content: space-between;
     width: 100%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .swiper-button-prev {
+    margin-left: -3vw;
+  }
+
+  .swiper-button-next {
+    margin-right: -3vw;
   }
 }
