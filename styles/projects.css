@@ -175,3 +175,10 @@
     font-size: 3vw;
   }
 }
+
+@media screen and (max-width: 767px) {
+  .project-item {
+    min-height: 35.28vh;
+    max-height: 250px;
+  }
+}
