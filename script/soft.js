@@ -1,40 +1,79 @@
 "use strict";
 
 import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs'
+let params;
+let screenSize;
+let effect;
 
-const swiper = new Swiper(".mySwiperMain", {
-    slidesPerView: 1,
-    spaceBetween: 30,
-    loop: true,
-    // allowTouchMove: false,
-    effect: 'cards',
-    cardsEffect: {
-        perSlideOffset: 4,
-        perSlideRotate: 3,
-        rotate: true,
-        slideShadows: true,
-    },
-    speed: 800,
-    // onAny(eventName, ...args) {
-    //     console.log('Event: ', eventName);
-    //     console.log('Event data: ', args);
-    //   },
-    grabCursor: true,
-    noSwipingClass: 'noSwipeGallery',
-    navigation: {
-      nextEl: ".swiper-button-next_main",
-      prevEl: ".swiper-button-prev_main",
-    },
-  });
+function calcScreenSize() {
+  if (window.matchMedia("(max-width: 900px)").matches) {
+    screenSize = "Меньше 900";
+    params = {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        loop: true,
+    
+        effect: 'creative',
+        creativeEffect: {
+            limitProgress: 2,
+            prev: {
+                translate: ["-110%", 0, 0],
+                opacity: 0.3,
+                scale: .75
+            },
+            next: {
+                translate: ["110%", 0, 0],
+                opacity: 0.3,
+                scale: .75
+            }
+        },
+    
+        speed: 800,
+        grabCursor: true,
+        noSwipingClass: 'noSwipeGallery',
+        navigation: {
+          nextEl: ".swiper-button-next_main",
+          prevEl: ".swiper-button-prev_main",
+        },
+      }
+  } else {
+    screenSize = "Больше 900";
+    params = {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        loop: true,
+   
+        effect: 'cards',
+        cardsEffect: {
+            perSlideOffset: 4,
+            perSlideRotate: 3,
+            rotate: true,
+            slideShadows: true,
+        },
+    
+        speed: 800,
+        grabCursor: true,
+        noSwipingClass: 'noSwipeGallery',
+        navigation: {
+          nextEl: ".swiper-button-next_main",
+          prevEl: ".swiper-button-prev_main",
+        },
+      }
+  }
+};
 
-  const swiper1 = new Swiper(".mySwiper1", {
+calcScreenSize();
+
+const swiper = new Swiper(".mySwiperMain", params);
+
+const swiper1 = new Swiper(".mySwiper1", {
     slidesPerView: 1,
     spaceBetween: 30,
     loop: true,
     // allowTouchMove: true,
-    autoplay: {
-        delay: 5000,
-    },
+    // autoplay: {
+    //     delay: 5000,
+    // },
     // navigation: {
     //   nextEl: ".swiper-button-next2",
     //   prevEl: ".swiper-button-prev2",
@@ -43,9 +82,9 @@ const swiper = new Swiper(".mySwiperMain", {
         el: '.swiper-pagination1',
         clickable: true,
       },
-  });
+});
 
-  const swiper2 = new Swiper(".mySwiper2", {
+const swiper2 = new Swiper(".mySwiper2", {
     slidesPerView: 1,
     spaceBetween: 30,
     loop: true,
@@ -53,16 +92,16 @@ const swiper = new Swiper(".mySwiperMain", {
     //   nextEl: ".swiper-button-next2",
     //   prevEl: ".swiper-button-prev2",
     // },
-    autoplay: {
-        delay: 5000,
-    },
+    // autoplay: {
+    //     delay: 5000,
+    // },
     pagination: {
         el: '.swiper-pagination2',
         clickable: true,
       },
-  });
+});
 
-  const swiper3 = new Swiper(".mySwiper3", {
+const swiper3 = new Swiper(".mySwiper3", {
     slidesPerView: 1,
     spaceBetween: 30,
     loop: true,
@@ -70,15 +109,17 @@ const swiper = new Swiper(".mySwiperMain", {
     //   nextEl: ".swiper-button-next2",
     //   prevEl: ".swiper-button-prev2",
     // },
-    autoplay: {
-        delay: 5000,
-    },
+    // autoplay: {
+    //     delay: 5000,
+    // },
     pagination: {
         el: '.swiper-pagination3',
         clickable: true,
       },
-  });
+});
 
+// window.addEventListener('resize', calcScreenSize);
+  
 window.addEventListener("DOMContentLoaded", () => {
     const popup = () => {
         let images = document.querySelectorAll(".card__img");
@@ -111,4 +152,4 @@ window.addEventListener("DOMContentLoaded", () => {
     }
 
     popup();
-})
+});
