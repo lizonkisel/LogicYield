@@ -352,6 +352,10 @@
     margin-bottom: 8px;
   }
 
+  .specifications__title {
+    margin-bottom: 16px;
+  }
+
   .peculiarities__desc {
     font-size: 12px;
     line-height: 16px;
