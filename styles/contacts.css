@@ -223,44 +223,46 @@
 }
 
 @media screen and (max-width: 1024px) {
+  .main__map {
+    width: 100%;
+    flex-direction: column;
+    gap: 28px;
+    max-height: max-content;
+  }
+}
+
+@media screen and (max-width: 900px) {
+
   .contacts-main__content {
-    width: 100vw;
-    justify-content: start;
-    padding: 0;
+    margin: 12px 0 42px 0;
   }
 
-  .main__form,
-  .main__map {
-    width: 100vw;
-    padding: 15px;
-    justify-content: center;
-    align-items: center;
+  .map__title {
+    font-size: 16px;
+    margin-bottom: 12px;
   }
 
   .map__frame {
-    width: 100%;
-  }
-  .map__address {
-    font-size: 4vw;
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    align-items: start;
+    height: 300px;
     width: 100%;
   }
 
-  /* .form__legend {
-    text-align: center;
+  .map__address {
+    grid-template-rows: auto auto;
+    margin: 0;
   }
-  .form__input {
-    width: 100%;
+
+  .address__title {
+    font-size: 16px;
+    line-height: 20px;
   }
-  .checkbox__label {
-    font-size: 3vw;
-  } 
-  
-  ._submit {
-    font-size: 4vw;
+  .address__text {
+    font-size: 12px;
   }
-  */
+
+  .map__tel,
+  .map__email {
+    font-size: 12px;
+    margin-bottom: 0;
+  }
 }
