@@ -71,9 +71,9 @@ const swiper1 = new Swiper(".mySwiper1", {
     spaceBetween: 30,
     loop: true,
     // allowTouchMove: true,
-    // autoplay: {
-    //     delay: 5000,
-    // },
+    autoplay: {
+        delay: 5000,
+    },
     // navigation: {
     //   nextEl: ".swiper-button-next2",
     //   prevEl: ".swiper-button-prev2",
@@ -92,9 +92,9 @@ const swiper2 = new Swiper(".mySwiper2", {
     //   nextEl: ".swiper-button-next2",
     //   prevEl: ".swiper-button-prev2",
     // },
-    // autoplay: {
-    //     delay: 5000,
-    // },
+    autoplay: {
+        delay: 5000,
+    },
     pagination: {
         el: '.swiper-pagination2',
         clickable: true,
@@ -109,9 +109,9 @@ const swiper3 = new Swiper(".mySwiper3", {
     //   nextEl: ".swiper-button-next2",
     //   prevEl: ".swiper-button-prev2",
     // },
-    // autoplay: {
-    //     delay: 5000,
-    // },
+    autoplay: {
+        delay: 5000,
+    },
     pagination: {
         el: '.swiper-pagination3',
         clickable: true,
