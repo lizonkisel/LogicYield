@@ -651,6 +651,10 @@ tr {
     margin-top: 0%;
   }
 
+  .footer-team {
+    position: relative;
+  }
+
   .footer {
     padding: 30px 0px;
   }
