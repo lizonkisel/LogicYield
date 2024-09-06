@@ -180,6 +180,8 @@
 }
 
 @media screen and (max-width: 1024px) {
+
+  /* Не проверено */
   .cards__item {
     width: 90vw;
     background: #2b5c24;
@@ -192,30 +194,120 @@
     gap: 50px;
   }
 
+  /* Не проверено */
   .card__title {
     font-size: 2vw;
     display: none;
   }
+
+  /* Не проверено */
   .card__title-phone {
     display: inline;
     font-size: 3vw;
   }
+
+  /* Не проверено */
   .card__list {
     font-size: 2.5vw;
   }
+}
+
+@media screen and (max-width: 900px) {
+
+  .cards {
+    margin-top: 12px;
+  }
+
+  .card__title-phone {
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .mySwiperMain {
+    width: 90vw;
+    height: auto;
+    max-width: 400px;
+    padding: 0 0 0 0 !important;
+    overflow: visible !important;
+  }
+
+  .swiper-button-prev,
+  .swiper-button-next {
+    top: 106% !important;
+    /* left: 50% !important; */
+  }
+
+  .swiper-button-prev {
+    left: 30% !important;
+  }
+
+  .swiper-button-next {
+    left: 60% !important;
+  }
+  
+  .cards__item {
+    width: 90%;
+    padding: 8% 5%;
+    flex-direction: column;
+    gap: 20px;
+    height: auto;
+    max-height: 100%;
+  }
+
   .cards__item .swiper{
     height: 40%;
-    width: 100% !important;
-    max-width: 100% !important;
-    min-width: 100% !important;
+    width: 90% !important;
+    max-width: 90% !important;
+    min-width: 90% !important;
   }
+
+  .cards__item .card__img {
+    width: 90%;
+  }
+
+  .swiper-pagination {
+    display: none;
+  }
+
+  .card__info {
+    max-width: 100%;
+  }
+
+  .card__desc {
+    font-size: 12px;
+    /* margin: 0 0 12px 0; */
+  }
+  
+  .card__subtitle {
+    font-size: 10px;
+    /* margin: 8px 0 8px 0; */
+  }
+  
+  .card__list {
+    font-size: 10px;
+  }
+  
+  .card__list__item {
+    margin: 12px 0 12px 20px;
+  }
+  
+  .card__list__item:first-of-type {
+    margin: 0 0 12px 20px;
+  }
+  
+  .card__list__item:last-of-type {
+    margin: 12px 0 0 20px;
+  }
+
+
 }
 
 @media screen and (max-width: 767px) {
-  .cards__item {
+  /* Не проверено */
+  /* .cards__item {
     justify-content: center;
     gap: 20px;
     padding: 30px;
-  }
+  } */
 }
 
