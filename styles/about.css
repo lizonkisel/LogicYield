@@ -164,6 +164,7 @@
   .about__desc, .about__publications{
     width: 100%;
     max-height: max-content;
+    overflow: hidden;
   }
 
   .publications__title{
