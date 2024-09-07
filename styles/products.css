@@ -335,6 +335,7 @@
   .swiper {
     width: 80vw;
     height: auto;
+    overflow: visible !important;
   }
 
   .swiper-slide {
