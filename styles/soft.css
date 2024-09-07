@@ -218,7 +218,7 @@
   }
 
   .card__title-phone {
-    font-size: 16px;
+    font-size: 20px;
     text-align: center;
   }
 
@@ -273,17 +273,17 @@
   }
 
   .card__desc {
-    font-size: 12px;
+    font-size: 16px;
     /* margin: 0 0 12px 0; */
   }
   
   .card__subtitle {
-    font-size: 10px;
-    /* margin: 8px 0 8px 0; */
+    font-size: 16px;
+    margin: 12px 0 12px 0;
   }
   
   .card__list {
-    font-size: 10px;
+    font-size: 16px;
   }
   
   .card__list__item {

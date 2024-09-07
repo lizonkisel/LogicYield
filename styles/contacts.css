@@ -238,7 +238,7 @@
   }
 
   .map__title {
-    font-size: 16px;
+    font-size: 20px;
     margin-bottom: 12px;
   }
 
@@ -253,16 +253,16 @@
   }
 
   .address__title {
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 20px;
+    line-height: 24px;
   }
   .address__text {
-    font-size: 12px;
+    font-size: 16px;
   }
 
   .map__tel,
   .map__email {
-    font-size: 12px;
+    font-size: 16px;
     margin-bottom: 0;
   }
 }

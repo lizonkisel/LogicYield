@@ -173,19 +173,19 @@
 
 @media screen and (max-width: 900px) {
   .publications__title{
-    font-size: 16px;
+    font-size: 20px;
   }
 
   .about__text{
-    font-size: 12px;
+    font-size: 16px;
   }
 
   .publications__text{
-    font-size: 10px;
+    font-size: 12px;
   }
 
   .about__tagline {
-    font-size: 16px;
+    font-size: 20px;
     margin-bottom: 20px;
   }
 }
