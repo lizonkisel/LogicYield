@@ -120,15 +120,15 @@ const swiper3 = new Swiper(".mySwiper3", {
 
 // window.addEventListener('resize', calcScreenSize);
   
+let images = document.querySelectorAll(".card__img");
+let popupImg = document.querySelector(".popup__img");
+let softPopup = document.querySelector(".soft__popup");
+let popupClose = document.querySelector(".popup__close");
+
 window.addEventListener("DOMContentLoaded", () => {
     const popup = () => {
-        let images = document.querySelectorAll(".card__img");
-        let popupImg = document.querySelector(".popup__img");
-        let softPopup = document.querySelector(".soft__popup");
-        let popupClose = document.querySelector(".popup__close")
         images.forEach(item => {
             item.addEventListener("click", (e) => {
-                
                 popupImg.src = e.target.src;
                 softPopup.style.display = "flex";
                 document.body.style.overflow = 'hidden';
@@ -150,6 +150,19 @@ window.addEventListener("DOMContentLoaded", () => {
         })
        
     }
-
     popup();
 });
+
+document.addEventListener("keydown", (e) => {
+    if( e.key === 'Escape') {
+      softPopup.style.display = "none";
+      document.body.style.overflow = "visible";
+    }
+  });
+  
+  softPopup.addEventListener("click", (e) => {
+    if (softPopup.style.display === "flex" && e.target != popupImg) {
+      softPopup.style.display = "none";
+      document.body.style.overflow = "visible";
+    }
+  });
