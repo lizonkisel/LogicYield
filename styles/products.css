@@ -349,15 +349,17 @@
 
   .swiper-button-prev {
     margin-left: -1vw;
+    opacity: 1;
   }
 
   .swiper-button-next {
     margin-right: -1vw;
+    opacity: 1;
   }
 
   .swiper-button-prev:hover,
   .swiper-button-next:hover {
-    opacity: none;
+    /* opacity: none; */
     text-shadow: none;
   }
 
