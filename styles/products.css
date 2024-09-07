@@ -299,8 +299,8 @@
 @media screen and (max-width: 900px) {
 
   .product__name {
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 20px;
+    line-height: 24px;
     text-align: center;
   }
 
@@ -311,7 +311,7 @@
   }
 
   .peculiarities__title {
-    font-size: 16px;
+    font-size: 20px;
     margin-bottom: 8px;
   }
 
@@ -320,8 +320,8 @@
   }
 
   .peculiarities__desc {
-    font-size: 12px;
-    line-height: 16px;
+    font-size: 16px;
+    line-height: 20px;
   }
 
   .product__peculiarities {
@@ -370,8 +370,8 @@
   }
 
   .peculiarities__item {
-    font-size: 12px;
-    line-height: 16px;
+    font-size: 16px;
+    line-height: 20px;
     margin: 4px 0 0 0;
   }
 
