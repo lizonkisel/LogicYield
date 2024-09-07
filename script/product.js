@@ -29,6 +29,7 @@ window.addEventListener("DOMContentLoaded", () => {
       image.addEventListener("click", (e) => {
         popupImg.src = e.target.src;
         softPopup.style.display = "flex";
+        document.body.style.position = "relative";
         document.body.style.overflow = "hidden";
         if(window.innerWidth > 769){
           if ( e.target.offsetHeight / e.target.offsetWidth  > 1.32) {
@@ -43,6 +44,7 @@ window.addEventListener("DOMContentLoaded", () => {
     });
     popupClose.addEventListener("click", (e) => {
       softPopup.style.display = "none";
+      document.body.style.position = "absolute";
       document.body.style.overflow = "visible";
     });
   };
@@ -52,6 +54,7 @@ window.addEventListener("DOMContentLoaded", () => {
 document.addEventListener("keydown", (e) => {
   if( e.key === 'Escape') {
     softPopup.style.display = "none";
+    document.body.style.position = "absolute";
     document.body.style.overflow = "visible";
   }
 });
@@ -59,6 +62,7 @@ document.addEventListener("keydown", (e) => {
 softPopup.addEventListener("click", (e) => {
   if (softPopup.style.display === "flex" && e.target != popupImg) {
     softPopup.style.display = "none";
+    document.body.style.position = "absolute";
     document.body.style.overflow = "visible";
   }
 });
