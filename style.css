@@ -384,6 +384,7 @@ tr {
   justify-content: center;
   align-items: center;
   z-index: 100;
+  cursor: pointer;
 }
 .popup__content {
   position: relative;
@@ -394,7 +395,8 @@ tr {
   align-items: center;
 }
 .popup__img{
-    width: 30%;
+  width: 30%;
+  cursor: auto;
 }
 .popup__close {
   position: absolute;
@@ -403,6 +405,7 @@ tr {
   width: 25px;
   height: 25px;
   background: none;
+  cursor: pointer;
 }
 .close__img {
   width: 100%;
