@@ -8,7 +8,6 @@ const swiper = new Swiper(".mySwiper-GOA", {
   pagination: {
     el: ".swiper-pagination-GOA",
     clickable: true,
-    // dynamicBullets: true,
   },
   navigation: {
     nextEl: ".swiper-button-next-GOA",

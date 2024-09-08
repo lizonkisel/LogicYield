@@ -1,5 +1,3 @@
-// import Swiper from "https://unpkg.com/swiper@7/swiper-bundle.esm.browser.min.js";
-
 import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs'
 
 const swiper = new Swiper(".mySwiper", {
@@ -10,7 +8,6 @@ const swiper = new Swiper(".mySwiper", {
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
-    // dynamicBullets: true,
   },
   navigation: {
     nextEl: ".swiper-button-next",
