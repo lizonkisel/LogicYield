@@ -5,8 +5,6 @@ window.addEventListener("DOMContentLoaded", () => {
   const menuItem = document.querySelectorAll(".nav__item");
   const up = document.querySelector(".up");
 
-  const headerMain = document.querySelector("header");
-
   const mainBody = document.querySelector("main");
 
   if(window.innerWidth < 769){
@@ -19,7 +17,7 @@ window.addEventListener("DOMContentLoaded", () => {
       }
     });
     window.addEventListener("scroll", () => {
-      console.log(window.pageYOffset);
+      // console.log(window.pageYOffset);
       if (window.pageYOffset > 0) {
         up.style.display = "block";
       }
@@ -49,7 +47,7 @@ window.addEventListener("DOMContentLoaded", () => {
  
   navLinks.forEach((link, i) => {
     link.addEventListener("click", (e) => {
-      if (i !== 3) {
+      if (i !== 1 && i !== 3) {
         if(window.innerWidth < 1025){
           e.preventDefault();
         }
@@ -57,10 +55,14 @@ window.addEventListener("DOMContentLoaded", () => {
     });
   });
 
+  /* Функция срабатывает только для тех полей меню, у которых внутри есть выпадающие списки */
+
   menuItem.forEach((item) => {
-    item.addEventListener("click", (e) => {
-      item.querySelector(".nav__menu").classList.toggle("nav__menu-active");
-    });
+    if (item.querySelector(".nav__menu")) {
+      item.addEventListener("click", (e) => {
+        item.querySelector(".nav__menu").classList.toggle("nav__menu-active");
+      });
+    }
   });
 
   mainBody.addEventListener("click", (e) => {
@@ -69,8 +71,3 @@ window.addEventListener("DOMContentLoaded", () => {
     }
   })  
 });
-    // console.log(window.pageYOffset);
-    // console.log(up);
-    // if (window.pageYOffset > 0) {
-    //   up.style.display = "block";
-    // }

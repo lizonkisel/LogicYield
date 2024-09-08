@@ -70,14 +70,9 @@ const swiper1 = new Swiper(".mySwiper1", {
     slidesPerView: 1,
     spaceBetween: 30,
     loop: true,
-    // allowTouchMove: true,
     autoplay: {
         delay: 5000,
     },
-    // navigation: {
-    //   nextEl: ".swiper-button-next2",
-    //   prevEl: ".swiper-button-prev2",
-    // },
     pagination: {
         el: '.swiper-pagination1',
         clickable: true,
@@ -88,10 +83,6 @@ const swiper2 = new Swiper(".mySwiper2", {
     slidesPerView: 1,
     spaceBetween: 30,
     loop: true,
-    // navigation: {
-    //   nextEl: ".swiper-button-next2",
-    //   prevEl: ".swiper-button-prev2",
-    // },
     autoplay: {
         delay: 5000,
     },
@@ -105,10 +96,6 @@ const swiper3 = new Swiper(".mySwiper3", {
     slidesPerView: 1,
     spaceBetween: 30,
     loop: true,
-    // navigation: {
-    //   nextEl: ".swiper-button-next2",
-    //   prevEl: ".swiper-button-prev2",
-    // },
     autoplay: {
         delay: 5000,
     },
@@ -117,8 +104,6 @@ const swiper3 = new Swiper(".mySwiper3", {
         clickable: true,
       },
 });
-
-// window.addEventListener('resize', calcScreenSize);
   
 let images = document.querySelectorAll(".card__img");
 let popupImg = document.querySelector(".popup__img");
