@@ -49,7 +49,7 @@ window.addEventListener("DOMContentLoaded", () => {
  
   navLinks.forEach((link, i) => {
     link.addEventListener("click", (e) => {
-      if (i !== 3) {
+      if (i !== 1 && i !== 3) {
         if(window.innerWidth < 1025){
           e.preventDefault();
         }
