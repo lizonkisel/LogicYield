@@ -41,7 +41,8 @@ a {
   padding: 0px;
 }
 .footer-team {
-  position: fixed;
+  /* position: fixed; */
+  position: absolute;
   justify-content: center;
   align-items: center;
 }
