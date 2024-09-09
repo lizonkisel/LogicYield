@@ -58,12 +58,12 @@
 
 @media screen and (min-width: 1400px) {
   .skills-list {
-    gap: 60px;
+    gap: 48px;
   }
   
   .skills-text__title {
     margin-bottom: 24px;
-    font-size: 28px;
+    font-size: 24px;
   }
   
   .skills-num {
