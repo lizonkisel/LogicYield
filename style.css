@@ -202,6 +202,30 @@ a {
   color: #ffff;
   left: -13px;
 }
+
+.header__lang {
+  margin-right: 12px;
+}
+
+.header__langBtn {
+  border: none;
+  /* display: inline; */
+  color: #5b5b5b;
+  font-size: 16px;
+  margin: 0 12px;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.header__langBtn:hover {
+  transform: scale(1.1);
+  color: #ffffff;
+}
+
+.header__langBtn_active {
+  color: #ffffff;
+}
+
 .start-body, .start-html{
   background-image: none;
   overflow: hidden;
