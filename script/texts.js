@@ -1,26 +1,11 @@
-
-const dotPulseTexts = {
-	"title": {
-		ru: "Продукты",
-		en: "Products",
-	},
-	"product-name": {
-		ru: "Cистема оптического контроля сыпучих материалов “DotPulse”",
-		en: "",
-	},
-  "peculiarities-title": {
-		ru: "Об устройстве",
-		en: "About device",
-	},
-  "dd": {
-		ru: "",
-		en: "",
-	},
-  "dd": {
-		ru: "",
-		en: "",
-	},
-}
+import { indexTexts } from "../texts/indexTexts.js";
+import { dotPulseTexts } from "../texts/dotPulseTexts.js";
+import { datasetGOATexts } from "../texts/datasetGOATexts.js";
+import { softTexts } from "../texts/softTexts.js";
+import { aboutTexts } from "../texts/aboutTexts.js";
+import { skillsTexts } from "../texts/skillsTexts.js";
+import { projectTexts } from "../texts/projectsTexts.js";
+import { contactsTexts } from "../texts/contactsTexts.js";
 
 const langButtons = document.querySelectorAll("[data-btn]");
 const allLangs = ["ru", "en"];
@@ -36,12 +21,27 @@ function checkPagePathName() {
 		case "/products.html":
 			currentTexts = dotPulseTexts;
 			break;
-		// case "/another_page.html":
-		// 	currentTexts = anotherTexts;
-		// 	break;
+		case "/product-dataset.html":
+			currentTexts = datasetGOATexts;
+			break;
+    case "/soft.html":
+      currentTexts = softTexts;
+      break;
+    case "/about.html":
+      currentTexts = aboutTexts;
+      break;
+    case "/skills.html":
+      currentTexts = skillsTexts;
+      break;
+    case "/project.html":
+      currentTexts = projectTexts;
+      break;
+    case "/contacts.html":
+    currentTexts = contactsTexts;
+    break;
 
 		default:
-			currentTexts = dotPulseTexts;
+			currentTexts = indexTexts;
 			break;
 	}
 }
