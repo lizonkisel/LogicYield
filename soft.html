@@ -105,7 +105,11 @@
             />Контакты</a
           >
         </li>
-        <div class="header__lang"></div>
+        <div class="header__lang">
+          <button class="header__langBtn" data-btn="ru">Ru</button>
+          <span>|</span>
+				  <button class="header__langBtn" data-btn="en">En</button>
+        </div>
       </nav>
     </header>
 
@@ -119,13 +123,13 @@
           <img src="" alt="" class="popup__img" />
         </div>
       </div>
-      <h2 class="title underlinedTitle">Софт</h2>
+      <h2 class="title underlinedTitle" data-lang="title">Софт</h2>
       <div class="cards">
         <div class="swiper mySwiperMain">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
               <div class="cards__item" id="DotPulse">
-                <h3 class="card__title-phone">DotPulse</h3>
+                <h3 class="card__title-phone" data-lang="card-title">DotPulse</h3>
                 <div class="swiper mySwiper1 noSwipeGallery">
                   <div class="swiper-wrapper">
                     <div class="swiper-slide">
@@ -157,7 +161,7 @@
                   <div class="swiper-pagination swiper-pagination1"></div>
                 </div>
                 <div class="card__info">
-                  <h3 class="card__title">DotPulse</h3>
+                  <h3 class="card__title" data-lang="card-title">DotPulse</h3>
                   <p class="card__desc">Программа разработана для приборов «DotPulse». 
                     В основе расчетов лежит оптическое изображение слоя гранул и 
                     алгоритм сегментации каждой гранулы на изображении и аппроксимации ее эллипсом.
@@ -177,7 +181,7 @@
                       создавать SQL базу данных изображений и рассчитанных свойств с возможностью импорта в *.csv;
                     </li>
                     <li class="card__list__item">
-                      выполнять анализ статических и динамических изображений гранул (в т.ч. в приборов, установленных над конвейерной лентой, течки или пересыпки гранул продукта).
+                      выполнять анализ статических и динамических изображений гранул (в т.ч. c приборов, установленных над конвейерной лентой, на течке или пересыпке гранул продукта).
                     </li>
                   </ul>
                 </div>
@@ -185,7 +189,7 @@
             </div>
             <div class="swiper-slide">
               <div class="cards__item" id="GOAAPI">
-                <h3 class="card__title-phone">GOA API</h3>
+                <h3 class="card__title-phone" data-lang="card-title">GOA API</h3>
                 <div class="swiper mySwiper2 noSwipeGallery">
                   <div class="swiper-wrapper">
                     <div class="swiper-slide">
@@ -220,9 +224,9 @@
                   <div class="swiper-pagination swiper-pagination2"></div>
                 </div>
                 <div class="card__info">
-                  <h3 class="card__title">GOA API</h3>
+                  <h3 class="card__title" data-lang="card-title">GOA API</h3>
                   <p class="card__desc">API для предоставления данных и использования нейросетевых 
-                    алгоритмов для анализа изображений гранул удобрений:
+                    алгоритмов для анализа изображений гранул удобрений.
                   </p>
                   <ul class="card__list">
                     <li class="card__list__item swiper-2">
@@ -243,7 +247,7 @@
             </div>  
             <div class="swiper-slide">
               <div class="cards__item" id="NeuralLicencePlate">
-                <h3 class="card__title-phone">Нейросетевой анализ номерных знаков автомобилей</h3>
+                <h3 class="card__title-phone" data-lang="card-title">Нейросетевой анализ номерных знаков автомобилей</h3>
                 <div class="swiper mySwiper3 noSwipeGallery">
                   <div class="swiper-wrapper">
                     <div class="swiper-slide">
@@ -285,16 +289,16 @@
                   <div class="swiper-pagination swiper-pagination3"></div>
                 </div>
                 <div class="card__info">
-                  <h3 class="card__title">Нейросетевой анализ номерных знаков автомобилей</h3>
+                  <h3 class="card__title" data-lang="card-title">Нейросетевой анализ номерных знаков автомобилей</h3>
                   <ul class="card__list">
                     <li class="card__list__item">
                       Определение положения номерного знака для вида от 1-го и от 3-го лица 
-                      (камеры мобильных телефонов, регистраторов и камер наблюдения)
+                      (камеры мобильных телефонов, регистраторов и камер наблюдения).
                     </li>
-                    <li class="card__list__item">проведение OCR анализа номерного знака для 
-                      получения текста и региона/страны выпуска;</li>
+                    <li class="card__list__item">Проведение OCR анализа номерного знака для 
+                      получения текста и региона/страны выпуска.</li>
                     <li class="card__list__item">
-                      возможность реализации API сервиса, в том числе для локальной установки.
+                      Возможность реализации API сервиса, в том числе для локальной установки.
                     </li>
                   </ul>
                 </div>
@@ -302,24 +306,24 @@
             </div>
             <div class="swiper-slide">
               <div class="cards__item" id="NeuralSatellite">
-                <h3 class="card__title-phone">Нейросетевой анализ и мониторинг спутниковых снимков</h3>
+                <h3 class="card__title-phone" data-lang="card-title">Нейросетевой анализ и мониторинг спутниковых снимков</h3>
                 <div class="card__info">
-                  <h3 class="card__title">Нейросетевой анализ и мониторинг спутниковых снимков</h3>
+                  <h3 class="card__title" data-lang="card-title">Нейросетевой анализ и мониторинг спутниковых снимков</h3>
                   <ul class="card__list">
                     <li class="card__list__item">
-                      получение спутниковых данных из открытых источников (Google EE, Copernicus);
+                      получение спутниковых данных из открытых источников (Google EE, Copernicus).
                     </li>
                     <li class="card__list__item">
-                      проведение классификации изображений;
+                      Проведение классификации изображений.
                     </li>
                     <li class="card__list__item">
-                      построение временных рядов из наблюдений;
+                      Построение временных рядов из наблюдений.
                     </li>
                     <li class="card__list__item">
-                      поиск и построение корреляций спутниковых снимков и результатов анализа наземных данных (дорожная сцена, лаборатории по РМ2.5, РМ10, промышленное производство);
+                      Поиск и построение корреляций спутниковых снимков и результатов анализа наземных данных (дорожная сцена, лаборатории по РМ2.5, РМ10, промышленное производство).
                     </li>
                     <li class="card__list__item">
-                      возможность реализации API сервиса, в том числе для локальной установки.
+                      Возможность реализации API сервиса, в том числе для локальной установки.
                     </li>
                   </ul>
                 </div>
