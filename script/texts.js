@@ -48,15 +48,38 @@ function checkPagePathName() {
 checkPagePathName();
 
 // Изменение языка у текстов
+// function changeLang() {
+// 	for (const key in currentTexts) {
+//     console.log(key);
+// 		console.log(currentTexts[key]);
+// 		console.log(Object.keys(currentTexts[key]));
+// 		console.log(Object.values(currentTexts[key]));
+// 		let elem = document.querySelector(`[data-lang=${key}]`);
+// 		if (elem) {
+// 			elem.textContent = currentTexts[key][currentLang];
+// 		}
+// 	}
+// }
+
 function changeLang() {
 	for (const key in currentTexts) {
-    console.log(key);
-		let elem = document.querySelector(`[data-lang=${key}]`);
-		if (elem) {
-			elem.textContent = currentTexts[key][currentLang];
+		// Выбираем все html-элементы с заданным ключом [data-lang=${key}]
+		let elems = document.querySelectorAll(`[data-lang=${key}]`);
+		// Если элемент такой есть и он 1, находим соответствующий объект с переводом
+		if (elems && elems.length === 1) {
+			elems[0].textContent = currentTexts[key][currentLang];
+		}
+		// Если элементов больше одного, задаём перевод для каждого элемента. 
+		// В условии проверка на наличие одинакового количества элементов и полей с переводом
+		// Если не хватает переводов, элементы не будут переводиться
+		if (elems.length > 1 && elems.length === Object.values(currentTexts[key]).length) {
+			elems.forEach((elem, index) => {
+				elem.textContent = Object.values(currentTexts[key])[index][currentLang];
+			})
 		}
 	}
 }
+
 changeLang();
 
 // Вешаем обработчики на каждую кнопку
