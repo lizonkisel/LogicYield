@@ -162,25 +162,25 @@
                 </div>
                 <div class="card__info">
                   <h3 class="card__title" data-lang="card-title">DotPulse</h3>
-                  <p class="card__desc">Программа разработана для приборов «DotPulse». 
+                  <p class="card__desc" data-lang="card-desc">Программа разработана для приборов «DotPulse». 
                     В основе расчетов лежит оптическое изображение слоя гранул и 
                     алгоритм сегментации каждой гранулы на изображении и аппроксимации ее эллипсом.
                   </p>
-                  <h4 class="card__subtitle">ПО способно:</h4>
+                  <h4 class="card__subtitle" data-lang="card-subtitle">ПО способно:</h4>
                   <ul class="card__list">
-                    <li class="card__list__item">
+                    <li class="card__list__item" data-lang="dotPulse-card-item">
                       проводить расчет физических свойств гранул на изображении (линейные размеры, цвет, форма);
                     </li>
-                    <li class="card__list__item">
+                    <li class="card__list__item" data-lang="dotPulse-card-item">
                       получать и отображать изображения с USB-камеры прибора «DotPulse» (включая высокоскоростные промышленные камеры);
                     </li>
-                    <li class="card__list__item">
+                    <li class="card__list__item" data-lang="dotPulse-card-item">
                       проводить предварительную обработку изображений и использовать классические и нейросетевые алгоритмы для сегментации каждой гранулы;
                     </li>
-                    <li class="card__list__item">
+                    <li class="card__list__item" data-lang="dotPulse-card-item">
                       создавать SQL базу данных изображений и рассчитанных свойств с возможностью импорта в *.csv;
                     </li>
-                    <li class="card__list__item">
+                    <li class="card__list__item" data-lang="dotPulse-card-item">
                       выполнять анализ статических и динамических изображений гранул (в т.ч. c приборов, установленных над конвейерной лентой, на течке или пересыпке гранул продукта).
                     </li>
                   </ul>
@@ -225,20 +225,20 @@
                 </div>
                 <div class="card__info">
                   <h3 class="card__title" data-lang="card-title">GOA API</h3>
-                  <p class="card__desc">API для предоставления данных и использования нейросетевых 
+                  <p class="card__desc" data-lang="card-desc">API для предоставления данных и использования нейросетевых 
                     алгоритмов для анализа изображений гранул удобрений.
                   </p>
                   <ul class="card__list">
-                    <li class="card__list__item swiper-2">
+                    <li class="card__list__item swiper-2" data-lang="GOA-card-item">
                       3447 изображений гранул 4 типов удобрений (ДАФ, NPK 15-15-15, NH4NO3, KCl);
                     </li>
-                    <li class="card__list__item">
+                    <li class="card__list__item" data-lang="GOA-card-item">
                       возможность отделения гранул от фона с помощью нейросетевой модели;
                     </li>
-                    <li class="card__list__item">
+                    <li class="card__list__item" data-lang="GOA-card-item">
                       определение каждой отдельной гранулы с ее свойствами (инстанс-сегментация) с помощью нейронных сетей;
                     </li>
-                    <li class="card__list__item">
+                    <li class="card__list__item" data-lang="GOA-card-item">
                       возможность анализа гранул верхнего слоя гранул вне зависимости от нижних слоев и фона;
                     </li>
                   </ul>
@@ -291,13 +291,13 @@
                 <div class="card__info">
                   <h3 class="card__title" data-lang="card-title">Нейросетевой анализ номерных знаков автомобилей</h3>
                   <ul class="card__list">
-                    <li class="card__list__item">
+                    <li class="card__list__item" data-lang="NeuralLicencePlate-card-item">
                       Определение положения номерного знака для вида от 1-го и от 3-го лица 
                       (камеры мобильных телефонов, регистраторов и камер наблюдения).
                     </li>
-                    <li class="card__list__item">Проведение OCR анализа номерного знака для 
+                    <li class="card__list__item" data-lang="NeuralLicencePlate-card-item">Проведение OCR анализа номерного знака для 
                       получения текста и региона/страны выпуска.</li>
-                    <li class="card__list__item">
+                    <li class="card__list__item" data-lang="NeuralLicencePlate-card-item">
                       Возможность реализации API сервиса, в том числе для локальной установки.
                     </li>
                   </ul>
@@ -310,19 +310,19 @@
                 <div class="card__info">
                   <h3 class="card__title" data-lang="card-title">Нейросетевой анализ и мониторинг спутниковых снимков</h3>
                   <ul class="card__list">
-                    <li class="card__list__item">
+                    <li class="card__list__item" data-lang="NeuralSatellite-card-item">
                       получение спутниковых данных из открытых источников (Google EE, Copernicus).
                     </li>
-                    <li class="card__list__item">
+                    <li class="card__list__item" data-lang="NeuralSatellite-card-item">
                       Проведение классификации изображений.
                     </li>
-                    <li class="card__list__item">
+                    <li class="card__list__item" data-lang="NeuralSatellite-card-item">
                       Построение временных рядов из наблюдений.
                     </li>
-                    <li class="card__list__item">
+                    <li class="card__list__item" data-lang="NeuralSatellite-card-item">
                       Поиск и построение корреляций спутниковых снимков и результатов анализа наземных данных (дорожная сцена, лаборатории по РМ2.5, РМ10, промышленное производство).
                     </li>
-                    <li class="card__list__item">
+                    <li class="card__list__item" data-lang="NeuralSatellite-card-item">
                       Возможность реализации API сервиса, в том числе для локальной установки.
                     </li>
                   </ul>

@@ -184,7 +184,7 @@ GOA API
 GOA API
 
 API для предоставления данных и использования нейросетевых алгоритмов для анализа изображений гранул удобрений.
-API for providing data and utilizing neural network algorithms to analyze fertilizer granule images
+API for providing data and utilizing neural network algorithms to analyze fertilizer granule images.
 
 3447 изображений гранул 4 типов удобрений (ДАФ, NPK 15-15-15, NH4NO3, KCl);
 3447 images of granules of 4 fertilizer types (DAF, NPK 15-15-15, NH4NO3, KCl);
