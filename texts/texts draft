@@ -1,3 +1,11 @@
+
+Создаём оптические приборы,
+We create optical devices,
+
+вдохновляясь индустрией
+inspired by the industry.
+
+
 Продукты
 
 
@@ -327,3 +335,75 @@ Prototyping and small-scale production.
 Бесшовная интеграция устройств и ПО (создание программно-аппаратных комплексов).
 Seamless hardware and software integration (integrated systems creation).
 
+Перспективные проекты
+Promising projects
+
+Сейчас мы активно работаем над рядом проектов:
+We are currently actively working on a number of projects:
+
+
+Облачная инфраструктура для накопления и анализа промышленных интеллектуальных систем “Лоджик Илд”
+Cloud Infrastructure for the Accumulation and Analysis of Industrial Intelligent Systems “Logic Yield”
+
+Создание облачной инфраструктуры на основе базы данных (PostgreSQL), API (FastAPI) и интерфейса пользователя (RestAPI).
+Creation of a cloud infrastructure based on a database (PostgreSQL), API (FastAPI), and user interface (RestAPI).
+
+Бесшовное подключение всех устройств Лоджик Илд к облачной инфраструктуре по защищенному каналу за корпоративным VPN.
+Seamless connection of all “Logic Yield” devices to the cloud infrastructure via a secure channel behind a corporate VPN.
+
+Возможность предварительной обработки и анализа данных (построение временных рядов, интеграция в Jupyter).
+Ability to pre-process and analyze data (building time series, integration into Jupyter).
+
+
+API инфраструктура для любых создаваемых нейронных сетей:
+API infrastructure for any created neural networks:
+
+Интеграция GET, POST и любых других запросов по требованиям пользователей.
+Integration of GET, POST, and any other requests as required by users.
+
+Мониторинг API (Grafana).
+API monitoring (Grafana).
+
+Защищенный доступ.
+Secured access.
+
+
+Устройство “UVYield” для анализа сыпучих материалов под ультрафиолетовым излучением
+UVYield device for analyzing bulk materials under ultraviolet radiation
+
+Анализ силы и равномерности флуоресценции гранул при УФ облучении.
+Analysis of the strength and uniformity of granule fluorescence under UV irradiation.
+
+Анализ размера, формы, цвета гранул.
+Analysis of the size, shape, and color of granules.
+
+Возможность установки устройства в производственные лаборатории.
+Possibility of installing the device in production laboratories.
+
+
+Контакты
+Contacts
+
+Мы на карте
+We are located here
+
+Адрес:
+420073, Республика Татарстан, г. Казань,
+ул. Гвардейская, д.14, офис 75
+
+Address:
+420073, Russian Federation, Republic of Tatarstan, Kazan,
+Gvardeyskaya str., 14, office 75.
+
+
+Контакты:
+Юновидова Елизавета
+
+Contacts:
+Elizaveta Iunovidova
+
+тел.: +79611121089
+tel.: +79611121089
+
+e-mail: logicyield@mail.ru
+e-mail: logicyield@mail.ru

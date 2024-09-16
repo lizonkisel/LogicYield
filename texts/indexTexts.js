@@ -1,11 +1,11 @@
 const indexTexts = {
-  "dd": {
-		ru: "",
-		en: "",
+  "title": {
+		ru: "Создаём оптические приборы,",
+		en: "We create optical devices,",
 	},
-  "dd": {
-		ru: "",
-		en: "",
+  "subtitle": {
+		ru: "вдохновляясь индустрией",
+		en: "inspired by the industry",
 	},
 }
 
