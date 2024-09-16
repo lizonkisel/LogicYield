@@ -203,6 +203,10 @@ a {
   left: -13px;
 }
 
+.header__lang-phone {
+  display: none;
+}
+
 .header__lang {
   margin-right: 12px;
 }
@@ -468,6 +472,14 @@ tr {
 
   /* Меню на малых устройствах */
 
+  .header__lang {
+    display: none;
+  }
+
+  .header__lang-phone {
+    display: inline-block;
+  }
+  
   .header__nav {
     display: none;
     flex-direction: column;
