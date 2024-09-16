@@ -31,6 +31,20 @@ const aboutTexts = {
 			en: "Promising projects",
 		}
 	},
+	"team-footer-item": {
+		"1": {
+			ru: "О нас",
+			en: "About us",
+		},
+		"2": {
+			ru: "Наши навыки",
+			en: "Our Expertise",
+		},
+		"3": {
+			ru: "Перспективные проекты",
+			en: "Promising projects",
+		}
+	},
   "title": {
 		ru: "О нас",
 		en: "About us",
