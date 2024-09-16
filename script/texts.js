@@ -104,24 +104,47 @@ function resetActiveClass(arr, activeClass) {
 
 // Проверка активной кнопки
 function checkActiveLangButton() {
-	switch (currentLang) {
-		case "ru":
-			document
-				.querySelector('[data-btn="ru"]')
-				.classList.add("header__langBtn_active");
-			break;
-		case "en":
-			document
-				.querySelector('[data-btn="en"]')
-				.classList.add("header__langBtn_active");
-			break;
+	// Эта проверка добавлена, чтобы на смартфонах и компах было активно соответствующее меню
+	if (window.matchMedia("(max-width: 1024px)").matches) {
+		switch (currentLang) {
+			case "ru":
+				document
+					.querySelector('[data-btn="ru"]')
+					.classList.add("header__langBtn_active");
+				break;
+			case "en":
+				document
+					.querySelector('[data-btn="en"]')
+					.classList.add("header__langBtn_active");
+				break;
+	
+			default:
+				document
+					.querySelector('[data-btn="en"]')
+					.classList.add("header__langBtn_active");
+				break;
+		}
+	} else {
+		switch (currentLang) {
+			case "ru":
+				document
+					.querySelectorAll('[data-btn="ru"]')[1]
+					.classList.add("header__langBtn_active");
+				break;
+			case "en":
+				document
+					.querySelectorAll('[data-btn="en"]')[1]
+					.classList.add("header__langBtn_active");
+				break;
+	
+			default:
+				document
+					.querySelectorAll('[data-btn="en"]')[1]
+					.classList.add("header__langBtn_active");
+				break;
+		}
+	};
 
-		default:
-			document
-				.querySelector('[data-btn="en"]')
-				.classList.add("header__langBtn_active");
-			break;
-	}
 }
 checkActiveLangButton();
 
