@@ -63,7 +63,7 @@ const skillsTexts = {
 			en: "Research and Development (R&D)"
 		},
 		"4": {
-			ru: "азработка и изготовление устройств для промышленного мониторинга",
+			ru: "Разработка и изготовление устройств для промышленного мониторинга",
 			en: "Industrial monitoring device development and manufacturing."
 		}
 	},
