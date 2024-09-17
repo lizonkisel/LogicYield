@@ -74,8 +74,13 @@ function changeLang() {
 		// Если не хватает переводов, элементы не будут переводиться
 		if (elems.length > 1 && elems.length === Object.values(currentTexts[key]).length) {
 			elems.forEach((elem, index) => {
-				// lastChild нужен, чтобы менялся только текст (а не влженные в ссылки картинки, например)
+				// эта проверка на количество детей и lastChild нужны, 
+				// чтобы менялся только текст (а не влженные в ссылки картинки, например)
+				if (elem.childNodes.length > 1) {
 				elem.lastChild.textContent = Object.values(currentTexts[key])[index][currentLang];
+				} else {
+					elem.textContent = Object.values(currentTexts[key])[index][currentLang];
+				}
 			})
 		}
 	}

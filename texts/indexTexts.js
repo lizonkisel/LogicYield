@@ -39,6 +39,10 @@ const indexTexts = {
 		ru: "вдохновляясь индустрией",
 		en: "inspired by the industry",
 	},
+	"start-btn": {
+		ru: "Познакомиться",
+		en: "Discover more",
+	},
 }
 
 export { indexTexts }
