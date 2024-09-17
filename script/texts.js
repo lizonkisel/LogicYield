@@ -74,7 +74,8 @@ function changeLang() {
 		// Если не хватает переводов, элементы не будут переводиться
 		if (elems.length > 1 && elems.length === Object.values(currentTexts[key]).length) {
 			elems.forEach((elem, index) => {
-				elem.textContent = Object.values(currentTexts[key])[index][currentLang];
+				// lastChild нужен, чтобы менялся только текст (а не влженные в ссылки картинки, например)
+				elem.lastChild.textContent = Object.values(currentTexts[key])[index][currentLang];
 			})
 		}
 	}
