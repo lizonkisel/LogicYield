@@ -4,7 +4,7 @@
 
 .services__desc-item {
   font-size: 20px;
-  line-height: 28px;
+  /* line-height: 28px; */
   margin: 20px 0 0 0;
 }
 
@@ -99,6 +99,10 @@
   font-size: 20px;
 }
 
+.coopModels__desc {
+  font-size: 16px;
+}
+
 .coopModelsList__item {
   list-style: decimal;
   margin-bottom: 16px;
@@ -134,6 +138,10 @@
   max-width: 300px;
 }
 
+.grants__desc {
+  font-size: 16px;
+}
+
 .grants__title {
   font-size: 20px;
   margin-bottom: 32px;
@@ -153,21 +161,90 @@
 @media screen and (min-width: 1399px) {
   .services__desc-item {
     font-size: 24px;
-    line-height: 32px;
-    margin: 8px 0 0 0;
+    /* line-height: 32px; */
+    margin: 16px 0 0 0;
   }
 
   .title {
-    font-size: 28px;
+    font-size: 32px;
     margin-bottom: 16px;
+  }
+
+  .services__subtitle {
+    font-size: 28px;
+    margin-bottom: 48px;
+  }
+
+  .tasksItem__title {
+    font-size: 24px;
+  }
+
+  .tasksItem__list {
+    font-size: 20px;
+    margin-top: 20px;
   }
 }
 
 @media screen and (min-width: 1790px) {
+
+  .services__desc {
+    margin-top: 48px;
+  }
+  
   .services__desc-item {
     font-size: 28px;
-    line-height: 36px;
+    /* line-height: 32px; */
+    margin: 24px 0 0 0;
   }
+
+  .title {
+    font-size: 40px;
+    margin-bottom: 24px;
+  }
+
+  .services__subtitle {
+    font-size: 32px;
+    margin-bottom: 60px;
+  }
+
+  .advantages__list {
+    font-size: 40px;
+    margin-top: 60px;
+  }
+
+  .tasksItem__title {
+    font-size: 28px;
+  }
+
+  .tasksItem__list {
+    font-size: 24px;
+    margin-top: 24px;
+  }
+
+  .coopModels__row {
+    padding: 40px 0;
+  }
+
+  .coopModels__title {
+    font-size: 28px;
+  }
+
+  .coopModels__desc {
+    font-size: 24px;
+  }
+
+  .grants__row {
+    padding: 40px 0;
+  }
+
+  .grants__title {
+    font-size: 28px;
+    margin-bottom: 44px;
+}
+
+  .grants__desc {
+    font-size: 24px;
+}
 }
 
 @media screen and (min-width: 2000px) {
@@ -178,8 +255,8 @@
   }
 
   .title {
-    font-size: 32px;
-    margin-bottom: 20px;
+    font-size: 48px;
+    margin-bottom: 40px;
   }
 }
 
