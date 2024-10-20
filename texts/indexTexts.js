@@ -1,18 +1,22 @@
 const indexTexts = {
 	"menu-item": {
 		"1": {
+			ru: "Услуги",
+			en: "Services",
+		},
+		"2": {
 			ru: "Продукты",
 			en: "Products",
 		},
-		"2": {
+		"3": {
 			ru: "Софт",
 			en: "Software",
 		},
-		"3": {
+		"4": {
 			ru: "Команда",
 			en: "Team",
 		},
-		"4": {
+		"5": {
 			ru: "Контакты",
 			en: "Contacts",
 		}
