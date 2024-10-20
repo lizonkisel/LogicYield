@@ -43,11 +43,14 @@ window.addEventListener("DOMContentLoaded", () => {
 
   navIcon.addEventListener("click", () => {
     navMenu.classList.toggle("header__nav-active");
+    console.log("icon click");
   });
  
   navLinks.forEach((link, i) => {
     link.addEventListener("click", (e) => {
-      if (i !== 1 && i !== 3) {
+      console.log("link click");
+      console.log(i);
+      if (i !== 0 && i !== 2 && i !== 4) {
         if(window.innerWidth < 1025){
           e.preventDefault();
         }

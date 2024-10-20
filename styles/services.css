@@ -1,0 +1,342 @@
+.services__desc {
+  margin-top: 20px;
+}
+
+.services__desc-item {
+  font-size: 20px;
+  /* line-height: 28px; */
+  margin: 20px 0 0 0;
+}
+
+.title {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  margin-top: 90px;
+  margin-bottom: 90px;
+}
+
+.section {
+  margin-top: 60px;
+}
+
+.services__subtitle {
+  font-size: 24px;
+  margin-bottom: 48px;
+}
+
+.tasks__wrapper {
+  background-color: #3D8E30;
+  width: 100vw;
+  margin: 0 -5vw 48px -5vw;
+  padding: 60px 5vw;
+
+  display: grid;
+  grid-template-columns: 1.4fr 1fr 1.4fr;
+  gap: 120px;
+}
+
+.tasks__item {
+  text-align: center;
+}
+
+.tasksItem__logo {
+  width: 180px;
+}
+
+.tasksItem__title {
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: 16px;
+  min-height: 84px;
+}
+
+.tasksItem__list {
+  text-align: left;
+  font-size: 16px;
+  margin-top: 12px;
+}
+
+.list__item {
+  list-style: disc;
+  margin-top: 20px;
+}
+
+.advantages__list {
+  font-size: 32px;
+  /* line-height: 44px; */
+  padding-left: 2vw;
+  margin-top: 42px;
+}
+
+.advantages__item {
+  list-style: disc;
+  margin-bottom: 36px;
+}
+
+.advantages__item::marker {
+  color:#3D8E30;
+  width: 20px;
+  height: 20px;
+}
+
+.coopModels__area {
+  display: flex;
+  flex-direction: column;
+}
+
+.coopModels__row {
+  border-top: 2px solid #3D8E30;
+  display: flex;
+  flex-direction: row;
+  gap: 180px;
+
+  padding: 20px 0;
+}
+
+.coopModels__title {
+  min-width: 20vw;
+  font-size: 20px;
+}
+
+.coopModels__desc {
+  font-size: 16px;
+}
+
+.coopModelsList__item {
+  list-style: decimal;
+  margin-bottom: 16px;
+}
+
+.coopModels__rightsText {
+  margin-left: -1.4vw;
+}
+
+
+.grants__area {
+  display: flex;
+  flex-direction: column;
+  margin-top: 60px;
+}
+
+.grants__row {
+  border-top: 2px solid #3D8E30;
+  display: flex;
+  flex-direction: row;
+  gap: 180px;
+
+  padding: 20px 0;
+}
+
+.grant__logoArea {
+  max-width: 20vw;
+}
+
+.grant__logo {
+  /* min-width: 20vw; */
+  min-width: 20vw;
+  max-width: 300px;
+}
+
+.grants__desc {
+  font-size: 16px;
+}
+
+.grants__title {
+  font-size: 20px;
+  margin-bottom: 32px;
+}
+
+.grantsList__item {
+  list-style: disc;
+  margin-bottom: 16px;
+}
+
+.grants__link {
+  margin-left: -1.3vw;
+  color:#3D8E30;
+  text-decoration: none;
+}
+
+@media screen and (min-width: 1399px) {
+  .services__desc-item {
+    font-size: 24px;
+    /* line-height: 32px; */
+    margin: 16px 0 0 0;
+  }
+
+  .title {
+    font-size: 32px;
+    margin-bottom: 16px;
+  }
+
+  .services__subtitle {
+    font-size: 28px;
+    margin-bottom: 48px;
+  }
+
+  .tasksItem__title {
+    font-size: 24px;
+  }
+
+  .tasksItem__list {
+    font-size: 20px;
+    margin-top: 20px;
+  }
+}
+
+@media screen and (min-width: 1790px) {
+
+  .services__desc {
+    margin-top: 48px;
+  }
+  
+  .services__desc-item {
+    font-size: 28px;
+    /* line-height: 32px; */
+    margin: 24px 0 0 0;
+  }
+
+  .title {
+    font-size: 40px;
+    margin-bottom: 24px;
+  }
+
+  .services__subtitle {
+    font-size: 32px;
+    margin-bottom: 60px;
+  }
+
+  .advantages__list {
+    font-size: 40px;
+    margin-top: 60px;
+  }
+
+  .tasksItem__title {
+    font-size: 28px;
+  }
+
+  .tasksItem__list {
+    font-size: 24px;
+    margin-top: 24px;
+  }
+
+  .coopModels__row {
+    padding: 40px 0;
+  }
+
+  .coopModels__title {
+    font-size: 28px;
+  }
+
+  .coopModels__desc {
+    font-size: 24px;
+  }
+
+  .grants__row {
+    padding: 40px 0;
+  }
+
+  .grants__title {
+    font-size: 28px;
+    margin-bottom: 44px;
+}
+
+  .grants__desc {
+    font-size: 24px;
+}
+}
+
+@media screen and (min-width: 2000px) {
+  .services__desc-item {
+    font-size: 32px;
+    line-height: 40px;
+    margin: 12px 0 0 0;
+  }
+
+  .title {
+    font-size: 48px;
+    margin-bottom: 40px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .services__desc-item {
+    font-size: 16px;
+    /* line-height: 22px; */
+    margin: 12px 0 0 0;
+  }
+
+  .title {
+    font-size: 24px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+
+  .services__subtitle {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+
+  .tasks__wrapper {
+    width: 100vw;
+    margin: 0 -5vw 48px -5vw;
+    padding: 32px 10%;
+  
+    grid-template-columns: 1fr;
+    grid-template-rows: 1.4fr auto 1.4fr;
+    gap: 44px;
+  }
+
+  .tasks__item {
+    border-bottom: 2px solid #111;
+  }
+
+  .tasks__item:last-of-type {
+    border-bottom: none;
+  }
+
+  .tasksItem__title {
+    min-height: auto;
+  }
+
+  .tasksItem__list {
+    margin-bottom: 40px;
+  }
+
+  .advantages__list {
+    font-size: 24px;
+    padding-left: 5vw;
+    margin-top: 20px;
+  }
+
+  .coopModels__row {
+    gap: 20px;
+    padding: 20px 0;
+  }
+
+  .coopModels__title {
+    min-width: 30vw;
+    font-size: 16px;
+  }
+
+  .grants__row {
+    gap: 20px;
+    padding: 20px 0;
+  }
+
+  .grant__logoArea {
+    min-width: 30vw;
+  }
+
+  .grant__logo {
+    max-width: 120px;
+  }
+
+  .grants__title {
+    font-size: 16px;
+  }
+
+  .grants__link {
+    margin-left: 0;
+}

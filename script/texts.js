@@ -1,4 +1,5 @@
 import { indexTexts } from "../texts/indexTexts.js";
+import { servicesTexts } from "../texts/servicesTexts.js";
 import { dotPulseTexts } from "../texts/dotPulseTexts.js";
 import { datasetGOATexts } from "../texts/datasetGOATexts.js";
 import { softTexts } from "../texts/softTexts.js";
@@ -20,6 +21,9 @@ function checkPagePathName() {
 	switch (currentPathName) {
 		case "/products.html":
 			currentTexts = dotPulseTexts;
+			break;
+		case "/services.html":
+			currentTexts = servicesTexts;
 			break;
 		case "/product-dataset.html":
 			currentTexts = datasetGOATexts;
