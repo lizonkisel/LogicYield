@@ -4,15 +4,16 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>LogicYield — DotPulse</title>
     <link rel="shortcut icon" href="./assets/img/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./styles/products.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
     <link
       rel="stylesheet"
-      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
   </head>
   <body>
@@ -21,6 +22,13 @@
         <a href="index.html" class="logo__link"></a>
         <img src="assets/img/logo.svg" alt="logo" class="logo__img" />
       </div>
+
+      <div class="header__lang-phone">
+        <button class="header__langBtn" data-btn="ru">Ru</button>
+        <span>|</span>
+        <button class="header__langBtn" data-btn="en">En</button>
+      </div>
+
       <div class="header__menu menu">
         <button class="menu__icon">
           <span></span>
@@ -28,8 +36,17 @@
       </div>
       <nav class="header__nav nav">
         <li class="nav__item">
+          <a href="services.html" class="nav__link link" data-lang="menu-item"
+            ><img
+              src="assets/img/services-icon.svg"
+              alt=""
+              class="nav-icon"
+            /> </a
+          >
+        </li>
+        <li class="nav__item">
           
-          <a href="products.html" class="nav__link link link-active"><img src="assets/img/product-icon.svg" alt="" class="nav-icon">Продукты</a>
+          <a href="products.html" class="nav__link link link-active" data-lang="menu-item"><img src="assets/img/product-icon.svg" alt="" class="nav-icon"> </a>
           <ul class="nav__menu">
             <li class="menu__item">
               <a href="products.html" class="menu__link menu__link-active"
@@ -37,63 +54,57 @@
               >
             </li>
             <li class="menu__item">
-              <a href="products-lua.html" class="menu__link"
-                >UVYield</a
+              <a href="product-dataset.html" class="menu__link"
+                >GOA dataset</a
               >
             </li>
           </ul>
         </li>
         <li class="nav__item nav__item-soft">
-          <a href="soft.html" class="nav__link nav__link-soft link"><img src="assets/img/soft-icon.svg" alt="" class="nav-icon">Софт</a>
-          <ul class="nav__menu nav__menu-soft">
+          <a href="soft.html" class="nav__link nav__link-soft link" data-lang="menu-item"><img src="assets/img/soft-icon.svg" alt="" class="nav-icon"> </a>
+          <!-- <ul class="nav__menu nav__menu-soft">
             <li class="menu__item">
               <a href="soft.html#DotPulse" class="menu__link">DotPulse</a>
             </li>
             <li class="menu__item">
-              <a href="soft.html#UVYield" class="menu__link">UVYield</a>
+              <a href="soft.html#GOAAPI" class="menu__link">GOA API</a>
             </li>
             <li class="menu__item">
-              <a href="soft.html#SaltYield" class="menu__link"
-                >SaltYield</a
-              >
+              <a href="soft.html#NeuralSatellite" class="menu__link">Neural Satellite</a>
             </li>
             <li class="menu__item">
-              <a href="soft.html#VideoYield" class="menu__link"
-                >VideoYield</a
-              >
+              <a href="soft.html#NeuralLicencePlate" class="menu__link">Neural Licence Plate</a>
             </li>
-            <li class="menu__item">
-              <a href="soft.html#SpectraYield" class="menu__link"
-                >SpectraYield </a
-              >
-            </li>
-          </ul>
+          </ul> -->
         </li>
         <li class="nav__item">
           
-          <a href="skills.html" class="nav__link link"><img src="assets/img/team-icon.svg" alt="" class="nav-icon">Команда</a>
+          <a href="about.html" class="nav__link link" data-lang="menu-item"><img src="assets/img/team-icon.svg" alt="" class="nav-icon"> </a>
           <ul class="nav__menu">
             <li class="menu__item">
-              <a href="skills.html" class="menu__link">Наши навыки</a>
+              <a href="about.html" class="menu__link" data-lang="team-menu-item"></a>
             </li>
             <li class="menu__item">
-              <a href="about.html" class="menu__link">О нас</a>
+              <a href="skills.html" class="menu__link" data-lang="team-menu-item"></a>
             </li>
             <li class="menu__item">
-              <a href="project.html" class="menu__link"
-                >Перспективные проекты</a
-              >
+              <a href="project.html" class="menu__link" data-lang="team-menu-item"></a>
             </li>
           </ul>
         </li>
         <li class="nav__item">
           
-          <a href="contacts.html" class="nav__link link"><img src="assets/img/contacts-icon.svg" alt="" class="nav-icon">Контакты</a>
+          <a href="contacts.html" class="nav__link link" data-lang="menu-item"><img src="assets/img/contacts-icon.svg" alt="" class="nav-icon"> </a>
         </li>
-        <div class="header__lang"></div>
+        <div class="header__lang">
+          <button class="header__langBtn" data-btn="ru">Ru</button>
+          <span>|</span>
+				  <button class="header__langBtn" data-btn="en">En</button>
+        </div>
       </nav>
     </header>
-    <main class="main product-main">
+
+    <main class="main">
       <img src="./assets/img/up.svg" alt="" class="up">
       <div class="soft__popup">
         <div class="popup__content">
@@ -103,124 +114,178 @@
           <img src="" alt="" class="popup__img">
         </div>
       </div>
-      <h2 class="product__title main__title title">Продукты</h2>
-      <div class="product__name">DotPulse-RSC</div>
+
+      <h2 class="title" data-lang="title"></h2>
+      <div class="product__name" data-lang="product-name"></div>
+
       <div class="product__desc">
-        <div class="desc__devcomm">
-          <img src="assets/img/developer-1.png" alt="" class="devcomm__img" />
-          <p class="devcomm__text">
-            «Устройство обеспечивает оперативный контроль размера, формы и цвета
-            гранул (оптико-электронный метод на основе машинного зрения, Python
-            и OpenCV). Сейчас 6 таких приборов работают на АО “Апатит”, г.
-            Череповец, анализируя готовую продукцию (промышленные минеральные
-            удобрения).»
+        <div>
+          <h3 class="peculiarities__title" data-lang="peculiarities-title"></h3>
+          <p class="peculiarities__item peculiarities__desc" data-lang="peculiarities__desc">
+
+          </p>
+          <p class="peculiarities__item peculiarities__desc" data-lang="peculiarities__desc">
+
           </p>
         </div>
-        <div class="desc__demo">
-            <div class="demo__video">
-              <img src="assets/img/peculiarities-1.png" alt="" class="video__img">
-            </div>
-            
-            <div class="demo__gallery">
-                <img src="assets/img/product-1.jpg" alt="" class="gallery__img">
-                <img src="assets/img/peculiarities-1.png" alt="" class="gallery__img">
-                <img src="assets/img/DotPulse_5.png" alt="" class="gallery__img">
-            </div>
-        </div>
+      </div>
+    </div>
+
+    <div class="product__peculiarities">
         <div class="swiper mySwiper">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
-              <img src="assets/img/product-1.jpg" alt="" class="gallery__img">
+              <img src="assets/img/DotPulse/1.jpg" alt="" class="gallery__img">
+              <!-- Slide 1 -->
             </div>
             <div class="swiper-slide">
-              <img src="assets/img/peculiarities-1.png" alt="" class="gallery__img">
+              <img src="assets/img/DotPulse/2.png" alt="" class="gallery__img">
+              <!-- Slide 2 -->
             </div>
             <div class="swiper-slide">
-              <img src="assets/img/DotPulse_5.png" alt="" class="gallery__img">
+              <img src="assets/img/DotPulse/3.jpg" alt="DotPulse device" class="gallery__img">
+              <!-- Slide 3 -->
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/img/DotPulse/4.jpg" alt="DotPulse device" class="gallery__img">
+              <!-- Slide 4 -->
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/img/DotPulse/5.png" alt="DotPulse device" class="gallery__img">
+              <!-- Slide 5 -->
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/img/DotPulse/6.jpg" alt="DotPulse device" class="gallery__img">
+              <!-- Slide 6 -->
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/img/DotPulse/7.jpg" alt="DotPulse device" class="gallery__img">
+              <!-- Slide 7 -->
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/img/DotPulse/8.png" alt="DotPulse device" class="gallery__img">
+              <!-- Slide 8 -->
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/img/DotPulse/9.jpg" alt="DotPulse device" class="gallery__img">
+              <!-- Slide 9 -->
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/img/DotPulse/10.jpg" alt="DotPulse device" class="gallery__img">
+              <!-- Slide 10 -->
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/img/DotPulse/11.jpg" alt="DotPulse device" class="gallery__img">
+              <!-- Slide 11 -->
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/img/DotPulse/12.jpg" alt="DotPulse device" class="gallery__img">
+              <!-- Slide 12 -->
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/img/DotPulse/13.jpg" alt="DotPulse device" class="gallery__img">
+              <!-- Slide 13 -->
             </div>
           </div>
+          <div class="swiper-pagination"></div>
           <div class="swiper-button-next"></div>
           <div class="swiper-button-prev"></div>
         </div>
-      </div>
-      </div>
-    </div>
-    <div class="product__peculiarities">
-        <img src="assets/img/peculiarities-1.png" alt="" class="peculiarities__img">
+
         <ul class="peculiarities__info">
-            <h3 class="peculiarities__title">Особенности:</h3>
-            <li class="peculiarities__item">Создан для производственных условий.</li>
-            <li class="peculiarities__item">Система роботизирована, обладает встроенным компьютером и устройством отбора гранул с ленты конвейера или в закрытой трубе.</li>
-            <li class="peculiarities__item">Легкая замена ключевых частей, возможность работы в качестве дата-сервера.</li>
-            <li class="peculiarities__item">Онлайн анализ размера, формы и цвета гранул в настраиваемом диапазоне (работает при диапазоне 1-10 мм, потенциал от 0.01 мм до необходимого размера)</li>
+            <h3 class="peculiarities__title" data-lang="peculiarities-title">:</h3>
+            <li class="peculiarities__item" data-lang="peculiarities__info"></li>
+            <li class="peculiarities__item" data-lang="peculiarities__info">
+            </li>
+            <li class="peculiarities__item" data-lang="peculiarities__info"></li>
+            <li class="peculiarities__item" data-lang="peculiarities__info">
+            </li>
+            <li class="peculiarities__item" data-lang="peculiarities__info">
+            </li>
+            <li class="peculiarities__item" data-lang="peculiarities__info">
+            </li>
         </ul>
     </div>
+
+    <div class="product__desc">
+      <div>
+        <h3 class="peculiarities__title" data-lang="peculiarities-title"></h3>
+        <p class="peculiarities__item" data-lang="trials-item">
+
+        </p>
+        <p class="peculiarities__item" data-lang="trials-item">
+
+        </p>
+      </div>
+    </div>
+
     <div class="product__specifications">
-        <div class="specifications__name">DotPulse-RSC</div>
-        <h3 class="specifications__title">Характеристики</h3>
+        <h3 class="peculiarities__title specifications__title" data-lang="peculiarities-title"></h3>
         <table class="specifications__table">
             <thead>
                 <tr>
-                    <th class="th-left">Уровень автоматизации устройства</th>
-                    <th class="th-right">3 уровень, работа в качестве дата-сервера, система самодиагностики, расчет параметров </th>
+                    <th class="th-left" data-lang="table-left-column"></th>
+                    <th class="th-right" data-lang="table-right-column"></th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
-                    <td class="td-left">Принцип измерения</td>
-                    <td class=td-right>оптический</td>
+                    <td class="td-left" data-lang="table-left-column"></td>
+                    <td class="td-right" data-lang="table-right-column"></td>
                 </tr>
                 <tr>
-                    <td class="td-left">Диапазон измерений, мм</td>
-                    <td class=td-right>1 – 10</td>
+                    <td class="td-left" data-lang="table-left-column"></td>
+                    <td class="td-right" data-lang="table-right-column"></td>
                 </tr>
                 <tr>
-                    <td class="td-left">Время измерения, мин</td>
-                    <td class=td-right>5</td>
+                    <td class="td-left" data-lang="table-left-column"></td>
+                    <td class="td-right" data-lang="table-right-column"></td>
                 </tr>
                 <tr>
-                    <td class="td-left">Тип образцов</td>
-                    <td class=td-right>гранулы минеральных удобрений</td>
+                    <td class="td-left" data-lang="table-left-column"></td>
+                    <td class="td-right" data-lang="table-right-column"></td>
                 </tr>
                 <tr>
-                    <td class="td-left">Масса образца, г</td>
-                    <td class=td-right>50 – 1000</td>
+                    <td class="td-left" data-lang="table-left-column"></td>
+                    <td class="td-right" data-lang="table-right-column"></td>
                 </tr>
                 <tr>
-                    <td class="td-left">Область анализа, д х ш, см</td>
-                    <td class=td-right>30х30</td>
+                    <td class="td-left" data-lang="table-left-column"></td>
+                    <td class="td-right" data-lang="table-right-column"></td>
                 </tr>
                 <tr>
-                    <td class="td-left">Измеряемые параметры</td>
-                    <td class=td-right>размер, площадь, сферичность, цвет</td>
+                    <td class="td-left" data-lang="table-left-column"></td>
+                    <td class="td-right" data-lang="table-right-column"></td>
                 </tr>
                 <tr>
-                    <td class="td-left">Масса прибора, кг</td>
-                    <td class=td-right>15</td>
+                    <td class="td-left" data-lang="table-left-column"></td>
+                    <td class="td-right" data-lang="table-right-column"></td>
                 </tr>
                 <tr>
-                    <td class="td-left">Масса системы отбора пробы, кг</td>
-                    <td class=td-right>50</td>
+                    <td class="td-left" data-lang="table-left-column"></td>
+                    <td class="td-right" data-lang="table-right-column"></td>
                 </tr>
                 <tr>
-                    <td class="td-left">Габариты прибора ш х д х в, м</td>
-                    <td class=td-right>0.5 х 0.5 х 0.6</td>
+                    <td class="td-left" data-lang="table-left-column"></td>
+                    <td class="td-right" data-lang="table-right-column"></td>
                 </tr>
                 <tr>
-                    <td class="td-left">Габариты системы отбора пробы ш х д х в, м</td>
-                    <td class=td-right>1 х 1 х 1.2</td>
+                    <td class="td-left" data-lang="table-left-column"></td>
+                    <td class="td-right" data-lang="table-right-column"></td>
                 </tr>
                 <tr>
-                    <td class="td-left">Рабочая система</td>
-                    <td class=td-right>Quad Core PC, Ubuntu 20.04</td>
+                    <td class="td-left" data-lang="table-left-column"></td>
+                    <td class="td-right" data-lang="table-right-column"></td>
                 </tr>
                 <tr>
-                    <td class="td-left">Программное обеспечение</td>
-                    <td class=td-right>DotPulse</td>
+                    <td class="td-left" data-lang="table-left-column"></td>
+                    <td class="td-right" data-lang="table-right-column"></td>
                 </tr>
             </tbody>
         </table>
+      </div>  
     </main>
+    
     <footer class="footer">
         <nav class="footer__nav nav">
             <li class="footer__nav__item">
@@ -230,13 +295,14 @@
             </li>
             <li class="footer__nav__item">
               <a
-                href="products-lua.html"
+                href="product-dataset.html"
                 class="footer__nav__link nav__link link "
-                >UVYield</a
+                >GOA dataset</a
               >
             </li>
           </nav>
     </footer>
+    <script type="module" src="script/texts.js"></script>
     <script src="script/main.js"></script>
     <script type="module" src="script/product.js" ></script>
   </body>

@@ -4,6 +4,9 @@ window.addEventListener("DOMContentLoaded", () => {
   const navLinks = navMenu.querySelectorAll(".nav__link");
   const menuItem = document.querySelectorAll(".nav__item");
   const up = document.querySelector(".up");
+
+  const mainBody = document.querySelector("main");
+
   if(window.innerWidth < 769){
     document.body.addEventListener("scroll", () => {
       if (document.body.scrollTop > 0) {
@@ -14,7 +17,7 @@ window.addEventListener("DOMContentLoaded", () => {
       }
     });
     window.addEventListener("scroll", () => {
-      console.log(window.pageYOffset);
+      // console.log(window.pageYOffset);
       if (window.pageYOffset > 0) {
         up.style.display = "block";
       }
@@ -27,6 +30,7 @@ window.addEventListener("DOMContentLoaded", () => {
       window.scrollTo(0, 0);
     }
   }
+
   window.addEventListener("resize", () => {
     if(window.innerWidth < 769){
       up.style.display = "block";
@@ -39,27 +43,34 @@ window.addEventListener("DOMContentLoaded", () => {
 
   navIcon.addEventListener("click", () => {
     navMenu.classList.toggle("header__nav-active");
+    console.log("icon click");
   });
  
   navLinks.forEach((link, i) => {
     link.addEventListener("click", (e) => {
-      if (i !== 3) {
+      console.log("link click");
+      console.log(i);
+      if (i !== 0 && i !== 2 && i !== 4) {
         if(window.innerWidth < 1025){
           e.preventDefault();
         }
       }
     });
   });
+
+  /* Функция срабатывает только для тех полей меню, у которых внутри есть выпадающие списки */
+
   menuItem.forEach((item) => {
-    item.addEventListener("click", (e) => {
-      item.querySelector(".nav__menu").classList.toggle("nav__menu-active");
-    });
+    if (item.querySelector(".nav__menu")) {
+      item.addEventListener("click", (e) => {
+        item.querySelector(".nav__menu").classList.toggle("nav__menu-active");
+      });
+    }
   });
-  
-  
+
+  mainBody.addEventListener("click", (e) => {
+    if (navMenu.classList.contains("header__nav-active")) {
+      navMenu.classList.toggle("header__nav-active");
+    }
+  })  
 });
-    // console.log(window.pageYOffset);
-    // console.log(up);
-    // if (window.pageYOffset > 0) {
-    //   up.style.display = "block";
-    // }

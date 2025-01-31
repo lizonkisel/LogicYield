@@ -1,0 +1,170 @@
+.project-subtitle {
+  text-align: center;
+  font-size: 16px;
+  display: block;
+  margin: -12px 0 0 0;
+}
+
+.project-content {
+  margin: 32px 0 0 0;
+}
+
+.project-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 36px;
+}
+
+.project-item {
+  background: #2b5c24;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  padding: 24px 32px 40px 32px;
+  gap: 16px;
+
+  min-height: 40vmin;
+  max-height: 50vmin;
+  overflow: auto;
+  scrollbar-color: #3D8E30 #111111;
+  scrollbar-width: thin;
+}
+
+
+/* Кажется, это нужно только для Safari */
+
+.project-item::-webkit-scrollbar {
+  width: 4px;               /* ширина scrollbar */
+}
+
+.project-item::-webkit-scrollbar-track {
+  background: #fff;        /* цвет дорожки */
+}
+.project-item::-webkit-scrollbar-thumb {
+  background-color: #3D8E30;    /* цвет плашки */
+  border-radius: 8px;       /* закругления плашки */
+  border: 1px solid #111111;  /* padding вокруг плашки */
+}
+
+
+.project-item__title {
+  text-align: center;
+  font-size: 16px;
+}
+
+.project-text__item {
+  list-style: decimal;
+  margin-left: 20px;
+  font-size: 1.8vmin;
+  margin-top: 16px;
+}
+
+.project-text__item:first-of-type {
+  margin-top: 4px;
+}
+
+
+@media screen and (min-width: 1400px) {
+
+  .project-subtitle {
+    font-size: 20px;
+  }
+
+  .project-content { 
+    margin: 42px 0 0 0;
+  }
+
+  .project-list {
+    gap: 44px;
+  }
+
+  .project-item {
+    padding: 28px 36px 60px 36px;
+    gap: 20px;
+    max-height: 54vmin;
+  }
+
+  .project-item__title {
+    font-size: 20px;
+  }
+
+  .project-text__item {
+    margin-left: 28px;
+    font-size: 20px;
+  }
+}
+
+@media screen and (min-width: 1790px) {
+  .project-subtitle {
+    font-size: 24px;
+  }
+
+  .project-list {
+    gap: 52px;
+  }
+
+  .project-text__item {
+    margin-top: 20px;
+  }
+}
+
+@media screen and (min-width: 2000px) {
+  .project-subtitle {
+    font-size: 24px;
+  }
+
+  .project-list {
+    gap: 72px;
+  }
+
+  .project-item {
+    max-height: 60vmin;
+  }
+
+  .project-item__title {
+    font-size: 24px;
+  }
+
+  .project-text__item {
+    font-size: 24px;
+    margin-top: 24px;
+  }
+
+  .project-text__item:first-of-type {
+    margin-top: 8px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .project-item {
+    min-height: auto;
+    max-height: max-content;
+    display: flex;
+    flex-direction: column;
+    padding: 8% 5%;
+    gap: 20px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .project-content {
+    margin: 20px 0;
+  }
+
+  .project-subtitle {
+    font-size: 20px;
+    margin-top: 4px;
+  }
+  .project-list {
+    grid-template-columns: 1fr;
+    width: 100%;
+  }
+
+  .project-item__title {
+    font-size: 20px;
+  }
+
+  .project-text__item {
+    font-size: 16px;
+  }
+}

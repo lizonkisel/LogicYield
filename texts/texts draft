@@ -1,0 +1,414 @@
+
+
+
+
+Создаём оптические приборы,
+We create optical devices,
+
+вдохновляясь индустрией
+inspired by the industry.
+
+Познакомиться
+Discover more
+
+Продукты
+
+
+Cистема оптического контроля сыпучих материалов “DotPulse”
+Optical control system “DotPulse” for bulk materials
+
+Об устройстве
+About device
+
+Устройство предназначено для анализа сыпучих материалов с фракциями от 1 до 100 мм 
+с получением оптико-электронных изображений.
+The device is designed to analyze bulk materials with particle sizes ranging from 1 to 100 mm 
+in order to generate optoelectronic images.
+
+Анализируемые физические свойства: линейный размер гранулы, форма гранулы и цвет гранулы 
+(детектирование не менее 90% гранул, относительная погрешность между параллельными измерениями 3.3 % для фракции 2-5 мм)
+The physical properties being analyzed are the particle size, shape, and color. The analysis ensures the detection 
+of at least 90% of particles, with a relative error of 3.3% between parallel measurements for the 2-5 mm size fraction.
+
+Особенности:
+Features:
+
+1. Создана для производственных условий.
+Designed for industrial environments.
+
+2. 3 варианта исполнения ПАК: динамический анализ пробы в потоке, 
+статический анализ с автоматическим отбором пробы, 
+статический анализ пробы с ручным отбором.
+3 configurations of the hardware and software system: 
+dynamic analysis of a sample in a flow, 
+static analysis with automated sample selection,
+static analysis with manual sample selection.
+
+3. Легкая замена ключевых частей, масса устройства в сборе не более 50 кг.
+Modular design: Easy replacement of key components for maintenance and upgrades.
+Total assembled unit weight is less than 50 kg.
+
+4. Возможность подачи гранул и распределения в монослой с последующим удалением (остаточное количество гранул не более 1 шт).
+Precise granule handling: Ability to feed and distribute granules in a single layer with minimal residue (less than 1 granule).
+
+5. Получена декларация соответствия требованиям технических регламентов 
+Евразийского экономического союза (ТР ТС 004/2011 и ТР ТС 020/2011)
+Received a declaration of conformity with the requirements of the technical regulations 
+of the Eurasian Economic Union (TR CU 004/2011 and TR CU 020/2011).
+
+6. ПО зарегистрировано в реестре программ для ЭВМ (свидетельство № 2023668146 от 23.08.2023).
+Software is registered in the register of computer programs 
+(certificate No. 2023668146 dated 08/23/2023).
+
+
+Испытания
+Industrial trials
+
+Прототип промышленного устройства прошел опытно-промышленные испытания на предприятиях 
+АО “МХК “Еврохим””, ПАО “Уралкалий”, АО “Аммоний”.
+The industrial device prototype has undergone pilot industrial trials 
+at JSC "EuroChem", PJSC "Uralkali", and JSC "Ammoni".
+
+Успешно проверена работа ПАК во всех 3 режимах 
+(динамический, статический с ручным отбором пробы и статический с автоматическим отбором пробы).
+The hardware and software system operation has been successfully tested in all three modes: 
+dynamic, static with automatic sample selection and static with manual sample selection.
+
+
+Характеристики
+Specifications
+
+Уровень автоматизации устройства
+Degree of automation
+
+Принцип измерения
+Measurement principle
+
+Диапазон измерений, мм
+Measurement range, mm
+
+Время измерения
+Measurement time
+
+Тип образцов
+Sample type
+
+Масса образца
+Sample mass
+
+Область анализа
+Analysis area size
+
+Измеряемые параметры
+Measured parameters
+
+Масса прибора, кг
+Device mass, kg
+
+Масса системы отбора пробы, кг
+Sample collection system mass, kg
+
+Габариты прибора ш х д х в, м
+Instrument dimensions, w x d x h, m
+
+Габариты системы отбора пробы ш х д х в, м
+Sample collection system dimensions, w x d x h, m
+
+Рабочая система
+OS
+
+Программное обеспечение
+Software
+
+полный (не требует оператора), аппаратная и программная самодиагностика, API для передачи данных
+Fully autonomous (operator-free), hardware and software self-diagnostics, API for data transfer
+
+оптический с нейросетевыми алгоритмами распознавания гранул
+Optical with neural network-based granule recognition algorithms
+
+1 – 100
+1 – 100
+
+настраиваемый параметр, от 5 минут
+Customizable parameter, from 5 minutes
+
+любые сыпучие материалы
+Any bulk materials
+
+не ограничена
+Unlimited
+
+настраивается в зависимости от объектива и удаленности от объекта
+Configurable, depending on the lens and distance from the object
+
+размер, площадь, сферичность, цвет
+Size, area, sphericity, color
+
+15
+15
+
+50
+50
+
+от 0.3 х 0.3 х 0.3
+from 0.3 x 0.3 x 0.3
+
+1 х 1 х 1.2
+1 х 1 х 1.2
+
+Quad Core PC, Ubuntu 20.04
+Quad Core PC, Ubuntu 20.04
+
+DotPulse, собственная разработка
+DotPulse, proprietary development 
+
+
+Софт
+Software
+
+Программа разработана для приборов «DotPulse». 
+В основе расчетов лежит оптическое изображение слоя гранул и 
+алгоритм сегментации каждой гранулы на изображении и аппроксимации ее эллипсом.
+The software is designed for "DotPulse" devices. The calculations are based on the optical image of a layer of granules and an algorithm for segmenting each granule in the image and approximating it with an ellipse.
+
+DotPulse
+DotPulse
+
+ПО способно:
+Software capabilities:
+
+проводить расчет физических свойств гранул на изображении (линейные размеры, цвет, форма);
+to perform calculations on the physical properties of granules within an image, including linear dimensions, color, and shape;
+
+получать и отображать изображения с USB-камеры прибора «DotPulse» (включая высокоскоростные промышленные камеры);
+to receive and display images from a DotPulse USB camera (including high-speed industrial cameras);
+
+проводить предварительную обработку изображений и использовать классические и нейросетевые алгоритмы для сегментации каждой гранулы;
+to perform image preprocessing and use both classical and neural network algorithms to segment each granule;
+
+создавать SQL базу данных изображений и рассчитанных свойств с возможностью импорта в *.csv;
+to create an SQL database of images and calculated properties with the ability to export data to *.csv format;
+
+выполнять анализ статических и динамических изображений гранул (в т.ч. c приборов, установленных над конвейерной лентой, на течке или пересыпке гранул продукта).
+to perform analysis of static and dynamic images of granules (including those from devices installed above conveyor belts, in streams or during product transfer).
+
+
+GOA API
+GOA API
+
+API для предоставления данных и использования нейросетевых алгоритмов для анализа изображений гранул удобрений.
+API for providing data and utilizing neural network algorithms to analyze fertilizer granule images.
+
+3447 изображений гранул 4 типов удобрений (ДАФ, NPK 15-15-15, NH4NO3, KCl);
+3447 images of granules of 4 fertilizer types (DAF, NPK 15-15-15, NH4NO3, KCl);
+
+возможность отделения гранул от фона с помощью нейросетевой модели;
+the ability to separate granules from the background using a neural network model;
+
+определение каждой отдельной гранулы с ее свойствами (инстанс-сегментация) с помощью нейронных сетей;
+instance segmentation of individual granules with their properties using neural networks;
+
+возможность анализа гранул верхнего слоя гранул вне зависимости от нижних слоев и фона;
+the ability to analyze the granules of the top layer independently of the underlying layers and background.
+
+
+Нейросетевой анализ номерных знаков автомобилей
+Neural network analysis of vehicle license plates
+
+Определение положения номерного знака для вида от 1-го и от 3-го лица (камеры мобильных телефонов, регистраторов и камер наблюдения).
+Determination of the license plate position from the first and third person perspective using mobile phone cameras, dashcams, and surveillance cameras
+
+Проведение OCR анализа номерного знака для получения текста и региона/страны выпуска.
+Performing OCR analysis of a license plate to extract text and determine the issuing region/country.
+
+Возможность реализации API сервиса, в том числе для локальной установки.
+The possibility of implementing an API service, including the option for local deployment.
+
+
+Нейросетевой анализ и мониторинг спутниковых снимков
+Neural network analysis and satellite image monitoring
+
+Получение спутниковых данных из открытых источников (Google EE, Copernicus).
+Acquiring satellite data from publicly available platforms (Google Earth Engine, Copernicus).
+
+Проведение классификации изображений.
+Performing image classification.
+
+Построение временных рядов из наблюдений.
+Developing time series from observational data.
+
+Поиск и построение корреляций спутниковых снимков и результатов анализа наземных данных (дорожная сцена, лаборатории по РМ2.5, РМ10, промышленное производство).
+Identifying and quantifying correlations between satellite remote sensing data and ground-based measurements (e.g., road traffic, PM2.5 and PM10 laboratory data, industrial output).
+
+Возможность реализации API сервиса, в том числе для локальной установки.
+The possibility of implementing an API service, including the option for local deployment.
+
+О нас
+About us
+
+Наша компания родилась из идеи о внедрении оптического зрения в промышленность минеральных удобрений. Наши ведущие сотрудники более 10 лет проработали на промышленных предприятиях, на каждодневной основе сталкиваясь с их проблемами и насущными требованиями. Логичным итогом нашего опыта стало создание собственной компании.
+Our company was born from the idea of introducing optical vision into the mineral fertilizer industry. Our leading employees have worked in industrial enterprises for over 10 years, facing their daily problems and urgent needs. The logical outcome of our experience was the creation of our own company.
+
+ООО “Лоджик Илд” начало свою работу в 2022 году. За 2022-2023 гг. мы привлекли более 10 млн рублей инвестиций, провели промышленные испытания на ряде предприятий-производителей минеральных удобрений.
+LLC “Logic Yield” started its work in 2022. In 2022-2023, we attracted more than 10 million rubles in investments and conducted industrial tests at a number of mineral fertilizer production facilities.
+
+На каждом из заводов мы сталкиваемся с исключительными особенностями производственных линий, с уникальными запросами заказчика. Данные условия мотивируют нас планомерно совершенствовать качество и скорость работы нашего ПО, делать ПАК более модульными и устойчивыми к производственным условиям.
+At each plant, we encounter unique features of production lines and unique customer requests. These conditions motivate us to systematically improve the quality and speed of our software, make the software package more modular and resilient to production conditions.
+
+До конца 2024 года мы планируем запустить несколько наших устройств в качестве автономных модулей на производственных линиях двух предприятий России.
+By the end of 2024, we aim to deploy several of our devices as autonomous modules on the production lines of two Russian facilities.
+
+Наши достижения:
+Our achievements:
+
+Свидетельство о регистрации ПО “DotPulse”
+Certificate of Registration for Software “DotPulse”
+
+Комплект конструкторской документации и декларация соответствия на устройства “DotPulse”
+A set of engineering documentation and a declaration of conformity for “DotPulse” devices
+
+Резиденты и грантополучатели “Сколково” и “Фонда содействия инновациям”
+Resident and grantee of “Skolkovo” and “Foundation for Assistance to Small Innovative Enterprises (FASIE)”
+
+Наши решения успешно опробованы на:
+Our solutions have been successfully tested at:
+
+Надеемся на сотрудничество и готовы к новым вызовам!
+We look forward to working together and are excited to take on new challenges!
+
+
+Наши навыки
+Our Expertise
+
+Кодинг и linux инфраструктура
+Coding and Linux infrastructure
+
+Программы на Python любой сложности.
+Developing Python applications of any complexity.
+
+API сервисы на FastAPI.
+API development with FastAPI.
+
+Docker-инфраструктура и сервисы.
+Creating and managing Docker infrastructure and services.
+
+Развертывание программ на linux-инфраструктуре любой сложности.
+Deploying applications onto Linux infrastructures of varying complexity.
+
+
+Искусственный интеллект
+Artificial intelligence
+
+Разработка любых нейронных сетей (детекция, сегментация, инстанс сегментация).
+Development of any neural networks (detection, segmentation, instance segmentation).
+
+Создание сервисов на базе нейронных сетей (инференс).
+Creation of services based on neural networks (inference).
+
+Комплексная обработка информации: графический, аудио, табличные данные.
+Complex data processing: graphic, audio, tabular data.
+
+
+Проведение исследовательских работ
+Research and Development (R&D)
+
+НИР любой сложности.
+Conduct research projects of any complexity.
+
+Написание научных статей и представление на конференциях (только при совместной разработке решений).
+Scientific paper writing and presentation at academic conferences (only when collaborating on solutions).
+
+Статистический и описательный анализ данных.
+Statistical and descriptive data analysis.
+
+Поиск, анализ и валидация данных.
+Comprehensive data sourcing, analysis, and validation.
+
+
+Разработка и изготовление устройств для промышленного мониторинга
+Industrial monitoring device development and manufacturing.
+
+Создание и настройка инфраструктуры для систем искусственного интелекта.
+Building and tailoring the environment for artificial intelligence systems.
+
+НИОКР любой сложности (чертежи, ТУ, паспорта, руководства по эксплуатации, декларации соответствия сертификатам и т.д.).
+R&D of any complexity: conducting research and development, from initial designs and technical specifications to operational manuals and compliance certifications.
+
+Прототипирование и мелкосерийное производство.
+Prototyping and small-scale production.
+
+Бесшовная интеграция устройств и ПО (создание программно-аппаратных комплексов).
+Seamless hardware and software integration (integrated systems creation).
+
+Перспективные проекты
+Promising projects
+
+Сейчас мы активно работаем над рядом проектов:
+We are currently actively working on a number of projects:
+
+
+Облачная инфраструктура для накопления и анализа промышленных интеллектуальных систем “Лоджик Илд”
+Cloud Infrastructure for the Accumulation and Analysis of Industrial Intelligent Systems “Logic Yield”
+
+Создание облачной инфраструктуры на основе базы данных (PostgreSQL), API (FastAPI) и интерфейса пользователя (RestAPI).
+Creation of a cloud infrastructure based on a database (PostgreSQL), API (FastAPI), and user interface (RestAPI).
+
+Бесшовное подключение всех устройств Лоджик Илд к облачной инфраструктуре по защищенному каналу за корпоративным VPN.
+Seamless connection of all “Logic Yield” devices to the cloud infrastructure via a secure channel behind a corporate VPN.
+
+Возможность предварительной обработки и анализа данных (построение временных рядов, интеграция в Jupyter).
+Ability to pre-process and analyze data (building time series, integration into Jupyter).
+
+
+API инфраструктура для любых создаваемых нейронных сетей:
+API infrastructure for any created neural networks:
+
+Интеграция GET, POST и любых других запросов по требованиям пользователей.
+Integration of GET, POST, and any other requests as required by users.
+
+Мониторинг API (Grafana).
+API monitoring (Grafana).
+
+Защищенный доступ.
+Secured access.
+
+
+Устройство “UVYield” для анализа сыпучих материалов под ультрафиолетовым излучением
+UVYield device for analyzing bulk materials under ultraviolet radiation
+
+Анализ силы и равномерности флуоресценции гранул при УФ облучении.
+Analysis of the strength and uniformity of granule fluorescence under UV irradiation.
+
+Анализ размера, формы, цвета гранул.
+Analysis of the size, shape, and color of granules.
+
+Возможность установки устройства в производственные лаборатории.
+Possibility of installing the device in production laboratories.
+
+
+Контакты
+Contacts
+
+Мы на карте
+We are located here
+
+Адрес:
+420073, Республика Татарстан, г. Казань,
+ул. Гвардейская, д.14, офис 75
+
+Address:
+420073, Russian Federation, Republic of Tatarstan, Kazan,
+Gvardeyskaya str., 14, office 75.
+
+
+Контакты:
+Юновидова Елизавета
+
+Contacts:
+Elizaveta Iunovidova
+
+тел.: +79611121089
+tel.: +79611121089
+
+e-mail: logicyield@mail.ru
+e-mail: logicyield@mail.ru

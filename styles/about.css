@@ -1,0 +1,292 @@
+.about__content {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  margin: 20px 0 140px 0;
+}
+
+.about__desc {
+  /* overflow-y: auto; */
+  scrollbar-color: #3D8E30 #111111;
+  scrollbar-width: thin;
+  width: 100%;
+}
+
+.about__publications {
+  /* width: 50%; */
+  display: flex;
+  flex-direction: column;
+}
+
+/* .about__desc,
+.about__publications {
+  width: 50%;
+  max-height: 50vmin;
+} */
+
+/* Кажется, это нужно только для Safari */
+
+.about__desc::-webkit-scrollbar {
+  width: 4px;               /* ширина scrollbar */
+}
+
+.about__desc::-webkit-scrollbar-track {
+  background: #fff;        /* цвет дорожки */
+}
+
+.about__desc::-webkit-scrollbar-thumb {
+  background-color: #3D8E30;    /* цвет плашки */
+  border-radius: 8px;       /* закругления плашки */
+  border: 1px solid #111111;  /* padding вокруг плашки */
+}
+
+
+.about__text {
+  font-size: 16px;
+  line-height: 20px;
+  margin: 16px 0 16px 0;
+}
+
+.about__text:first-of-type {
+  margin: 0 0 16px 0;
+}
+
+.about__text:last-of-type {
+  margin: 16px 0 0 0;
+}
+
+.publications__title {
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+
+.publications__cards {
+  width: 70%;
+  align-self: center;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  
+  margin: 24px 0 0 0;
+}
+
+.publications__card {
+  width: 100%;
+  background: #3d8e30;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  transition: transform 0.4s;
+  padding: 20px;
+}
+.publications__card:hover {
+  transform: scale(1.1);
+  transition: transform 0.4s;
+}
+.publications__text {
+  color: #ffffff;
+  font-size: 1.05vw;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+  
+.about__partners {
+  display: flex;
+  flex-direction: column;
+}
+
+.partners__title {
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+
+.partners__logos {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 40px;
+
+  margin-top: 20px;
+}
+
+.partner__logo {
+  max-width: 20vw;
+}
+
+/* .partners__title {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.partners__logos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+}
+
+.partner__logo {
+  max-width: 80vw;
+}
+*/
+
+.about__tagline {
+  /* display: block; */
+  font-size: 18px;
+  text-align: center;
+  width: 100%;
+  margin: 36px 0 0 0;
+} 
+
+@media screen and (min-width: 1400px) {
+
+  .about__content {
+    gap: 72px;
+  }
+
+  .about__text {
+    font-size: 24px;
+    line-height: 28px;
+    margin: 20px 0 20px 0;
+  }
+
+  .about__text:first-of-type {
+    margin: 0 0 20px 0;
+  }
+  
+  .about__text:last-of-type {
+    margin: 20px 0 0 0;
+  }
+
+  .publications__title {
+    font-size: 28px;
+    margin-bottom: 32px;
+  }
+
+  .publications__cards {
+    gap: 32px;
+    margin: 16px 0 0 0;
+  }
+
+  .partners__title {
+    font-size: 28px;
+    margin-bottom: 32px;
+  }
+
+  .about__tagline {
+    font-size: 24px;
+    margin: 60px 0 0 0;
+  }
+}
+
+@media screen and (min-width: 1790px) {
+  .about__desc,
+  .about__publications {
+    max-height: 60vmin;
+  }
+
+  .about__text {
+    font-size: 28px;
+    line-height: 36px;
+    margin: 20px 0 20px 0;
+  }
+
+  .publications__title {
+    font-size: 32px;
+    margin-bottom: 36px;
+  }
+
+  .partners__title {
+    font-size: 32px;
+    margin-bottom: 36px;
+  }
+
+  .about__tagline {
+    font-size: 28px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .about__content{
+    flex-direction: column;
+    gap: 28px;
+    margin: 12px 0 0 0;
+  }
+
+  /* .about__desc, .about__publications{
+    width: 100%;
+    max-height: max-content;
+    overflow: hidden;
+  } */
+
+  .publications__title{
+    text-align: center;
+  }
+
+  .partners__title{
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .publications__title{
+    margin-top: 20px;
+    font-size: 20px;
+  }
+
+  .about__text{
+    font-size: 16px;
+  }
+
+  .publications__cards {
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+    margin: 0;
+  }
+
+  .publications__card:hover {
+    transform: none;
+  }
+
+  .publications__text{
+    font-size: 12px;
+  }
+
+  
+  .about__partners {
+    display: block;
+  }
+
+  .partners__title {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .partners__logos {
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+    margin-top: 0;
+  }
+  
+  .partner__logo {
+    max-width: 80vw;
+  }
+
+  .about__tagline {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+}

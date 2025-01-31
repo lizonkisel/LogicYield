@@ -21,9 +21,14 @@
   <body class="start-body">
     <header class="header">
       <div class="header__logo logo">
-        <a href="index.html" class="logo__link"></a>
-        <img src="assets/img/logo.svg" alt="logo" class="logo__img" />
       </div>
+
+      <div class="header__lang-phone">
+        <button class="header__langBtn" data-btn="ru">Ru</button>
+        <span>|</span>
+        <button class="header__langBtn" data-btn="en">En</button>
+      </div>
+
       <div class="header__menu menu">
         <button class="menu__icon">
           <span></span>
@@ -31,114 +36,112 @@
       </div>
       <nav class="header__nav nav">
         <li class="nav__item">
-          <a href="products.html" class="nav__link link"
+          <a href="services.html" class="nav__link link" data-lang="menu-item"
+            ><img
+              src="assets/img/services-icon.svg"
+              alt=""
+              class="nav-icon"
+            /> </a
+          >
+        </li>
+        <li class="nav__item">
+          <a href="products.html" class="nav__link link" data-lang="menu-item"
             ><img
               src="assets/img/product-icon.svg"
               alt=""
               class="nav-icon"
-            />Продукты</a
+            /> </a
           >
           <ul class="nav__menu">
             <li class="menu__item">
               <a href="products.html" class="menu__link">DotPulse-RSC</a>
             </li>
             <li class="menu__item">
-              <a href="products-lua.html" class="menu__link">UVYield</a>
+              <a href="product-dataset.html" class="menu__link"
+                >GOA dataset</a
+              >
             </li>
           </ul>
         </li>
         <li class="nav__item nav__item-soft">
-          <a href="soft.html" class="nav__link nav__link-soft link"
+          <a href="soft.html" class="nav__link nav__link-soft link" data-lang="menu-item"
             ><img
               src="assets/img/soft-icon.svg"
               alt=""
               class="nav-icon"
-            />Софт</a
+            /> </a
           >
-          <ul class="nav__menu nav__menu-soft">
+          <!-- <ul class="nav__menu nav__menu-soft">
             <li class="menu__item">
               <a href="soft.html#DotPulse" class="menu__link">DotPulse</a>
             </li>
             <li class="menu__item">
-              <a href="soft.html#UVYield" class="menu__link">UVYield</a>
+              <a href="soft.html#GOAAPI" class="menu__link">GOA API</a>
             </li>
             <li class="menu__item">
-              <a href="soft.html#SaltYield" class="menu__link">SaltYield</a>
+              <a href="soft.html#NeuralSatellite" class="menu__link">Neural Satellite</a>
             </li>
             <li class="menu__item">
-              <a href="soft.html#VideoYield" class="menu__link">VideoYield</a>
+              <a href="soft.html#NeuralLicencePlate" class="menu__link">Neural Licence Plate</a>
             </li>
-            <li class="menu__item">
-              <a href="soft.html#SpectraYield" class="menu__link"
-                >SpectraYield
-              </a>
-            </li>
-          </ul>
+          </ul> -->
         </li>
         <li class="nav__item">
-          <a href="skills.html" class="nav__link link"
+          <a href="about.html" class="nav__link link" data-lang="menu-item"
             ><img
               src="assets/img/team-icon.svg"
               alt=""
               class="nav-icon"
-            />Команда</a
+            /> </a
           >
           <ul class="nav__menu">
             <li class="menu__item">
-              <a href="skills.html" class="menu__link">Наши навыки</a>
+              <a href="about.html" class="menu__link" data-lang="team-menu-item"></a>
             </li>
             <li class="menu__item">
-              <a href="about.html" class="menu__link">О нас</a>
+              <a href="skills.html" class="menu__link" data-lang="team-menu-item"></a>
             </li>
             <li class="menu__item">
-              <a href="project.html" class="menu__link"
-                >Перспективные проекты</a
+              <a href="project.html" class="menu__link" data-lang="team-menu-item"
+                ></a
               >
             </li>
           </ul>
         </li>
         <li class="nav__item">
-          <a href="contacts.html" class="nav__link link"
+          <a href="contacts.html" class="nav__link link" data-lang="menu-item"
             ><img
               src="assets/img/contacts-icon.svg"
               alt=""
               class="nav-icon"
-            />Контакты</a
+            /> </a
           >
         </li>
-        <div class="header__lang"></div>
+        <div class="header__lang">
+          <button class="header__langBtn" data-btn="ru">Ru</button>
+          <span>|</span>
+				  <button class="header__langBtn" data-btn="en">En</button>
+        </div>
       </nav>
     </header>
+
     <main class="main start-main">
       <img src="./assets/img/up.svg" alt="" class="up" style="opacity: 0;"/>
       <div class="main__content start__content">
-        <div class="video__container">
-          <div class="video__placeholder">
-            <img src="./assets/img/loader.svg" alt="loader" class="video__loader">
-            <div class="video__text">Пожалуйста, подождите. Вас ждёт интересное видео</div>
-          </div>
-          <video
-            src="assets/video/video-1.mp4"
-            playsinline
-            muted
-            alt="team"
-            class="main__video video-1 video-active"
-          ></video>
-          <video
-            src="assets/video/video-2.mp4"
-            playsinline
-            muted
-            alt="team"
-            class="main__video video-2"
-          ></video>
+        <div>
+          <img class="index__cover" src="./assets/img/indexlogo.svg" alt="LogicYield logo">
         </div>
 
         <div class="main__text">
-          <h1 class="main__title title">LogicYield</h1>
-          <p class="main__desc desc">Inspired by industry</p>
+          <h1 class="index__title" data-lang="title"></h1>
+          <p class="index__subtitle" data-lang="subtitle"></p>
         </div>
+        <a class="nav__link link start-link neon-pulse" data-lang="start-btn" href="about.html">
+
+        </a>
       </div>
     </main>
+    <script type="module" src="script/texts.js"></script>
     <script src="script/main.js"></script>
     <script src="script/start.js"></script>
   </body>

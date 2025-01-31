@@ -1,0 +1,260 @@
+.main__content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5%;
+  width: 100%;
+}
+
+.contacts-main__content {
+  justify-content: space-around;
+  align-items: start;
+  width: 100%;
+  height: 100%;
+  margin: 10px 0 0 0;
+}
+
+.main__form,
+.main__map {
+  max-height: 70vh;
+}
+.main__form {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form__legend {
+  width: 80%;
+  font-weight: 600;
+  font-size: 24px;
+}
+.form__input {
+  width: 80%;
+  background: #292929;
+  font-size: 20px;
+  padding: 10px;
+  border-radius: 10px;
+  color: #ffff;
+  border: 1px solid transparent;
+}
+.form__textarea {
+  resize: none;
+  height: 108px;
+  font-family: "Open Sans", sans-serif;
+}
+.checkbox__label {
+  background: 0;
+  padding: 0;
+  white-space: nowrap;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.486);
+  margin-left: 15px;
+  padding: 5px;
+  position: relative;
+}
+._checbox {
+  margin-right: 25px;
+  position: relative;
+  opacity: 0;
+}
+._checbox:focus .checbox__placeholder {
+  content: "";
+  background: #292929;
+  border-radius: 10px;
+  border: 1px solid #fff;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  opacity: 1;
+  transform: translate(-25%, -25%);
+  pointer-events: none;
+}
+.checbox__placeholder {
+  content: "";
+  background: #292929;
+  border-radius: 10px;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  opacity: 1;
+  top: 50%;
+  left: 0%;
+  transform: translateY(-50%);
+  pointer-events: none;
+  z-index: 15;
+  background-image: url(../assets/img/tick.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 0;
+}
+.checkbox__ok {
+  content: url(../assets/img/tick.svg);
+  pointer-events: none;
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  opacity: 0;
+  
+  top: 50%;
+  transform: translate(25%, -50%);
+  z-index: 20;
+  border: 1px solid transparent;
+}
+._checbox:checked + .checbox__placeholder {
+  background-size: contain;
+}
+
+._error {
+  box-shadow: 0 0 15px red;
+}
+._submit {
+  color: #ffff;
+  background: #3d8e30;
+  border-radius: 10px;
+  width: 30%;
+  font-weight: 700;
+  font-size: 1.5vw;
+}
+.dispatch{
+  background: #292929;
+}
+
+.main__map {
+  width: 90vw;
+  display: flex;
+  flex-direction: row;
+  gap: 60px;
+}
+.map__title {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+.address__title {
+  font-size: 24px;
+  line-height: 36px;
+
+  margin-bottom: 10px;
+}
+.address__text {
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+
+.map__address {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  gap: 20px;
+
+  margin: 44px 0 0 0;
+}
+
+.map__tel,
+.map__email {
+  color: #ffff;
+  display: inline-block;
+  margin-bottom: 5px;
+  font-size: 16px;
+}
+.map__frame {
+  width: 50vw;
+  height: 360px;
+  margin-bottom: 8px;
+  border-radius: 10px;
+}
+
+@media screen and (min-width: 1400px) {
+  .map__title {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+
+  .map__frame {
+    height: 450px;
+  }
+
+  .map__address { 
+    margin: 48px 0 0 0;
+  }
+
+  .address__title {
+    font-size: 28px;
+    line-height: 40px;
+  
+    margin-bottom: 20px;
+  }
+  .address__text {
+    font-size: 24px;
+    margin-bottom: 12px;
+  }
+
+  .map__tel,
+  .map__email {
+    margin-bottom: 8px;
+    font-size: 20px;
+  }
+}
+
+@media screen and (min-width: 1790px) {
+  .map__title {
+    font-size: 32px;
+  }
+
+  .address__title {
+    font-size: 32px;
+  }
+  .address__text {
+    font-size: 28px;
+  }
+
+  .map__tel,
+  .map__email {
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .main__map {
+    width: 100%;
+    flex-direction: column;
+    gap: 28px;
+    max-height: max-content;
+  }
+}
+
+@media screen and (max-width: 900px) {
+
+  .contacts-main__content {
+    margin: 12px 0 42px 0;
+  }
+
+  .map__title {
+    font-size: 20px;
+    margin-bottom: 12px;
+  }
+
+  .map__frame {
+    height: 300px;
+    width: 100%;
+  }
+
+  .map__address {
+    grid-template-rows: auto auto;
+    margin: 0;
+  }
+
+  .address__title {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .address__text {
+    font-size: 16px;
+  }
+
+  .map__tel,
+  .map__email {
+    font-size: 16px;
+    margin-bottom: 0;
+  }
+}

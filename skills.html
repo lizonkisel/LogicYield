@@ -4,9 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>LogicYield — Skills</title>
     <link rel="shortcut icon" href="./assets/img/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./styles/skills.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
@@ -17,6 +18,13 @@
         <a href="index.html" class="logo__link"></a>
         <img src="assets/img/logo.svg" alt="logo" class="logo__img" />
       </div>
+      
+      <div class="header__lang-phone">
+        <button class="header__langBtn" data-btn="ru">Ru</button>
+        <span>|</span>
+        <button class="header__langBtn" data-btn="en">En</button>
+      </div>
+
       <div class="header__menu menu">
         <button class="menu__icon">
           <span></span>
@@ -24,8 +32,17 @@
       </div>
       <nav class="header__nav nav">
         <li class="nav__item">
+          <a href="services.html" class="nav__link link" data-lang="menu-item"
+            ><img
+              src="assets/img/services-icon.svg"
+              alt=""
+              class="nav-icon"
+            /> </a
+          >
+        </li>
+        <li class="nav__item">
           
-          <a href="products.html" class="nav__link link"><img src="assets/img/product-icon.svg" alt="" class="nav-icon">Продукты</a>
+          <a href="products.html" class="nav__link link" data-lang="menu-item"><img src="assets/img/product-icon.svg" alt="" class="nav-icon"> </a>
           <ul class="nav__menu">
             <li class="menu__item">
               <a href="products.html" class="menu__link"
@@ -33,77 +50,75 @@
               >
             </li>
             <li class="menu__item">
-              <a href="products-lua.html" class="menu__link"
-                >UVYield</a
+              <a href="product-dataset.html" class="menu__link"
+                >GOA dataset</a
               >
             </li>
           </ul>
         </li>
         <li class="nav__item nav__item-soft">
-          <a href="soft.html" class="nav__link nav__link-soft link"><img src="assets/img/soft-icon.svg" alt="" class="nav-icon">Софт</a>
-          <ul class="nav__menu nav__menu-soft">
+          <a href="soft.html" class="nav__link nav__link-soft link" data-lang="menu-item"><img src="assets/img/soft-icon.svg" alt="" class="nav-icon"> </a>
+          <!-- <ul class="nav__menu nav__menu-soft">
             <li class="menu__item">
               <a href="soft.html#DotPulse" class="menu__link">DotPulse</a>
             </li>
             <li class="menu__item">
-              <a href="soft.html#UVYield" class="menu__link">UVYield</a>
+              <a href="soft.html#GOAAPI" class="menu__link">GOA API</a>
             </li>
             <li class="menu__item">
-              <a href="soft.html#SaltYield" class="menu__link"
-                >SaltYield</a
-              >
+              <a href="soft.html#NeuralSatellite" class="menu__link">Neural Satellite</a>
             </li>
             <li class="menu__item">
-              <a href="soft.html#VideoYield" class="menu__link"
-                >VideoYield</a
-              >
+              <a href="soft.html#NeuralLicencePlate" class="menu__link">Neural Licence Plate</a>
             </li>
-            <li class="menu__item">
-              <a href="soft.html#SpectraYield" class="menu__link"
-                >SpectraYield </a
-              >
-            </li>
-          </ul>
+          </ul> -->
         </li>
         <li class="nav__item">
           
-          <a href="skills.html" class="nav__link link link-active"><img src="assets/img/team-icon.svg" alt="" class="nav-icon">Команда</a>
+          <a href="about.html" class="nav__link link link-active" data-lang="menu-item"><img src="assets/img/team-icon.svg" alt="" class="nav-icon"> </a>
           <ul class="nav__menu">
             <li class="menu__item">
-              <a href="skills.html" class="menu__link menu__link-active">Наши навыки</a>
+              <a href="about.html" class="menu__link" data-lang="team-menu-item"></a>
             </li>
             <li class="menu__item">
-              <a href="about.html" class="menu__link">О нас</a>
+              <a href="skills.html" class="menu__link menu__link-active" data-lang="team-menu-item"></a>
             </li>
             <li class="menu__item">
-              <a href="project.html" class="menu__link"
-                >Перспективные проекты</a
+              <a href="project.html" class="menu__link" data-lang="team-menu-item"
+                ></a
               >
             </li>
           </ul>
         </li>
         <li class="nav__item">
           
-          <a href="contacts.html" class="nav__link link"><img src="assets/img/contacts-icon.svg" alt="" class="nav-icon">Контакты</a>
+          <a href="contacts.html" class="nav__link link" data-lang="menu-item"><img src="assets/img/contacts-icon.svg" alt="" class="nav-icon"> </a>
         </li>
-        <div class="header__lang"></div>
+        <div class="header__lang">
+          <button class="header__langBtn" data-btn="ru">Ru</button>
+          <span>|</span>
+				  <button class="header__langBtn" data-btn="en">En</button>
+        </div>
       </nav>
     </header>
+    
     <main class="main skills-main">
       <img src="./assets/img/up.svg" alt="" class="up">
-      <h2 class="skills-title title">Наши навыки</h2>
+      <h2 class="title" data-lang="title"></h2>
       <div class="skills-content content">
         <div class="skills-list">
+          
           <div class="skills-item">
             <div class="skills-num">1</div>
             <div class="skills-text">
-              <h3 class="skills-text__title">Разработка программ</h3>
+              <h3 class="skills-text__title" data-lang="subtitle"></h3>
               <ul class="skills-text__desc">
-                <li class="li desc__item">
-                  Python 3 (numpy, pyqt5, scipy, opencv, pandas, <br> matplotlib,
-                  pySerial, pyUSB);
+                <li class="li desc__item" data-lang="coding-item">
+                  
                 </li>
-                <li class="li desc__item">R.</li>
+                <li class="li desc__item" data-lang="coding-item"></li>
+                <li class="li desc__item" data-lang="coding-item"></li>
+                <li class="li desc__item" data-lang="coding-item"></li>
               </ul>
             </div>
           </div>
@@ -112,16 +127,14 @@
           <div class="skills-item">
             <div class="skills-num">2</div>
             <div class="skills-text">
-              <h3 class="skills-text__title">Администрирование linux систем</h3>
+              <h3 class="skills-text__title" data-lang="subtitle"></h3>
               <ul class="skills-text__desc">
-                <li class="li desc__item">
-                  установка и настройка в качестве сервера;
+                <li class="li desc__item" data-lang="AI-item">
+                  
                 </li>
-                <li class="li desc__item">ansible;</li>
-                <li class="li desc__item">nginx;</li>
-                <li class="li desc__item">SQL;</li>
-                <li class="li desc__item">Samba;</li>
-                <li class="li desc__item">Jupyter-hub (lab, notebook).</li>
+                <li class="li desc__item" data-lang="AI-item">
+                </li>
+                <li class="li desc__item" data-lang="AI-item"></li>
               </ul>
             </div>
           </div>
@@ -129,17 +142,17 @@
           <div class="skills-item">
             <div class="skills-num">3</div>
             <div class="skills-text">
-              <h3 class="skills-text__title">Анализ данных</h3>
+              <h3 class="skills-text__title" data-lang="subtitle"></h3>
               <ul class="skills-text__desc">
-                <li class="li desc__item">статистические гипотезы и выводы;</li>
-                <li class="li desc__item">
-                  поиск, загрузка и предобработка данных;
+                <li class="li desc__item" data-lang="RandD-item">
                 </li>
-                <li class="li desc__item">
-                  обучение, валидация и развертывание моделей <br> (logistic
-                  regression, random forest, xgboost, pytorch etc.);
+                <li class="li desc__item" data-lang="RandD-item">
+                  
                 </li>
-                <li class="li desc__item">работа с временными рядами.</li>
+                <li class="li desc__item" data-lang="RandD-item">
+                  
+                </li>
+                <li class="li desc__item" data-lang="RandD-item"></li>
               </ul>
             </div>
           </div>
@@ -147,78 +160,47 @@
           <div class="skills-item">
             <div class="skills-num">4</div>
             <div class="skills-text">
-              <h3 class="skills-text__title">Прототипирование</h3>
+              <h3 class="skills-text__title" data-lang="subtitle"></h3>
               <ul class="skills-text__desc">
-                <li class="li desc__item">3D печать;</li>
-                <li class="li desc__item">лазерная резка;</li>
-                <li class="li desc__item">фрезеровка с ЧПУ;</li>
-                <li class="li desc__item">Raspberry PI;</li>
-                <li class="li desc__item">
-                  разработка плат (Altium, EasyEDA).
+                <li class="li desc__item" data-lang="deviceCreation-item">
+                </li>
+                <li class="li desc__item" data-lang="deviceCreation-item">
+                </li>
+                <li class="li desc__item" data-lang="deviceCreation-item">
+                </li>
+                <li class="li desc__item" data-lang="deviceCreation-item">
                 </li>
               </ul>
             </div>
           </div>
 
-          
-          
-          
-          <div class="skills-item">
-            <div class="skills-num">5</div>
-            <div class="skills-text">
-              <h3 class="skills-text__title">
-                Пуско-наладка в производственных условиях
-              </h3>
-              <ul class="skills-text__desc">
-                <li class="li desc__item">
-                  10 лет опыта научной работы в условиях промышленного <br>
-                  производства (АО "Апатит", г. Череповец);
-                </li>
-                <li class="li desc__item"> успешный запуск 6 устройств в промышленную практику;</li>
-                <li class="li desc__item">проведение опытно-промышленных испытаний;</li>
-                <li class="li desc__item">подключение устройств к MES-системам производства;</li>
-                <li class="li desc__item">сопровождение работы, сервис и модернизация.</li>
-              </ul>
-            </div>
-          </div>
-
-
-          <div class="skills-item">
-            <div class="skills-num">6</div>
-            <div class="skills-text"> 
-              <h3 class="skills-text__title">Изготовление устройств</h3>
-              <ul class="skills-text__desc">
-                <li class="li desc__item">по собственным чертежам;</li>
-                <li class="li desc__item">совместно с заказчиком;</li>
-                <li class="li desc__item">для лаборатории (анализ степени обработки кондиционирующими добавками);</li>
-                <li class="li desc__item">для промышленного производства (анализ гранулометрического состава).</li>
-              </ul>
-            </div>
-          </div>
         </div>
       </div>
     </main>
-    <footer class="footer footer-about">
+    <footer class="footer footer-team">
       <nav class="footer__nav nav">
+        <li class="footer__nav__item">
+          <a href="about.html" class="footer__nav__link nav__link link" data-lang="team-footer-item"
+            ></a
+          >
+        </li>
         <li class="footer__nav__item">
           <a
             href="skills.html"
             class="footer__nav__link nav__link link link-active"
-            >Наши навыки</a
+            data-lang="team-footer-item"
+            ></a
           >
         </li>
         <li class="footer__nav__item">
-          <a href="about.html" class="footer__nav__link nav__link link"
-            >О нас</a
-          >
-        </li>
-        <li class="footer__nav__item">
-          <a href="project.html" class="footer__nav__link nav__link link"
-            >Перспективные проекты</a
+          <a href="project.html" class="footer__nav__link nav__link link" data-lang="team-footer-item"
+            ></a
           >
         </li>
       </nav>
     </footer>
+
+    <script type="module" src="script/texts.js"></script>
     <script src="script/main.js"></script>
   </body>
 </html>

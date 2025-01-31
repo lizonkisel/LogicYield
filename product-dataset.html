@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="shortcut icon" href="./assets/img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./styles/product-dataset.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__logo logo">
+        <a href="index.html" class="logo__link"></a>
+        <img src="assets/img/logo.svg" alt="logo" class="logo__img" />
+      </div>
+
+      <div class="header__lang-phone">
+        <button class="header__langBtn" data-btn="ru">Ru</button>
+        <span>|</span>
+        <button class="header__langBtn" data-btn="en">En</button>
+      </div>
+      
+      <div class="header__menu menu">
+        <button class="menu__icon">
+          <span></span>
+        </button>
+      </div>
+      <nav class="header__nav nav">
+        <li class="nav__item">
+          <a href="services.html" class="nav__link link" data-lang="menu-item"
+            ><img
+              src="assets/img/services-icon.svg"
+              alt=""
+              class="nav-icon"
+            /> </a
+          >
+        </li>
+        <li class="nav__item">
+          
+          <a href="products.html" class="nav__link link link-active"><img src="assets/img/product-icon.svg" alt="" class="nav-icon">Продукты</a>
+          <ul class="nav__menu">
+            <li class="menu__item">
+              <a href="products.html" class="menu__link"
+                >DotPulse-RSC</a
+              >
+            </li>
+            <li class="menu__item">
+              <a href="product-dataset.html" class="menu__link menu__link-active"
+                >GOA dataset</a
+              >
+            </li>
+          </ul>
+        </li>
+        <li class="nav__item nav__item-soft">
+          <a href="soft.html" class="nav__link nav__link-soft link"><img src="assets/img/soft-icon.svg" alt="" class="nav-icon">Софт</a>
+          <!-- <ul class="nav__menu nav__menu-soft">
+            <li class="menu__item">
+              <a href="soft.html#DotPulse" class="menu__link">DotPulse</a>
+            </li>
+            <li class="menu__item">
+              <a href="soft.html#GOAAPI" class="menu__link">GOA API</a>
+            </li>
+            <li class="menu__item">
+              <a href="soft.html#NeuralSatellite" class="menu__link">Neural Satellite</a>
+            </li>
+            <li class="menu__item">
+              <a href="soft.html#NeuralLicencePlate" class="menu__link">Neural Licence Plate</a>
+            </li>
+          </ul> -->
+        </li>
+        <li class="nav__item">
+          
+          <a href="about.html" class="nav__link link"><img src="assets/img/team-icon.svg" alt="" class="nav-icon">Команда</a>
+          <ul class="nav__menu">
+            <li class="menu__item">
+              <a href="about.html" class="menu__link">О нас</a>
+            </li>
+            <li class="menu__item">
+              <a href="skills.html" class="menu__link">Наши навыки</a>
+            </li>
+            <li class="menu__item">
+              <a href="project.html" class="menu__link"
+                >Перспективные проекты</a
+              >
+            </li>
+          </ul>
+        </li>
+        <li class="nav__item">
+          
+          <a href="contacts.html" class="nav__link link"><img src="assets/img/contacts-icon.svg" alt="" class="nav-icon">Контакты</a>
+        </li>
+        <div class="header__lang">
+          <button class="header__langBtn" data-btn="ru">Ru</button>
+          <span>|</span>
+				  <button class="header__langBtn" data-btn="en">En</button>
+        </div>
+      </nav>
+    </header>
+    
+    <main class="main">
+      <img src="./assets/img/up.svg" alt="" class="up">
+      <div class="soft__popup">
+        <div class="popup__content">
+          <button class="popup__close">
+            <img src="assets/img/close.svg" alt="" class="close__img">
+          </button>
+          <img src="" alt="" class="popup__img">
+        </div>
+      </div>
+
+      <h2 class="title">Продукты</h2>
+      <div class="product__name">Датасет "Гранулометрический оптический анализ" (ГОА)</div>
+
+      <div class="product__desc">
+        <div>
+          <p class="peculiarities__item peculiarities__desc">
+            Наша компания разработала и предоставляет для использования по открытой лицензии (MIT) 
+            датасет с изображениями гранул минеральных удобрений.
+          </p>
+          <p class="peculiarities__item peculiarities__desc">
+            На текущий момент в датасете представлены 4 типа минеральных удобрений 
+            (ДАФ, NPF 15-15-15, аммиачная селитра и KCl). Данные получены в промышленных 
+            условиях с использованием 2 вариантов исполнения нашего устройства “DotPulse”:
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="product__peculiarities">
+        <ul class="peculiarities__info">
+          <li class="peculiarities__item">
+            <h4>Статический анализ гранул с автоматическим отбором пробы</h4>
+            Опробован на ДАФ, NPK 15-15-15, KCl. 
+            Прибор оснащен цветной камерой с rolling shutter затвором.
+          </li>
+          <li class="peculiarities__item">
+            <h4>Динамический анализ гранул в потоке</h4>
+            Опробован на KCl и аммиачной селитре.
+            Прибор оснащен высокоскоростной цветной камерой с глобальным затвором.
+          </li>
+        </ul>
+
+        <div class="swiper mySwiper-GOA">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="assets/img/GOA/58-2-1_KCl-crush.jpg" alt="KCL granules" class="gallery__img">
+              <!-- Slide 1 -->
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/img/GOA/9-1-4_DAP-BGS.jpg" alt="DAP granules" class="gallery__img">
+              <!-- Slide 2 -->
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/img/GOA/60-2-1_NH4NO3-prill.jpg" alt="NH4NO3 prills" class="gallery__img">
+              <!-- Slide 3 -->
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/img/GOA/219-2-0_NPK-AG-SB.jpg" alt="NPK granules" class="gallery__img">
+              <!-- Slide 4 -->
+            </div>
+
+          </div>
+          <div class="swiper-pagination swiper-pagination-GOA"></div>
+          <div class="swiper-button-next swiper-button-next-GOA"></div>
+          <div class="swiper-button-prev swiper-button-prev-GOA"></div>
+        </div>
+
+    </div>
+
+    <div class="datasetInfo__field">
+        <h3 class="datasetInfo__title">Информация о датасете</h3>
+        <div class="datasetInfo__items">
+          <img class="datasetInfo__item" src="assets/img/GOA/color_total.png" alt="">
+          <img class="datasetInfo__item" src="assets/img/GOA/violins_cranules_num.png" alt="">
+        </div>
+    </div>
+
+    <div class="product__specifications specifications__field">
+      <h3 class="peculiarities__title specifications__title">Характеристики датасета</h3>
+
+      <table class="specifications__table">
+        <thead>
+            <tr>
+                <th class="th-left td-firstColumn">Тип гранул</th>
+                <th class="th-left">Количество изображений</th>
+                <th class="th-left">Общее количество гранул</th>
+                <th class="th-left">Сред. кол-во гранул на изобр.</th>
+                <th class="th-left th-lastColumn">Сред. кол-во пикселей <br> на гранулу на изобр., %</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="td-main td-firstColumn">ДАФ</td>
+                <td class="td-main">3182</td>
+                <td class="td-main">30335</td>
+                <td class="td-main">10</td>
+                <td class="td-main td-lastColumn">4</td>
+            </tr>
+            <tr>
+                <td class="td-main td-firstColumn">Хлорид калия</td>
+                <td class="td-main">216</td>
+                <td class="td-main">23718</td>
+                <td class="td-main">130</td>
+                <td class="td-main td-lastColumn">76</td>
+            </tr>
+            <tr>
+                <td class="td-main td-firstColumn">Нитрат аммония</td>
+                <td class="td-main">4</td>
+                <td class="td-main">1912</td>
+                <td class="td-main">361</td>
+                <td class="td-main td-lastColumn">84</td>
+            </tr>
+            <tr>
+                <td class="td-main td-firstColumn">NPK 15-15-15</td>
+                <td class="td-main">45</td>
+                <td class="td-main">1094</td>
+                <td class="td-main">24</td>
+                <td class="td-main td-lastColumn">8</td>
+            </tr>
+            <tr>
+              <td class="td-main td-lastRow td-firstColumn">Всего:</td>
+              <td class="td-main td-lastRow">3447</td>
+              <td class="td-main td-lastRow">57059</td>
+              <td class="td-main td-lastRow">131</td>
+              <td class="td-main td-lastRow td-lastColumn">43</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>  
+    </main>
+
+    <footer class="footer">
+        <nav class="footer__nav nav">
+            <li class="footer__nav__item">
+              <a href="products.html" class="footer__nav__link nav__link link"
+                >DotPulse-RSC</a
+              >
+            </li>
+            <li class="footer__nav__item">
+              <a
+                href="product-dataset.html"
+                class="footer__nav__link nav__link link link-active"
+                >GOA dataset</a
+              >
+            </li>
+          </nav>
+    </footer>
+    
+    <script type="module" src="script/texts.js"></script>
+    <script src="script/main.js"></script>
+    <script type="module" src="script/product-dataset.js" ></script>
+  </body>
+</html>

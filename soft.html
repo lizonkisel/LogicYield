@@ -4,9 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>LogicYield — Software</title>
     <link rel="shortcut icon" href="./assets/img/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./styles/soft.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
@@ -16,7 +17,7 @@
     />
     <link
       rel="stylesheet"
-      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
   </head>
   <body id="body">
@@ -25,6 +26,13 @@
         <a href="index.html" class="logo__link"></a>
         <img src="assets/img/logo.svg" alt="logo" class="logo__img" />
       </div>
+
+      <div class="header__lang-phone">
+        <button class="header__langBtn" data-btn="ru">Ru</button>
+        <span>|</span>
+        <button class="header__langBtn" data-btn="en">En</button>
+      </div>
+
       <div class="header__menu menu">
         <button class="menu__icon">
           <span></span>
@@ -32,85 +40,96 @@
       </div>
       <nav class="header__nav nav">
         <li class="nav__item">
-          <a href="products.html" class="nav__link link"
+          <a href="services.html" class="nav__link link" data-lang="menu-item"
+            ><img
+              src="assets/img/services-icon.svg"
+              alt=""
+              class="nav-icon"
+            /> </a
+          >
+        </li>
+        <li class="nav__item">
+          <a href="products.html" class="nav__link link" data-lang="menu-item"
             ><img
               src="assets/img/product-icon.svg"
               alt=""
               class="nav-icon"
-            />Продукты</a
+            /> </a
           >
           <ul class="nav__menu">
             <li class="menu__item">
               <a href="products.html" class="menu__link">DotPulse-RSC</a>
             </li>
             <li class="menu__item">
-              <a href="products-lua.html" class="menu__link">UVYield</a>
+              <a href="product-dataset.html" class="menu__link"
+                >GOA dataset</a
+              >
             </li>
           </ul>
         </li>
         <li class="nav__item nav__item-soft">
-          <a href="soft.html" class="nav__link nav__link-soft link link-active"
+          <a href="soft.html" class="nav__link nav__link-soft link link-active" data-lang="menu-item"
             ><img
               src="assets/img/soft-icon.svg"
               alt=""
               class="nav-icon"
-            />Софт</a
+            /> </a
           >
-          <ul class="nav__menu nav__menu-soft">
+          <!-- <ul class="nav__menu nav__menu-soft">
             <li class="menu__item">
               <a href="soft.html#DotPulse" class="menu__link">DotPulse</a>
             </li>
             <li class="menu__item">
-              <a href="soft.html#UVYield" class="menu__link">UVYield</a>
+              <a href="soft.html#GOAAPI" class="menu__link">GOA API</a>
             </li>
             <li class="menu__item">
-              <a href="soft.html#SaltYield" class="menu__link">SaltYield</a>
+              <a href="soft.html#NeuralSatellite" class="menu__link">Neural Satellite</a>
             </li>
             <li class="menu__item">
-              <a href="soft.html#VideoYield" class="menu__link">VideoYield</a>
+              <a href="soft.html#NeuralLicencePlate" class="menu__link">Neural Licence Plate</a>
             </li>
-            <li class="menu__item">
-              <a href="soft.html#SpectraYield" class="menu__link"
-                >SpectraYield
-              </a>
-            </li>
-          </ul>
+          </ul> -->
         </li>
         <li class="nav__item">
-          <a href="skills.html" class="nav__link link"
+          <a href="about.html" class="nav__link link" data-lang="menu-item"
             ><img
               src="assets/img/team-icon.svg"
               alt=""
               class="nav-icon"
-            />Команда</a
+            /> </a
           >
           <ul class="nav__menu">
             <li class="menu__item">
-              <a href="skills.html" class="menu__link">Наши навыки</a>
+              <a href="about.html" class="menu__link" data-lang="team-menu-item"></a>
             </li>
             <li class="menu__item">
-              <a href="about.html" class="menu__link">О нас</a>
+              <a href="skills.html" class="menu__link" data-lang="team-menu-item"></a>
             </li>
             <li class="menu__item">
-              <a href="project.html" class="menu__link"
-                >Перспективные проекты</a
+              <a href="project.html" class="menu__link" data-lang="team-menu-item"
+                ></a
               >
             </li>
           </ul>
         </li>
         <li class="nav__item">
-          <a href="contacts.html" class="nav__link link"
+          <a href="contacts.html" class="nav__link link" data-lang="menu-item"
             ><img
               src="assets/img/contacts-icon.svg"
               alt=""
               class="nav-icon"
-            />Контакты</a
+            /> </a
           >
         </li>
-        <div class="header__lang"></div>
+        <div class="header__lang">
+          <button class="header__langBtn" data-btn="ru">Ru</button>
+          <span>|</span>
+				  <button class="header__langBtn" data-btn="en">En</button>
+        </div>
       </nav>
     </header>
-    <main class="main product-main soft-main">
+
+    <main class="main soft-main">
       <img src="./assets/img/up.svg" alt="" class="up">
       <div class="soft__popup">
         <div class="popup__content">
@@ -120,288 +139,199 @@
           <img src="" alt="" class="popup__img" />
         </div>
       </div>
-      <h2 class="product__title soft-title main__title title">Софт</h2>
-      <div class="product__desc soft-desc">
-        <div class="desc__devcomm soft-devcomm">
-          <img src="assets/img/developer-3.png" alt="" class="devcomm__img" />
-          <div class="devcomm__text">
-            «На счету нашей команды несколько уникальных программных проектов
-            для производственных лабораторий и промышленности. »
-          </div>
-        </div>
-      </div>
-      <div class="soft__cards cards">
-        <div class="cards__item" id="DotPulse">
-          <h3 class="card__title-phone">DotPulse (в эксплуатации)</h3>
-          <div class="swiper mySwiper1">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <img
-                  src="assets/img/DotPulse_1.png"
-                  alt=""
-                  class="card__img card__img-active"
-                />
-              </div>
-              <div class="swiper-slide">
-                <img src="assets/img/DotPulse_2.png" alt="" class="card__img" />
-              </div>
-              <div class="swiper-slide">
-                <img src="assets/img/DotPulse_3.png" alt="" class="card__img" />
-              </div>
-              <div class="swiper-slide">
-                <img src="assets/img/DotPulse_4.png" alt="" class="card__img" />
-              </div>
-              <div class="swiper-slide">
-                <img src="assets/img/DotPulse_5.png" alt="" class="card__img" />
-              </div>
-            </div>
-            <div class="swiper-button-next swiper-button-next1"></div>
-            <div class="swiper-button-prev swiper-button-prev1"></div>
-          </div>
-          <div class="card__info">
-            <h3 class="card__title">DotPulse (в эксплуатации)</h3>
-            <ul class="card__list">
-              <li class="card__list__item">
-                анализ гранулометрического состава;
-              </li>
-              <li class="card__list__item">
-                статистический анализ изображений с гранулами или элиптическими
-                формами (цвет, сферичность, размеры осей, площадь);
-              </li>
-              <li class="card__list__item">
-                ведение базы измеренных образцов (изображения, расчеты);
-              </li>
-              <li class="card__list__item">
-                возможность работы в ручном и автоматическом режиме;
-              </li>
-              <li class="card__list__item">
-                возможность задавать пользователей и доступ по паролю;
-              </li>
-              <li class="card__list__item">
-                возможность портирования на сенсорные устройства.
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="cards__item" id="UVYield">
-          <h3 class="card__title-phone">UVYield (тестовая версия)</h3>
-          <div class="swiper mySwiper1">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <img
-                  src="assets/img/UVYield_1.jpg"
-                  alt=""
-                  class="card__img card__img-active"
-                />
-              </div>
-              <div class="swiper-slide">
-                <img
-                  src="assets/img/UVYield_2.png"
-                  alt=""
-                  class="card__img"
-                />
-              </div>
-              <div class="swiper-slide">
-                <img src="assets/img/UVYield_3.png" alt="" class="card__img" />
-              </div>
-              <div class="swiper-slide">
-                <img
-                  src="assets/img/UVYield_4.png"
-                  alt=""
-                  class="card__img"
-                />
-              </div>
-              <div class="swiper-slide">
-                <img src="assets/img/UVYield_5.png" alt="" class="card__img" />
+      <h2 class="title underlinedTitle" data-lang="title"></h2>
+      <div class="cards">
+        <div class="swiper mySwiperMain">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="cards__item" id="DotPulse">
+                <h3 class="card__title-phone" data-lang="card-title"></h3>
+                <div class="swiper mySwiper1 noSwipeGallery">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <img
+                        src="assets/img/soft/dotPulse/interface1.png"
+                        alt=""
+                        class="card__img card__img-active"
+                      />
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="assets/img/soft/dotPulse/interface2.png" alt="" class="card__img" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="assets/img/soft/dotPulse/interface3.png" alt="" class="card__img" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="assets/img/soft/dotPulse/interface4.png" alt="" class="card__img" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="assets/img/soft/dotPulse/KCl_split_recog.png" alt="" class="card__img" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="assets/img/soft/dotPulse/KCl_split_recog_2.png" alt="" class="card__img" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="assets/img/soft/dotPulse/image_for_calibration3.png" alt="" class="card__img" />
+                    </div>
+                  </div>
+                  <div class="swiper-pagination swiper-pagination1"></div>
+                </div>
+                <div class="card__info">
+                  <h3 class="card__title" data-lang="card-title"></h3>
+                  <p class="card__desc" data-lang="card-desc">
+                  </p>
+                  <h4 class="card__subtitle" data-lang="card-subtitle"></h4>
+                  <ul class="card__list">
+                    <li class="card__list__item" data-lang="dotPulse-card-item">
+
+                    </li>
+                    <li class="card__list__item" data-lang="dotPulse-card-item">
+                    </li>
+                    <li class="card__list__item" data-lang="dotPulse-card-item">
+                    </li>
+                    <li class="card__list__item" data-lang="dotPulse-card-item">
+                    </li>
+                    <li class="card__list__item" data-lang="dotPulse-card-item">
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
-            <div class="swiper-button-next swiper-button-next1"></div>
-            <div class="swiper-button-prev swiper-button-prev1"></div>
-          </div>
-          <div class="card__info">
-            <h3 class="card__title">UVYield (тестовая версия)</h3>
-            <ul class="card__list">
-              <li class="card__list__item swiper-2">
-                анализ флуоресценции под действием УФ;
-              </li>
-              <li class="card__list__item">
-                расчет полноты и яркости свечения;
-              </li>
-              <li class="card__list__item">
-                ведение базы измеренных образцов (изображения, расчеты);
-              </li>
-              <li class="card__list__item">
-                возможность работы в ручном и автоматическом режиме;
-              </li>
-              <li class="card__list__item">
-                возможность задавать пользователей и доступ по паролю;
-              </li>
-              <li class="card__list__item">
-                возможность портирования на сенсорные устройства.
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="cards__item" id="SaltYield">
-          <h3 class="card__title-phone">SaltIndex (в разработке)</h3>
-          <div class="swiper mySwiper1">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <img
-                  src="assets/img/SaltIndex_1.png"
-                  alt=""
-                  class="card__img card__img-active"
-                />
+            <div class="swiper-slide">
+              <div class="cards__item" id="GOAAPI">
+                <h3 class="card__title-phone" data-lang="card-title"></h3>
+                <div class="swiper mySwiper2 noSwipeGallery">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <img
+                        src="assets/img/soft/GOAAPI/goa1.png"
+                        alt=""
+                        class="card__img card__img-active"
+                      />
+                    </div>
+                    <div class="swiper-slide">
+                      <img
+                        src="assets/img/soft/GOAAPI/goa2.png"
+                        alt=""
+                        class="card__img"
+                      />
+                    </div>
+                    <div class="swiper-slide">
+                      <img
+                        src="assets/img/soft/GOAAPI/goa3.png"
+                        alt=""
+                        class="card__img"
+                      />
+                    </div>
+                    <div class="swiper-slide">
+                      <img
+                        src="assets/img/soft/GOAAPI/goa4.png"
+                        alt=""
+                        class="card__img"
+                      />
+                    </div>
+                  </div>
+                  <div class="swiper-pagination swiper-pagination2"></div>
+                </div>
+                <div class="card__info">
+                  <h3 class="card__title" data-lang="card-title"></h3>
+                  <p class="card__desc" data-lang="card-desc">
+                  </p>
+                  <ul class="card__list">
+                    <li class="card__list__item swiper-2" data-lang="GOA-card-item">
+                    </li>
+                    <li class="card__list__item" data-lang="GOA-card-item">
+                    </li>
+                    <li class="card__list__item" data-lang="GOA-card-item">
+                    </li>
+                    <li class="card__list__item" data-lang="GOA-card-item">
+                    </li>
+                  </ul>
+                </div>
               </div>
-              <div class="swiper-slide">
-                <img src="assets/img/SaltIndex_1.png" alt="" class="card__img" />
-              </div>
-            </div>
-            <div class="swiper-button-next swiper-button-next1"></div>
-            <div class="swiper-button-prev swiper-button-prev1"></div>
-          </div>
-          <div class="card__info">
-            <h3 class="card__title">SaltIndex (в разработке)</h3>
-            <ul class="card__list">
-              <li class="card__list__item">
-                теоретический расчет солевого индекса для минеральных удобрений;
-              </li>
-              <li class="card__list__item">
-                расчет по проводимости с использование базы данных измеренных
-                образцов;
-              </li>
-              <li class="card__list__item">составление отчетов;</li>
-              <li class="card__list__item">
-                возможность задавать пользователей и доступ по паролю;
-              </li>
-              <li class="card__list__item">
-                возможность портирования на сенсорные устройства.
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="cards__item" id="VideoYield">
-          <h3 class="card__title-phone">VideoYield (тестовая версия)</h3>
-          <div class="swiper mySwiper1">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <img
-                  src="assets/img/VideoYield_1.png"
-                  alt=""
-                  class="card__img card__img-active"
-                />
-              </div>
-              <div class="swiper-slide">
-                <img src="assets/img/VideoYield_2.png" alt="" class="card__img" />
-              </div>
-              <div class="swiper-slide">
-                <img
-                  src="assets/img/VideoYield_3.png"
-                  alt=""
-                  class="card__img"
-                />
-              </div>
-              <div class="swiper-slide">
-                <img src="assets/img/VideoYield_4.png" alt="" class="card__img" />
-              </div>
-              <div class="swiper-slide">
-                <img src="assets/img/VideoYield_5.png" alt="" class="card__img" />
-              </div>
-            </div>
-            <div class="swiper-button-next swiper-button-next1"></div>
-            <div class="swiper-button-prev swiper-button-prev1"></div>
-          </div>
-          <div class="card__info">
-            <h3 class="card__title">VideoYield (тестовая версия)</h3>
-            <ul class="card__list">
-              <li class="card__list__item">
-                возможность видео-мониторинга эксперимента (например, для
-                микроскопов);
-              </li>
-              <li class="card__list__item">запись и сжатие видео;</li>
-              <li class="card__list__item">
-                возможность сохранения изображений;
-              </li>
-              <li class="card__list__item">
-                мониторинг цвета, площадей и изменений;
-              </li>
-              <li class="card__list__item">
-                возможность маркирования расстояний на изображении;
-              </li>
-              <li class="card__list__item">
-                возможность задавать количество кадров в сек., мин., час.;
-              </li>
-              <li class="card__list__item">
-                возможность просмотра видео и фотографий.
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="cards__item" id="SpectraYield">
-          <h3 class="card__title-phone">DSpectra (в эксплуатации)</h3>
-          <div class="swiper mySwiper1">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <img
-              src="assets/img/SpectraYield_1.png"
-              alt=""
-              class="card__img card__img-active"
-            />
-              </div>
-              <div class="swiper-slide">
-                <img src="assets/img/SpectraYield_2.png" alt="" class="card__img" />
-              </div>
-              <div class="swiper-slide">
-                <img src="assets/img/SpectraYield_3.png" alt="" class="card__img" />
-              </div>
-              <div class="swiper-slide">
-                <img src="assets/img/SpectraYield_4.png" alt="" class="card__img" />
-              </div>
-              <div class="swiper-slide">
-                <img
-              src="assets/img/SpectraYield_5.png"
-              alt=""
-              class="card__img"
-            />
-              </div>
-              <div class="swiper-slide">
-                <img src="assets/img/SpectraYield_6.jpeg" alt="" class="card__img" />
-              </div>
-              <div class="swiper-slide">
-                <img src="assets/img/SpectraYield_7.png" alt="" class="card__img" />
+            </div>  
+            <div class="swiper-slide">
+              <div class="cards__item" id="NeuralLicencePlate">
+                <h3 class="card__title-phone" data-lang="card-title"></h3>
+                <div class="swiper mySwiper3 noSwipeGallery">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <img
+                        src="assets/img/soft/neuralLicencePlate/plate1.png"
+                        alt=""
+                        class="card__img card__img-active"
+                      />
+                    </div>
+                    <div class="swiper-slide">
+                      <img
+                      src="assets/img/soft/neuralLicencePlate/plate2.png"
+                        alt=""
+                        class="card__img"
+                      />
+                    </div>
+                    <div class="swiper-slide">
+                      <img
+                      src="assets/img/soft/neuralLicencePlate/plate3.png"
+                        alt=""
+                        class="card__img"
+                      />
+                    </div>
+                    <div class="swiper-slide">
+                      <img
+                      src="assets/img/soft/neuralLicencePlate/plate4.png"
+                        alt=""
+                        class="card__img"
+                      />
+                    </div>
+                    <div class="swiper-slide">
+                      <img
+                      src="assets/img/soft/neuralLicencePlate/plate5.png"
+                        alt=""
+                        class="card__img"
+                      />
+                    </div>
+                  </div>
+                  <div class="swiper-pagination swiper-pagination3"></div>
+                </div>
+                <div class="card__info">
+                  <h3 class="card__title" data-lang="card-title"></h3>
+                  <ul class="card__list">
+                    <li class="card__list__item" data-lang="NeuralLicencePlate-card-item">
+                    </li>
+                    <li class="card__list__item" data-lang="NeuralLicencePlate-card-item"></li>
+                    <li class="card__list__item" data-lang="NeuralLicencePlate-card-item">
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
-            <div class="swiper-button-next swiper-button-next1"></div>
-            <div class="swiper-button-prev swiper-button-prev1"></div>
+            <div class="swiper-slide">
+              <div class="cards__item" id="NeuralSatellite">
+                <h3 class="card__title-phone" data-lang="card-title"></h3>
+                <div class="card__info">
+                  <h3 class="card__title" data-lang="card-title"></h3>
+                  <ul class="card__list">
+                    <li class="card__list__item" data-lang="NeuralSatellite-card-item">
+                    </li>
+                    <li class="card__list__item" data-lang="NeuralSatellite-card-item">
+                    </li>
+                    <li class="card__list__item" data-lang="NeuralSatellite-card-item">
+                    </li>
+                    <li class="card__list__item" data-lang="NeuralSatellite-card-item">
+                    </li>
+                    <li class="card__list__item" data-lang="NeuralSatellite-card-item">
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="card__info">
-            <h3 class="card__title">DSpectra (в эксплуатации)</h3>
-            <ul class="card__list">
-              <li class="card__list__item">
-                анализ энергодисперсионной рентгеноспектральной информации;
-              </li>
-              <li class="card__list__item">
-                загрузка, сглаживание и разделения спектров;
-              </li>
-              <li class="card__list__item">
-                выделение характеристических линий элементов;
-              </li>
-              <li class="card__list__item">
-                расчет интенсивностей и площадей характеристических линий;
-              </li>
-              <li class="card__list__item">
-                построение линейной множественной регрессии;
-              </li>
-              <li class="card__list__item">составление отчетов;</li>
-              <li class="card__list__item">
-                возможность управления энергодисперсионными ренгеновскими
-                спектрометрами (при наличии спецификаций для протоколов).
-              </li>
-            </ul>
-          </div>
+          <div class="swiper-button-next swiper-button-next_main"></div>
+          <div class="swiper-button-prev swiper-button-prev_main"></div>
         </div>
       </div>
     </main>
+    <script type="module" src="script/texts.js"></script>
     <script src="script/soft.js" type="module"></script>
     <script src="script/main.js"></script>
   </body>

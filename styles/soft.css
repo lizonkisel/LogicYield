@@ -1,0 +1,299 @@
+.soft-main {
+  padding-bottom: 90px;
+}
+
+/* Основная галерея */
+
+.mySwiperMain {
+  width: 80vw;
+  max-width: 1400px;
+  padding: 0 60px 0 60px !important;
+}
+
+.mySwiperMain > .swiper-wrapper {
+  width: 80vw;
+}
+
+
+.swiper-button-prev,
+.swiper-button-next {
+  opacity: .6;
+  transition: all 0.5s ease;
+}
+
+.swiper-button-prev:after {
+  color: #3d8e30 !important;
+}
+
+.swiper-button-next:after {
+  color: #3d8e30 !important;
+}
+
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+  opacity: 1;
+}
+
+.swiper-button-prev:hover {
+  text-shadow: #3d8e30 -7px 0 10px;
+}
+
+.swiper-button-next:hover {
+  text-shadow: #3d8e30 7px 0 10px;
+}
+
+
+
+.cards {
+  margin-top: 28px;
+}
+
+.cards__item {
+  height: 50vh;
+  max-height: 600px;
+  background: #2b5c24;
+  border-radius: 20px;
+  padding: 36px 72px 36px 72px;
+  box-sizing: content-box;
+  display: flex;
+  align-self: center;
+  align-items: center;
+  justify-content: center;
+  gap: 48px;
+}
+
+.card__info {
+  max-width: 80%;
+}
+
+.card__title {
+  font-size: calc(1.8vmax);
+  margin: 0 0 8px 0;
+}
+
+.card__desc {
+  font-size: calc(1.8vmin);
+  margin: 0 0 12px 0;
+}
+
+.card__subtitle {
+  font-size: calc(1vmax);
+  margin: 8px 0 8px 0;
+}
+
+.card__list {
+  font-size: calc(1vmax);
+}
+
+.card__list__item {
+  list-style: disc;
+  margin: 8px 0 8px 20px;
+}
+
+.card__list__item:first-of-type {
+  margin: 0 0 8px 20px;
+}
+
+.card__list__item:last-of-type {
+  margin: 8px 0 0 20px;
+}
+
+.card__title-phone {
+  display: none;
+}
+
+/* Галерея внутри карточки */
+
+.cards__item .swiper {
+  max-width: 35%;
+  min-width: 35%;
+  height: 100%;
+  /* Не ясно, зачем тут flex. Но пока оставлю */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 !important;
+}
+
+.cards__item .swiper-slide{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cards__item .card__img{
+  display: flex;
+  width: 90%;
+  border-radius: 10px;
+}
+
+.swiper-pagination-bullet {
+  background-color: #111 !important;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #fff !important;
+}
+
+
+@media screen and (min-width: 1400px) {
+  .card__title {
+    font-size: 28px;
+    margin: 0 0 16px 0;
+  }
+}
+
+@media screen and (min-width: 1800px) {
+
+  .card__title {
+    font-size: 32px;
+    margin: 0 0 20px 0;
+  }
+
+  .card__desc {
+    font-size: 20px;
+    margin: 0 0 16px 0;
+  }
+  
+  .card__subtitle {
+    font-size: 20px;
+    margin: 12px 0 12px 0;
+  }
+
+  .card__list {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+
+  /* Не проверено */
+  .cards__item {
+    width: 90vw;
+    background: #2b5c24;
+    border-radius: 20px;
+    padding: 5%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+  }
+
+  /* Не проверено */
+  .card__title {
+    font-size: 2vw;
+    display: none;
+  }
+
+  /* Не проверено */
+  .card__title-phone {
+    display: inline;
+    font-size: 3vw;
+  }
+
+  /* Не проверено */
+  .card__list {
+    font-size: 2.5vw;
+  }
+}
+
+@media screen and (max-width: 900px) {
+
+  .soft-main {
+    max-width: 100vw;
+    overflow-x: hidden;
+    padding-bottom: 120px;
+  }
+
+  .cards {
+    margin-top: 12px;
+  }
+
+  .card__title-phone {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .mySwiperMain {
+    width: 90vw;
+    height: auto;
+    max-width: 400px;
+    padding: 0 0 0 0 !important;
+    overflow: visible !important;
+    margin-top: 16% !important;
+  }
+
+  .swiper-button-prev,
+  .swiper-button-next {
+    /* top: 106% !important; */
+    top: -3.5% !important;
+    opacity: 1;
+  }
+
+  .swiper-button-prev:hover,
+  .swiper-button-next:hover {
+    text-shadow: none;
+  }
+
+  .swiper-button-prev {
+    left: 30% !important;
+  }
+
+  .swiper-button-next {
+    left: 60% !important;
+  }
+  
+  .cards__item {
+    width: 90%;
+    padding: 8% 5%;
+    flex-direction: column;
+    gap: 20px;
+    height: auto;
+    max-height: 100%;
+  }
+
+  .cards__item .swiper{
+    height: 40%;
+    width: 90% !important;
+    max-width: 90% !important;
+    min-width: 90% !important;
+  }
+
+  .cards__item .card__img {
+    width: 90%;
+  }
+
+  .swiper-pagination {
+    display: none;
+  }
+
+  .card__info {
+    max-width: 100%;
+  }
+
+  .card__desc {
+    font-size: 16px;
+  }
+  
+  .card__subtitle {
+    font-size: 16px;
+    margin: 12px 0 12px 0;
+  }
+  
+  .card__list {
+    font-size: 16px;
+  }
+  
+  .card__list__item {
+    margin: 12px 0 12px 20px;
+  }
+  
+  .card__list__item:first-of-type {
+    margin: 0 0 12px 20px;
+  }
+  
+  .card__list__item:last-of-type {
+    margin: 12px 0 0 20px;
+  }
+}

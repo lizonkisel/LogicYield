@@ -4,9 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>LogicYield — Contacts</title>
     <link rel="shortcut icon" href="./assets/img/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./styles/contacts.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
@@ -17,6 +18,13 @@
         <a href="index.html" class="logo__link"></a>
         <img src="assets/img/logo.svg" alt="logo" class="logo__img" />
       </div>
+
+      <div class="header__lang-phone">
+        <button class="header__langBtn" data-btn="ru">Ru</button>
+        <span>|</span>
+        <button class="header__langBtn" data-btn="en">En</button>
+      </div>
+
       <div class="header__menu menu">
         <button class="menu__icon">
           <span></span>
@@ -24,8 +32,17 @@
       </div>
       <nav class="header__nav nav">
         <li class="nav__item">
+          <a href="services.html" class="nav__link link" data-lang="menu-item"
+            ><img
+              src="assets/img/services-icon.svg"
+              alt=""
+              class="nav-icon"
+            /> </a
+          >
+        </li>
+        <li class="nav__item">
           
-          <a href="products.html" class="nav__link link"><img src="assets/img/product-icon.svg" alt="" class="nav-icon">Продукты</a>
+          <a href="products.html" class="nav__link link" data-lang="menu-item"><img src="assets/img/product-icon.svg" alt="" class="nav-icon"> </a>
           <ul class="nav__menu">
             <li class="menu__item">
               <a href="products.html" class="menu__link"
@@ -33,123 +50,91 @@
               >
             </li>
             <li class="menu__item">
-              <a href="products-lua.html" class="menu__link"
-                >UVYield</a
+              <a href="product-dataset.html" class="menu__link"
+                >GOA dataset</a
               >
             </li>
           </ul>
         </li>
         <li class="nav__item nav__item-soft">
-          <a href="soft.html" class="nav__link nav__link-soft link"><img src="assets/img/soft-icon.svg" alt="" class="nav-icon">Софт</a>
-          <ul class="nav__menu nav__menu-soft">
+          <a href="soft.html" class="nav__link nav__link-soft link" data-lang="menu-item"><img src="assets/img/soft-icon.svg" alt="" class="nav-icon"> </a>
+          <!-- <ul class="nav__menu nav__menu-soft">
             <li class="menu__item">
               <a href="soft.html#DotPulse" class="menu__link">DotPulse</a>
             </li>
             <li class="menu__item">
-              <a href="soft.html#UVYield" class="menu__link">UVYield</a>
+              <a href="soft.html#GOAAPI" class="menu__link">GOA API</a>
             </li>
             <li class="menu__item">
-              <a href="soft.html#SaltYield" class="menu__link"
-                >SaltYield</a
-              >
+              <a href="soft.html#NeuralSatellite" class="menu__link">Neural Satellite</a>
             </li>
             <li class="menu__item">
-              <a href="soft.html#VideoYield" class="menu__link"
-                >VideoYield</a
-              >
+              <a href="soft.html#NeuralLicencePlate" class="menu__link">Neural Licence Plate</a>
             </li>
-            <li class="menu__item">
-              <a href="soft.html#SpectraYield" class="menu__link"
-                >SpectraYield </a
-              >
-            </li>
-          </ul>
+          </ul> -->
         </li>
         <li class="nav__item">
           
-          <a href="skills.html" class="nav__link link"><img src="assets/img/team-icon.svg" alt="" class="nav-icon">Команда</a>
+          <a href="about.html" class="nav__link link" data-lang="menu-item"><img src="assets/img/team-icon.svg" alt="" class="nav-icon"> </a>
           <ul class="nav__menu">
             <li class="menu__item">
-              <a href="skills.html" class="menu__link">Наши навыки</a>
+              <a href="about.html" class="menu__link" data-lang="team-menu-item"></a>
             </li>
             <li class="menu__item">
-              <a href="about.html" class="menu__link">О нас</a>
+              <a href="skills.html" class="menu__link" data-lang="team-menu-item"></a>
             </li>
             <li class="menu__item">
-              <a href="project.html" class="menu__link"
-                >Перспективные проекты</a
+              <a href="project.html" class="menu__link" data-lang="team-menu-item"
+                ></a
               >
             </li>
           </ul>
         </li>
         <li class="nav__item">
           
-          <a href="contacts.html" class="nav__link link link-active"><img src="assets/img/contacts-icon.svg" alt="" class="nav-icon">Контакты</a>
+          <a href="contacts.html" class="nav__link link link-active" data-lang="menu-item"><img src="assets/img/contacts-icon.svg" alt="" class="nav-icon"> </a>
         </li>
-        <div class="header__lang"></div>
+        <div class="header__lang">
+          <button class="header__langBtn" data-btn="ru">Ru</button>
+          <span>|</span>
+				  <button class="header__langBtn" data-btn="en">En</button>
+        </div>
       </nav>
     </header>
-    <main class="main contacts-main">
+
+    <main class="main">
       <img src="./assets/img/up.svg" alt="" class="up">
-      <h2 class="title main__title contacts__title">Контакты</h2>
+      <h2 class="title underlinedTitle" data-lang="title"></h2>
       <div class="main__content contacts-main__content">
-        <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSf03N6Hj1tvaL3723KG9rTPLps2BpascLswuKkAmQb8BxN1sA/formResponse" class="main__form form" method="POST">
-          <legend class="form__legend legend">Напишите нам!</legend>
-          <input type="text" class="form__input _name _req" name="entry.1191637883"  placeholder="Ваше имя" />
-          <input
-            type="email"
-            class="form__input _email _req"
-            name="entry.1945015567"
-            placeholder="Адрес электронной почты"
-            
-          />
-          <input
-            type="tel"
-            class="form__input _tel"
-            name="entry.1988770167"
-            placeholder="Номер телефона (опционально)"
-          />
-          <textarea
-            class="form__textarea form__input _textarea _req"
-            name=""
-            name="entry.825778905"
-            placeholder="Интересующая информация (услуга, вопросы сотрудничества и т.д.)"
-          ></textarea>
-          <label class="checkbox__label form__input">
-            
-            
-            <input class="form__checbox _checbox _req" type="checkbox" name=""  /><span class="checbox__placeholder"></span>Даю
-            согласие на обработку персональных данных
-            
-          </label>
-          <button type="submit" class="form__input _submit">Связаться</button>
-        </form>
         <div class="main__map map">
-          <h3 class="map__title">Мы на карте</h3>
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2046.943723529172!2d37.900973046216016!3d59.13334170772633!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46afb79796da94f5%3A0x44bbd50d4a8d4f5b!2z0YPQuy4g0L_RgC3Rgi4g0J_QvtCx0LXQtNGLLCAxMiwg0KfQtdGA0LXQv9C-0LLQtdGGLCDQktC-0LvQvtCz0L7QtNGB0LrQsNGPINC-0LHQuy4sIDE2MjYwNg!5e0!3m2!1sru!2sru!4v1636566626132!5m2!1sru!2sru"
-            style="border: 0"
-            class="map__frame"
-            allowfullscreen=""
-            loading="lazy"
-          ></iframe>
+          <div>
+            <h3 class="map__title" data-lang="map-title"></h3>
+            <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A4e5091177a1f1508f317bb5e5ee2d3c1e058f80751c8e96381ebc00f8f049225&amp;source=constructor" 
+              class="map__frame"
+              loading="lazy"
+              frameborder="0">
+            </iframe>
+          </div>
           <div class="map__address">
-            <h3 class="address__title">Адрес</h3>
-            <span class="address__text">
-              г. Череповец, проспект Победы, д. 12, <br />
-              лаборатория 411
-            </span>
-            <h3 class="address__title">Руководитель команды:</h3>
-            <span class="address__text">Юновидов Дмитрий,</span> <br />
-            <a href="tel:+79636407572" class="map__tel">тел.: +79636407572</a
-            ><br />
-            <a href="mailto:Dm.Yunovidov@gmail.com" class="map__email"
-              >e-mail: Dm.Yunovidov@gmail.com</a
-            >
+            <div>
+              <h3 class="address__title" data-lang="address-title"></h3>
+              <p class="address__text" data-lang="address-text">
+              </p>
+            </div>
+            <div>
+              <h3 class="address__title" data-lang="address-title"></h3>
+              <p class="address__text" data-lang="address-text"></p>
+              <a href="tel:+79611121089" class="map__tel" data-lang="contact-data"></a
+              ><br />
+              <a href="mailto:logicyield@mail.ru" class="map__email" data-lang="contact-data"
+                ></a
+              >
+            </div>
           </div>
         </div>
       </div>
     </main>
+    <script type="module" src="script/texts.js"></script>
     <script src="script/contacts.js"></script>
     <script src="script/main.js"></script>
   </body>
