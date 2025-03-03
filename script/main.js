@@ -40,6 +40,31 @@ window.addEventListener("DOMContentLoaded", () => {
     }
   })
  
+  /* Может переместить этот раздел с куками ниже? */
+
+  const legalPopupWrapper = document.querySelector(".popupLegal__wrapper");
+  const legalPopupButton = document.querySelector(".popupLegal__button");
+
+  legalPopupButton.addEventListener("click", closeLegalPopup);
+
+  function closeLegalPopup(e) {
+    legalPopupWrapper.style.display = "none";
+    Cookies.set('legalAgreement', 'true', { expires: 7 })
+    legalPopupButton.removeEventListener("click", closeLegalPopup);
+  };
+
+  function checkLegalCookies() {
+    if (Cookies.get('legalAgreement') === "true") {
+      legalPopupWrapper.style.display = "none";
+      legalPopupButton.removeEventListener("click", closeLegalPopup);
+    } else {
+      legalPopupWrapper.style.display = "block";
+    }
+  }
+  
+  checkLegalCookies();
+  console.log(Cookies.get('legalAgreement'));
+
 
   navIcon.addEventListener("click", () => {
     navMenu.classList.toggle("header__nav-active");
@@ -74,15 +99,4 @@ window.addEventListener("DOMContentLoaded", () => {
     }
   })
   
-  const legalPopup = document.querySelector(".popupLegal");
-  const legalPopupButton = document.querySelector(".popupLegal__button");
-
-  function closeLegalPopup(e) {
-    legalPopup.style.visibility = "hidden";
-    legalPopupButton.removeEventListener("click", closeLegalPopup);
-  };
-
-  legalPopupButton.addEventListener("click", closeLegalPopup);
-
-
 });
