@@ -1,22 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="start-html">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>LogicYield — Contacts</title>
-    <link rel="shortcut icon" href="./assets/img/favicon.ico" type="image/x-icon">
+    <title>LogicYield</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="./styles/contacts.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="shortcut icon"
+      href="./assets/img/favicon.ico"
+      type="image/x-icon"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;1,400&display=swap"
+      rel="stylesheet"
+    />
   </head>
-  <body>
+  <body class="start-body">
     <header class="header">
       <div class="header__logo logo">
-        <a href="index.html" class="logo__link"></a>
-        <img src="assets/img/logo.svg" alt="logo" class="logo__img" />
       </div>
 
       <div class="header__lang-phone">
@@ -41,23 +45,32 @@
           >
         </li>
         <li class="nav__item">
-          
-          <a href="products.html" class="nav__link link" data-lang="menu-item"><img src="assets/img/product-icon.svg" alt="" class="nav-icon"> </a>
+          <a href="products.html" class="nav__link link" data-lang="menu-item"
+            ><img
+              src="assets/img/product-icon.svg"
+              alt=""
+              class="nav-icon"
+            /> </a
+          >
           <ul class="nav__menu">
             <li class="menu__item">
-              <a href="products.html" class="menu__link"
-                >DotPulse-RSC</a
-              >
+              <a href="products.html" class="menu__link">DotPulse-RSC</a>
             </li>
-            <!-- <li class="menu__item">
+            <li class="menu__item">
               <a href="product-dataset.html" class="menu__link"
                 >GOA dataset</a
               >
-            </li> -->
+            </li>
           </ul>
         </li>
         <li class="nav__item nav__item-soft">
-          <a href="soft.html" class="nav__link nav__link-soft link" data-lang="menu-item"><img src="assets/img/soft-icon.svg" alt="" class="nav-icon"> </a>
+          <a href="soft.html" class="nav__link nav__link-soft link" data-lang="menu-item"
+            ><img
+              src="assets/img/soft-icon.svg"
+              alt=""
+              class="nav-icon"
+            /> </a
+          >
           <!-- <ul class="nav__menu nav__menu-soft">
             <li class="menu__item">
               <a href="soft.html#DotPulse" class="menu__link">DotPulse</a>
@@ -74,8 +87,13 @@
           </ul> -->
         </li>
         <li class="nav__item">
-          
-          <a href="about.html" class="nav__link link" data-lang="menu-item"><img src="assets/img/team-icon.svg" alt="" class="nav-icon"> </a>
+          <a href="about.html" class="nav__link link" data-lang="menu-item"
+            ><img
+              src="assets/img/team-icon.svg"
+              alt=""
+              class="nav-icon"
+            /> </a
+          >
           <ul class="nav__menu">
             <li class="menu__item">
               <a href="about.html" class="menu__link" data-lang="team-menu-item"></a>
@@ -91,8 +109,13 @@
           </ul>
         </li>
         <li class="nav__item">
-          
-          <a href="contacts.html" class="nav__link link link-active" data-lang="menu-item"><img src="assets/img/contacts-icon.svg" alt="" class="nav-icon"> </a>
+          <a href="contacts.html" class="nav__link link" data-lang="menu-item"
+            ><img
+              src="assets/img/contacts-icon.svg"
+              alt=""
+              class="nav-icon"
+            /> </a
+          >
         </li>
         <div class="header__lang">
           <button class="header__langBtn" data-btn="ru">Ru</button>
@@ -102,40 +125,24 @@
       </nav>
     </header>
 
-    <main class="main">
-      <img src="./assets/img/up.svg" alt="" class="up">
-      <h2 class="title underlinedTitle" data-lang="title"></h2>
-      <div class="main__content contacts-main__content">
-        <div class="main__map map">
-          <div>
-            <h3 class="map__title" data-lang="map-title"></h3>
-            <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A4e5091177a1f1508f317bb5e5ee2d3c1e058f80751c8e96381ebc00f8f049225&amp;source=constructor" 
-              class="map__frame"
-              loading="lazy"
-              frameborder="0">
-            </iframe>
-          </div>
-          <div class="map__address">
-            <div>
-              <h3 class="address__title" data-lang="address-title"></h3>
-              <p class="address__text" data-lang="address-text">
-              </p>
-            </div>
-            <div>
-              <h3 class="address__title" data-lang="address-title"></h3>
-              <p class="address__text" data-lang="address-text"></p>
-              <a href="tel:+79611121089" class="map__tel" data-lang="contact-data"></a
-              ><br />
-              <a href="mailto:logicyield@mail.ru" class="map__email" data-lang="contact-data"
-                ></a
-              >
-            </div>
-          </div>
+    <main class="main start-main">
+      <img src="./assets/img/up.svg" alt="" class="up" style="opacity: 0;"/>
+      <div class="main__content start__content">
+        <div>
+          <img class="index__cover" src="./assets/img/indexlogo.svg" alt="LogicYield logo">
         </div>
+
+        <div class="main__text">
+          <h1 class="index__title" data-lang="title"></h1>
+          <p class="index__subtitle" data-lang="subtitle"></p>
+        </div>
+        <a class="nav__link link start-link neon-pulse" data-lang="start-btn" href="about.html">
+
+        </a>
       </div>
     </main>
     <script type="module" src="script/texts.js"></script>
-    <script src="script/contacts.js"></script>
     <script src="script/main.js"></script>
+    <script src="script/start.js"></script>
   </body>
 </html>
