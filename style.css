@@ -432,6 +432,47 @@ tr {
   width: 100%;
 }
 
+.popupLegal__wrapper {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 10;
+}
+
+.popupLegal {
+  display: flex;
+  flex-direction: row;
+  column-gap: 12%;
+
+  background-color: #3D8E30;
+  opacity: .9;
+
+  border-radius: 20px 20px 0 0;
+  padding: 4% 8%;
+}
+
+.popupLegal__text {
+  font-size: 24px;
+}
+
+.popupLegal__link {
+  color: #111111;
+  text-decoration: underline;
+}
+
+.popupLegal__button {
+  max-height: 60px;
+  padding: 16px 40px;
+  font-size: 20px;
+  background-color: #ffffff;
+  color: #111111;
+  border-radius: 20px;
+
+  align-self: center;
+}
+
+
+
 @media screen and (min-width: 1400px) {
   .logo {
     width: 240px;

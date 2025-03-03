@@ -72,5 +72,17 @@ window.addEventListener("DOMContentLoaded", () => {
     if (navMenu.classList.contains("header__nav-active")) {
       navMenu.classList.toggle("header__nav-active");
     }
-  })  
+  })
+  
+  const legalPopup = document.querySelector(".popupLegal");
+  const legalPopupButton = document.querySelector(".popupLegal__button");
+
+  function closeLegalPopup(e) {
+    legalPopup.style.visibility = "hidden";
+    legalPopupButton.removeEventListener("click", closeLegalPopup);
+  };
+
+  legalPopupButton.addEventListener("click", closeLegalPopup);
+
+
 });
