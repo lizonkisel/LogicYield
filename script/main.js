@@ -48,17 +48,19 @@ window.addEventListener("DOMContentLoaded", () => {
   legalPopupButton.addEventListener("click", closeLegalPopup);
 
   function closeLegalPopup(e) {
-    legalPopupWrapper.style.display = "none";
-    Cookies.set('legalAgreement', 'true', { expires: 7 })
+    Cookies.set('legalAgreement', 'true', { expires: 7 });
+    legalPopupWrapper.classList.remove('popupLegal_opened');
+    legalPopupWrapper.classList.add('popupLegal_closed');
     legalPopupButton.removeEventListener("click", closeLegalPopup);
   };
 
   function checkLegalCookies() {
     if (Cookies.get('legalAgreement') === "true") {
-      legalPopupWrapper.style.display = "none";
+      legalPopupWrapper.classList.remove('popupLegal_opened');
+      legalPopupWrapper.classList.add('popupLegal_closed');
       legalPopupButton.removeEventListener("click", closeLegalPopup);
     } else {
-      legalPopupWrapper.style.display = "block";
+      legalPopupWrapper.classList.add('popupLegal_opened');
     }
   }
   

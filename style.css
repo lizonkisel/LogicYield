@@ -434,11 +434,35 @@ tr {
 
 .popupLegal__wrapper {
   position: fixed;
-  display: none;
+  /* display: none; */
+  visibility: hidden;
   bottom: 0;
   left: 0;
   z-index: 10;
+
+  animation: showBottom .7s;
 }
+
+@keyframes showBottom {
+  from {bottom:-100%;}
+  to {bottom:0;}
+}
+
+.popupLegal_opened {
+  visibility: visible;
+}
+
+.popupLegal_closed {
+  visibility: hidden;
+  /* animation: hideBottom 5.7s; */
+}
+
+/* @keyframes hideBottom {
+  from {bottom: 0;}
+  to {bottom: -100%;
+    visibility: hidden;}
+} */
+
 
 .popupLegal {
   display: flex;
@@ -470,8 +494,14 @@ tr {
   border-radius: 20px;
 
   align-self: center;
+
+  cursor: pointer;
+  transition: 0.4s;
 }
 
+.popupLegal__button:hover {
+  transform: scale(1.1);
+}
 
 
 @media screen and (min-width: 1400px) {
