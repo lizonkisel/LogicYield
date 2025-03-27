@@ -19,6 +19,25 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
+
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript" >
+      (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+      m[i].l=1*new Date();
+      for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+      k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+      (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+      ym(100609606, "init", {
+          clickmap:true,
+          trackLinks:true,
+          accurateTrackBounce:true,
+          webvisor:true
+      });
+    </script>
+    <noscript><div><img src="https://mc.yandex.ru/watch/100609606" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+    <!-- /Yandex.Metrika counter -->
+
   </head>
   <body id="body">
     <header class="header">
@@ -60,11 +79,11 @@
             <li class="menu__item">
               <a href="products.html" class="menu__link">DotPulse-RSC</a>
             </li>
-            <li class="menu__item">
+            <!-- <li class="menu__item">
               <a href="product-dataset.html" class="menu__link"
                 >GOA dataset</a
               >
-            </li>
+            </li> -->
           </ul>
         </li>
         <li class="nav__item nav__item-soft">
@@ -197,7 +216,7 @@
                 </div>
               </div>
             </div>
-            <div class="swiper-slide">
+            <!-- <div class="swiper-slide">
               <div class="cards__item" id="GOAAPI">
                 <h3 class="card__title-phone" data-lang="card-title"></h3>
                 <div class="swiper mySwiper2 noSwipeGallery">
@@ -249,7 +268,7 @@
                   </ul>
                 </div>
               </div>
-            </div>  
+            </div>   -->
             <div class="swiper-slide">
               <div class="cards__item" id="NeuralLicencePlate">
                 <h3 class="card__title-phone" data-lang="card-title"></h3>
@@ -330,8 +349,19 @@
           <div class="swiper-button-prev swiper-button-prev_main"></div>
         </div>
       </div>
+
+      <div class="popupLegal__wrapper">
+        <section class="popupLegal">
+          <div>
+            <p class="popupLegal__text" data-lang="legal-text"></p>
+            <a class="popupLegal__link" data-lang="policy-name" href="./assets/legal/logicyield-legal-policy.pdf" target="_blank"></a>
+          </div>
+          <button class="popupLegal__button" data-lang="policy-button" type="button"></button>
+        </section>
+      </div>  
     </main>
     <script type="module" src="script/texts.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.5/dist/js.cookie.min.js" type="module"></script>
     <script src="script/soft.js" type="module"></script>
     <script src="script/main.js"></script>
   </body>

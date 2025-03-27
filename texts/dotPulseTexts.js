@@ -222,6 +222,18 @@ const dotPulseTexts = {
 			ru: "DotPulse, собственная разработка",
 			en: "DotPulse, proprietary development ",
 		}
+	},
+	"legal-text": {
+		ru: "Продолжая использовать сайт, Вы даете согласие ООО «ЛОДЖИК ИЛД» (ИНН 1686015257) на обработку файлов cookies и пользовательских данных, собираемых посредством агрегаторов статистики посетителей веб-сайтов, в целях ведения статистики посещений сайта в соответствии с ",
+		en: "By continuing to use the website, you consent to LLC «Logic Yield» (TIN 1686015257) processing cookies and user data collected through website visitor statistics aggregators for the purpose of compiling website visit statistics in accordance with",
+	},
+	"policy-name": {
+		ru: "Политикой обработки персональных данных",
+		en: "Privacy policy",
+	},
+	"policy-button": {
+		ru: "Согласен",
+		en: "Agree",
 	}
 }
 

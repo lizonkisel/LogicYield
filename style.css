@@ -367,6 +367,26 @@ a {
   justify-content: center;
   gap: 40px;
 }
+
+.footer__legal {
+  position: absolute;
+  padding: 48px 0 24px 0;
+
+  display: flex;
+  justify-content: center;
+}
+
+.footer__policy-link {
+  color: #ffffff;
+  font-size: 10px;
+  transition: all 0.5s ease;
+}
+
+.footer__policy-link:hover {
+  font-weight: 600;
+  font-size: 12px;
+}
+
 .footer__nav__link {
   font-size: 1vw;
 }
@@ -431,6 +451,81 @@ tr {
 .close__img {
   width: 100%;
 }
+
+.popupLegal__wrapper {
+  position: fixed;
+  /* display: none; */
+  visibility: hidden;
+  bottom: 0;
+  left: 0;
+  z-index: 10;
+
+  animation: showBottom 2s;
+}
+
+@keyframes showBottom {
+  from {bottom:-100%;}
+  to {bottom:0;}
+}
+
+.popupLegal_opened {
+  visibility: visible;
+}
+
+.popupLegal_closed {
+  visibility: hidden;
+  transition: visibility 0s 2s;
+  animation: hideBottom 2s;
+}
+
+@keyframes hideBottom {
+  from {bottom: 0;}
+  to {bottom: -100%}
+}
+
+
+.popupLegal {
+  display: flex;
+  flex-direction: row;
+  column-gap: 12%;
+
+  background-color: #3D8E30;
+  opacity: .9;
+
+  border-radius: 20px 20px 0 0;
+  padding: 4% 8%;
+}
+
+.popupLegal__text {
+  font-size: 24px;
+  display: inline;
+}
+
+.popupLegal__link {
+  color: #111111;
+  font-size: 24px;
+  text-decoration: underline;
+  display: inline;
+}
+
+.popupLegal__button {
+  max-height: 60px;
+  padding: 16px 40px;
+  font-size: 20px;
+  background-color: #ffffff;
+  color: #111111;
+  border-radius: 20px;
+
+  align-self: center;
+
+  cursor: pointer;
+  transition: transform 0.4s ease;;
+}
+
+.popupLegal__button:hover {
+  transform: scale(1.1);
+}
+
 
 @media screen and (min-width: 1400px) {
   .logo {
@@ -683,6 +778,30 @@ tr {
   .main {
     min-height: 80vh;
     padding: 90px 5% 0 5%;
+  }
+
+  .popupLegal {
+    flex-direction: column;
+    row-gap: 28px;
+  
+    padding: 8%;
+  }
+  
+  .popupLegal__text {
+    font-size: 16px;
+  }
+  
+  .popupLegal__link {
+    font-size: 16px;
+  }
+  
+  .popupLegal__button {
+    width: 100%;
+    font-size: 16px;
+  }
+  
+  .popupLegal__button:hover {
+    transform: none;
   }
 
   /* Не проверено */
