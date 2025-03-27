@@ -780,6 +780,30 @@ tr {
     padding: 90px 5% 0 5%;
   }
 
+  .popupLegal {
+    flex-direction: column;
+    row-gap: 28px;
+  
+    padding: 8%;
+  }
+  
+  .popupLegal__text {
+    font-size: 16px;
+  }
+  
+  .popupLegal__link {
+    font-size: 16px;
+  }
+  
+  .popupLegal__button {
+    width: 100%;
+    font-size: 16px;
+  }
+  
+  .popupLegal__button:hover {
+    transform: none;
+  }
+
   /* Не проверено */
   .start__content {
     overflow: visible;
