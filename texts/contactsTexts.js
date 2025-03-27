@@ -73,6 +73,10 @@ const contactsTexts = {
 			en: "e-mail: logicyield@mail.ru"
 		}
 	},
+	"policy-link": {
+		ru: "Политика обработки персональных данных",
+		en: "Privacy policy",
+	}
 }
 
 export { contactsTexts }

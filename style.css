@@ -367,6 +367,20 @@ a {
   justify-content: center;
   gap: 40px;
 }
+
+.footer__legal {
+  position: absolute;
+  padding: 48px 0 24px 0;
+
+  display: flex;
+  justify-content: center;
+}
+
+.footer__policy-link {
+  color: #ffffff;
+  font-size: 12px;
+}
+
 .footer__nav__link {
   font-size: 1vw;
 }

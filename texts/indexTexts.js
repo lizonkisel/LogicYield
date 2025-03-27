@@ -47,6 +47,10 @@ const indexTexts = {
 		ru: "Познакомиться",
 		en: "Discover more",
 	},
+	"policy-link": {
+		ru: "Политика обработки персональных данных",
+		en: "Privacy policy",
+	}
 }
 
 export { indexTexts }
