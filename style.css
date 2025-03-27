@@ -492,11 +492,14 @@ tr {
 
 .popupLegal__text {
   font-size: 24px;
+  display: inline;
 }
 
 .popupLegal__link {
   color: #111111;
+  font-size: 24px;
   text-decoration: underline;
+  display: inline;
 }
 
 .popupLegal__button {
