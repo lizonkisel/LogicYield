@@ -72,7 +72,6 @@ function changeLang() {
 		// Если элемент такой есть и он 1, находим соответствующий объект с переводом
 		if (elems && elems.length === 1) {
 			elems[0].textContent = currentTexts[key][currentLang];
-			console.log(`Elems0: ${elems[0].textContent}`);
 		}
 		// Если элементов больше одного, задаём перевод для каждого элемента. 
 		// В условии проверка на наличие одинакового количества элементов и полей с переводом
@@ -83,12 +82,8 @@ function changeLang() {
 				// чтобы менялся только текст (а не влжjенные в ссылки картинки, например)
 				if (elem.childNodes.length > 1) {
 					elem.lastChild.textContent = Object.values(currentTexts[key])[index][currentLang];
-					console.log(`Elem: ${elem}`);
-					console.log(`Elem.lastChild.textContent: ${elem.lastChild.textContent}`);
 				} else {
 					elem.textContent = Object.values(currentTexts[key])[index][currentLang];
-					console.log(`Elem: ${elem}`);
-					console.log(`Elem.textContent: ${elem.textContent}`);
 				}
 			})
 		}

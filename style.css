@@ -378,13 +378,13 @@ a {
 
 .footer__policy-link {
   color: #ffffff;
-  font-size: 12px;
+  font-size: 10px;
   transition: all 0.5s ease;
 }
 
 .footer__policy-link:hover {
   font-weight: 600;
-  font-size: 16px;
+  font-size: 12px;
 }
 
 .footer__nav__link {
