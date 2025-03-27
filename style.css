@@ -460,7 +460,7 @@ tr {
   left: 0;
   z-index: 10;
 
-  animation: showBottom .7s;
+  animation: showBottom 2s;
 }
 
 @keyframes showBottom {
@@ -474,14 +474,14 @@ tr {
 
 .popupLegal_closed {
   visibility: hidden;
-  /* animation: hideBottom 5.7s; */
+  transition: visibility 0s 2s;
+  animation: hideBottom 2s;
 }
 
-/* @keyframes hideBottom {
+@keyframes hideBottom {
   from {bottom: 0;}
-  to {bottom: -100%;
-    visibility: hidden;}
-} */
+  to {bottom: -100%}
+}
 
 
 .popupLegal {
@@ -519,7 +519,7 @@ tr {
   align-self: center;
 
   cursor: pointer;
-  transition: 0.4s;
+  transition: transform 0.4s ease;;
 }
 
 .popupLegal__button:hover {
