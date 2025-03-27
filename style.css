@@ -379,6 +379,12 @@ a {
 .footer__policy-link {
   color: #ffffff;
   font-size: 12px;
+  transition: all 0.5s ease;
+}
+
+.footer__policy-link:hover {
+  font-weight: 600;
+  font-size: 16px;
 }
 
 .footer__nav__link {
