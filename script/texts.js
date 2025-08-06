@@ -6,6 +6,7 @@ import { softTexts } from "../texts/softTexts.js";
 import { aboutTexts } from "../texts/aboutTexts.js";
 import { skillsTexts } from "../texts/skillsTexts.js";
 import { projectTexts } from "../texts/projectsTexts.js";
+import { newsTexts } from "../texts/newsTexts.js";
 import { contactsTexts } from "../texts/contactsTexts.js";
 
 const langButtons = document.querySelectorAll("[data-btn]");
@@ -39,6 +40,9 @@ function checkPagePathName() {
       break;
     case "/project.html":
       currentTexts = projectTexts;
+      break;
+		case "/news.html":
+      currentTexts = newsTexts;
       break;
     case "/contacts.html":
     currentTexts = contactsTexts;

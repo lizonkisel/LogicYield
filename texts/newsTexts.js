@@ -1,4 +1,4 @@
-const datasetGOATexts = {
+const newsTexts = {
 	"menu-item": {
 		"1": {
 			ru: "Услуги",
@@ -39,13 +39,17 @@ const datasetGOATexts = {
 			en: "Promising projects",
 		}
 	},
-  "dd": {
-		ru: "",
-		en: "",
+  "title": {
+		ru: "Создаём оптические приборы,",
+		en: "We create optical devices,",
 	},
-  "dd": {
-		ru: "",
-		en: "",
+  "subtitle": {
+		ru: "вдохновляясь индустрией",
+		en: "inspired by the industry",
+	},
+	"start-btn": {
+		ru: "Познакомиться",
+		en: "Discover more",
 	},
 	"legal-text": {
 		ru: "Продолжая использовать сайт, Вы даете согласие ООО «ЛОДЖИК ИЛД» (ИНН 1686015257) на обработку файлов cookies и пользовательских данных, собираемых посредством агрегаторов статистики посетителей веб-сайтов, в целях ведения статистики посещений сайта в соответствии с ",
@@ -58,7 +62,11 @@ const datasetGOATexts = {
 	"policy-button": {
 		ru: "Согласен",
 		en: "Agree",
+	},
+	"policy-link": {
+		ru: "Политика обработки персональных данных",
+		en: "Privacy policy",
 	}
 }
 
-export { datasetGOATexts }
+export { newsTexts }

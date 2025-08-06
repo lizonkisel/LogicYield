@@ -17,6 +17,10 @@ const servicesTexts = {
 			en: "Team",
 		},
 		"5": {
+			ru: "Новости",
+			en: "News",
+		},
+		"6": {
 			ru: "Контакты",
 			en: "Contacts",
 		}
