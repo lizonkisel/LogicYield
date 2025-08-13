@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="start-html">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -14,10 +14,11 @@
       href="./assets/img/favicon.ico"
       type="image/x-icon"
     />
-    <link
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <!-- <link
       href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;1,400&display=swap"
       rel="stylesheet"
-    />
+    /> -->
 
     <!-- Yandex.Metrika counter -->
     <script type="text/javascript" >
@@ -38,7 +39,7 @@
     <!-- /Yandex.Metrika counter -->
      
   </head>
-  <body class="start-body">
+  <body>
     <header class="header">
       <div class="header__logo logo">
       </div>
@@ -154,16 +155,41 @@
       </nav>
     </header>
 
-    <main class="main start-main">
+    <main class="main">
       <img src="./assets/img/up.svg" alt="" class="up" />
+      <h2 class="title" data-lang="title"></h2>
       <section class="newsArticles">
-        <article class="newsArticles_card card_odd">
+        <article class="newsArticles_card">
+          <img class="newsArticles_img" src="./assets/img/news/VRNK-1164.jpeg" alt="">
+          <span class="newsArticles_topic" data-lang="topic">Выставки и конференции</span>
+          <h4 class="newsArticles_title" data-lang="header">Наши специалисты приняли участие в работе форума “Цифровые технологии 2025”</h4>
+          <span class="newsArticles_date" data-lang="date">01.08.2025</span>
+        </article>
+        <article class="newsArticles_card newsArticles_card_odd">
           <img class="newsArticles_img" src="" alt="">
           <span class="newsArticles_topic" data-lang="topic"></span>
           <h4 class="newsArticles_title" data-lang="header"></h4>
           <span class="newsArticles_date" data-lang="date"></span>
         </article>
-        <article class="newsArticles_card card_even">
+        <article class="newsArticles_card">
+          <img class="newsArticles_img" src="" alt="">
+          <span class="newsArticles_topic" data-lang="topic"></span>
+          <h4 class="newsArticles_title" data-lang="header"></h4>
+          <span class="newsArticles_date" data-lang="date"></span>
+        </article>
+        <article class="newsArticles_card">
+          <img class="newsArticles_img" src="./assets/img/news/VRNK-1164.jpeg" alt="">
+          <span class="newsArticles_topic" data-lang="topic">Выставки и конференции</span>
+          <h4 class="newsArticles_title" data-lang="header">Наши специалисты приняли участие в работе форума “Цифровые технологии 2025”</h4>
+          <span class="newsArticles_date" data-lang="date">01.08.2025</span>
+        </article>
+                <article class="newsArticles_card newsArticles_card_odd">
+          <img class="newsArticles_img" src="" alt="">
+          <span class="newsArticles_topic" data-lang="topic"></span>
+          <h4 class="newsArticles_title" data-lang="header"></h4>
+          <span class="newsArticles_date" data-lang="date"></span>
+        </article>
+        <article class="newsArticles_card">
           <img class="newsArticles_img" src="" alt="">
           <span class="newsArticles_topic" data-lang="topic"></span>
           <h4 class="newsArticles_title" data-lang="header"></h4>
@@ -177,7 +203,7 @@
         </article>
       </section>
 
-      <div class="popupLegal__wrapper">
+      <!-- <div class="popupLegal__wrapper">
         <section class="popupLegal">
           <div>
             <p class="popupLegal__text" data-lang="legal-text"></p>
@@ -185,11 +211,8 @@
           </div>
           <button class="popupLegal__button" data-lang="policy-button" type="button"></button>
         </section>
-      </div>   
+      </div>    -->
     </main>
-    <footer class="footer footer__legal">
-      <a class="footer__policy-link" data-lang="policy-link" href="./assets/legal/logicyield-legal-policy.pdf" target="_blank"></a>
-    </footer>
 
     <script type="module" src="script/texts.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.5/dist/js.cookie.min.js" type="module"></script>

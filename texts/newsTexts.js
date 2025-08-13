@@ -40,17 +40,100 @@ const newsTexts = {
 		}
 	},
   "title": {
-		ru: "Создаём оптические приборы,",
-		en: "We create optical devices,",
+		ru: "Новости",
+		en: "News",
 	},
-  "subtitle": {
-		ru: "вдохновляясь индустрией",
-		en: "inspired by the industry",
+	"topic": {
+		"1": {
+			ru: "Образование и повышение квалификации",
+			en: "Education and skill boosting",
+		},
+		"2": {
+			ru: "Выставки и конференции",
+			en: "Exhibitions and conferences",
+		},
+		"3": {
+			ru: "Выставки и конференции",
+			en: "Exhibitions and conferences",
+		},
+		"4": {
+			ru: "Продукты и технологии",
+			en: "Products and technologies",
+		},
+		"5": {
+			ru: "Продукты и технологии",
+			en: "Products and technologies",
+		},
+		"6": {
+			ru: "Выставки и конференции",
+			en: "Exhibitions and conferences",
+		},
+		"7": {
+			ru: "Гранты",
+			en: "Grants",
+		}
 	},
-	"start-btn": {
-		ru: "Познакомиться",
-		en: "Discover more",
+		"header": {
+		"1": {
+			ru: "",
+			en: "",
+		},
+		"2": {
+			ru: "",
+			en: "",
+		},
+		"3": {
+			ru: "",
+			en: "",
+		},
+		"4": {
+			ru: "",
+			en: "",
+		},
+		"5": {
+			ru: "",
+			en: "",
+		},
+		"6": {
+			ru: "",
+			en: "",
+		},
+		"7": {
+			ru: "",
+			en: "",
+		}
 	},
+	"date": {
+		"1": {
+			ru: "",
+			en: "",
+		},
+		"2": {
+			ru: "",
+			en: "",
+		},
+		"3": {
+			ru: "",
+			en: "",
+		},
+		"4": {
+			ru: "",
+			en: "",
+		},
+		"5": {
+			ru: "",
+			en: "",
+		},
+		"6": {
+			ru: "",
+			en: "",
+		},
+		"7": {
+			ru: "",
+			en: "",
+		}
+	},
+
 	"legal-text": {
 		ru: "Продолжая использовать сайт, Вы даете согласие ООО «ЛОДЖИК ИЛД» (ИНН 1686015257) на обработку файлов cookies и пользовательских данных, собираемых посредством агрегаторов статистики посетителей веб-сайтов, в целях ведения статистики посещений сайта в соответствии с ",
 		en: "By continuing to use the website, you consent to LLC «Logic Yield» (TIN 1686015257) processing cookies and user data collected through website visitor statistics aggregators for the purpose of compiling website visit statistics in accordance with",

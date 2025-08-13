@@ -2,53 +2,49 @@
   display: grid;
 
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 20px auto 20px;
-  grid-template-areas:
-    "odd .    ."
-    "odd even ."
-    ".   even .  ";
+  justify-items: center;
+
+  gap: 120px 0;
 }
 
 .container {
-  /* display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 20px auto;
-  grid-template-areas:
-    "column . column"
-    "column column column" */
+
 }
 
 .newsArticles_card {
   display: flex;
   flex-direction: column;
+  gap: 20px;
   padding: 40px 32px;
   border: 3px solid #3D8E30;
   border-radius: 20px;
   box-shadow: 20px 20px 8px 0px #B1EC52;
-  width: 200px;
-  height: 400px;
+  max-width: 400px;
+  /* width: 200px; */
+  /* height: 400px; */
 }
 
-.card_odd {
-  grid-area: odd;
-}
-
-.card_even {
-  grid-area: even;
+.newsArticles_card_odd {
+  margin: 32px 0 -32px 0;
 }
 
 .newsArticles_img {
+  border-radius: 20px;
 
 }
 
 .newsArticles_topic {
-
+  font-size: 16px;
+  font-weight: 300;
 }
 
 .newsArticles_title {
-
+  font-size: 20px;
+  font-weight: 600;
 }
 
 .newsArticles_date {
-
+  font-size: 12px;
+  font-weight: 300;
+  margin: 10px 0;
 }
