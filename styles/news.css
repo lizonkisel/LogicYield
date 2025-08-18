@@ -21,10 +21,11 @@
   padding: 40px 32px;
   border: 3px solid #3D8E30;
   border-radius: 20px;
-  box-shadow: 20px 20px 8px 0px #B1EC52;
   width: min(25vw, 600px);
-  /* max-width: 400px;
-  min-width: 200px; */
+  /* box-shadow: 20px 20px 8px 0px #B1EC52; */
+  box-shadow: 
+    17px 17px 8px 0 #111111,
+    20px 20px 8px 0 #b1ec52;
 }
 
 .newsArticles_card_odd {
