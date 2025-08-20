@@ -25,6 +25,8 @@ console.log(articlesDates);
 const uniqIds = generateIds(articlesDates);
 console.log(uniqIds);
 
+
+
 window.onload = () => {
   const navLinks = document.getElementsByClassName("route");
   for (let link of navLinks) {
@@ -47,7 +49,9 @@ const push = (event) => {
 
   // Меняем URL страницы
   // window.history.pushState({ id }, "", url);
-  window.history.pushState({ id }, "", id);
-
-  document.getElementById("main").innerHTML = <p>Это страничка</p>
+  window.history.pushState({ id }, "", `${url} + / + ${id}`);
+  
+  const a = document.getElementById(`${id}`); //or grab it by tagname etc
+  a.href = `${url} + / + ${id}`;
+  
 };
