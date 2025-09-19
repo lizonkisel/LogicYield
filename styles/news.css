@@ -64,36 +64,49 @@
 
 /* Страничка с одной новостью */
 
-.newsArticles_wholeCard {
+.newsArticles_card_oneNews {
+  display: block;
+}
 
+.newsArticles_wholeCard {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  color: #ffffff;
+  text-align: left;
+  font-family: "Open Sans", sans-serif;
 }
 
 .newsArticles_topic_wholeCard {
-
+  font-size: 24px;
 }
 
 .newsArticles_date_wholeCard {
-
+  font-size: 16px;
 }
 
 .newsArticles_img_wholeCard {
-
+  max-width: 70vw;
 }
 
 .newsArticles_imgDesc {
-
+  font-size: 12px;
+  font-weight: 300;
 }
 
 .newsArticles_imgAuthor {
-
+  font-size: 12px;
+  font-weight: 300;
 }
 
 .newsArticles_title_wholeCard {
-
+  font-size: 32px;
 }
 
 .newsArticles_texts_wholeCard {
-  
+  font-size: 28px;
+  font-weight: 400;
 }
 
 .back-to-news-btn {

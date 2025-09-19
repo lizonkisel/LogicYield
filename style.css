@@ -302,6 +302,10 @@ a {
   text-align: center;
 }
 
+.news__title_invisible {
+  display: none;
+}
+
 .placeholder__bg{
   position: absolute;
   top: 0;

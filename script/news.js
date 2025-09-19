@@ -48,8 +48,12 @@ const news = [
   }
 ];
 
+/* Отрисовываем страницу со всеми новостями */
 function renderNewsList() {
+  const title = document.getElementById('news-title');
+  title.classList.remove("news__title_invisible");
   const app = document.getElementById('newsArticles');
+  app.classList.remove("newsArticles_card_oneNews");
   app.innerHTML = `
     ${news.map(item => `
       <button class="navigate-to-article-btn" data-id="${item.id}">
@@ -74,8 +78,12 @@ function renderNewsList() {
   console.log("renderNewsList");
 };
 
+/* Отрисовываем страницу с одной новостью */
 function renderNewsItem(id) {
+  const title = document.getElementById('news-title');
+  title.classList.add("news__title_invisible");
   const app = document.getElementById('newsArticles');
+  app.classList.add("newsArticles_card_oneNews");
   const newsItem = news.find(item => item.id == id);
   if (!newsItem) {
     app.innerHTML = '<h1>Новость не найдена</h1><button id="back-to-news-btn">Вернуться</button>';
@@ -84,10 +92,22 @@ function renderNewsItem(id) {
     });
     return;
   }
+  // app.innerHTML = `
+  //   <h1>${newsItem.name}</h1>
+  //   <p>${newsItem.content}</p>
+  //   <button id="back-to-news-btn" class="back-to-news-btn">Вернуться к списку</button>
+  // `;
   app.innerHTML = `
-    <h1>${newsItem.name}</h1>
-    <p>${newsItem.content}</p>
-    <button id="back-to-news-btn" class="back-to-news-btn">Вернуться к списку</button>
+    <article class="newsArticles_wholeCard">
+      <button id="back-to-news-btn" class="back-to-news-btn">Вернуться к списку</button>
+      <span class="newsArticles_topic newsArticles_topic_wholeCard" data-lang="topic">${newsItem.topic}</span>
+      <span class="newsArticles_date newsArticles_date_wholeCard" data-lang="date">${newsItem.date}</span>
+      <img class="newsArticles_img newsArticles_img_wholeCard" src=${newsItem.img_src} alt="">
+      <span class="newsArticles_imgDesc">Кто на фото</span>
+      <span class="newsArticles_imgAuthor">Кто автор фото</span>
+      <h4 class="newsArticles_title newsArticles_title_wholeCard" data-lang="header">${newsItem.name}</h4>
+      <div class="newsArticles_texts_wholeCard">${newsItem.content}</div>
+    </article>
   `;
   document.getElementById('back-to-news-btn').addEventListener('click', () => {
     navigate('/news');
