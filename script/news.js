@@ -35,6 +35,7 @@ const news = [
     name: "Участие в Летней школе LxMLS 2025 (Португалия, Лиссабон)",
     topic: "Образование и повышение квалификации",
     date: "28.07.2025",
+    img_src: "./assets/img/news/Lisbon_title.jpg",
     content: 'Это подробное описание первой новости. Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
   },
   {
@@ -42,6 +43,7 @@ const news = [
     name: "Участие в конференции EDM (Республика Алтай)",
     topic: "Выставки и конференции",
     date: "04.07.2025",
+    img_src: "./assets/img/news/EDM_title.jpeg",
     content: 'Это подробное описание второй новости. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
   }
 ];
@@ -49,18 +51,13 @@ const news = [
 function renderNewsList() {
   const app = document.getElementById('newsArticles');
   app.innerHTML = `
-    <h1>Список новостей</h1>
     ${news.map(item => `
-      <div class="news-card" style="border: 1px solid #ccc; padding: 15px; margin-bottom: 10px;">
-        <h3>${item.title}</h3>
-        <button class="navigate-to-article-btn" data-id="${item.id}">Читать далее</button>
-      </div>
       <button class="navigate-to-article-btn" data-id="${item.id}">
         <article class="newsArticles_card">
-          <img class="newsArticles_img" src="./assets/img/news/Lisbon_title.jpg" alt="">
-          <span class="newsArticles_topic" data-lang="topic">Выставки и конференции</span>
-          <h4 class="newsArticles_title" data-lang="header">Наши специалисты приняли участие в работе форума “Цифровые технологии 2025”</h4>
-          <span class="newsArticles_date" data-lang="date">01.08.2025</span>
+          <img class="newsArticles_img" src=${item.img_src} alt="">
+          <span class="newsArticles_topic" data-lang="topic">${item.topic}</span>
+          <h4 class="newsArticles_title" data-lang="header">${item.name}</h4>
+          <span class="newsArticles_date" data-lang="date">${item.date}</span>
         </article>
       </button>
     `).join('')}
@@ -90,7 +87,7 @@ function renderNewsItem(id) {
   app.innerHTML = `
     <h1>${newsItem.name}</h1>
     <p>${newsItem.content}</p>
-    <button id="back-to-news-btn">Вернуться к списку</button>
+    <button id="back-to-news-btn" class="back-to-news-btn">Вернуться к списку</button>
   `;
   document.getElementById('back-to-news-btn').addEventListener('click', () => {
     navigate('/news');
