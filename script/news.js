@@ -1,5 +1,5 @@
 import { newsTexts } from "../texts/newsTexts.js";
-
+import { news } from "../texts/data/news-data.js";
 
 console.log(newsTexts);
 
@@ -26,27 +26,17 @@ console.log(articlesDates);
 const uniqIds = generateIds(articlesDates);
 console.log(uniqIds);
 
-
 // 1753660800, 1751587200, 1748822400, 1738281600, 1735516800, 1729468800, 1704067200
 
-const news = [
-  {
-    id: '1753660800',
-    name: "Участие в Летней школе LxMLS 2025 (Португалия, Лиссабон)",
-    topic: "Образование и повышение квалификации",
-    date: "28.07.2025",
-    img_src: "./assets/img/news/Lisbon_title.jpg",
-    content: 'Это подробное описание первой новости. Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-  },
-  {
-    id: "1751587200",
-    name: "Участие в конференции EDM (Республика Алтай)",
-    topic: "Выставки и конференции",
-    date: "04.07.2025",
-    img_src: "./assets/img/news/EDM_title.jpeg",
-    content: 'Это подробное описание второй новости. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+
+/* Добавить количество новостей и проверить, работает ли эта функция */ 
+news.map((newsElem, index) => {
+  if (news.length === uniqIds.length) {
+    newsElem.id = uniqIds[index];
+  } else {
+    console.log("Исходных новостей больше, чем заготовок под новостные карточки");
   }
-];
+});
 
 /* Отрисовываем страницу со всеми новостями */
 function renderNewsList() {
@@ -99,14 +89,23 @@ function renderNewsItem(id) {
   // `;
   app.innerHTML = `
     <article class="newsArticles_wholeCard">
-      <button id="back-to-news-btn" class="back-to-news-btn">Вернуться к списку</button>
+      <button id="back-to-news-btn" class="back-to-news-btn">← Назад к списку новостей</button>
       <span class="newsArticles_topic newsArticles_topic_wholeCard" data-lang="topic">${newsItem.topic}</span>
       <span class="newsArticles_date newsArticles_date_wholeCard" data-lang="date">${newsItem.date}</span>
-      <img class="newsArticles_img newsArticles_img_wholeCard" src=${newsItem.img_src} alt="">
-      <span class="newsArticles_imgDesc">Кто на фото</span>
-      <span class="newsArticles_imgAuthor">Кто автор фото</span>
+      <div class="newsArticles_imgWrapper_wholeCard"> 
+        <img class="newsArticles_img newsArticles_img_wholeCard" src=${newsItem.img_src} alt="">
+      </div>
+      <span class="newsArticles_imgDesc">${newsItem.img_desc}</span>
+      <span class="newsArticles_imgAuthor">Фото: ${newsItem.img_author}</span>
       <h4 class="newsArticles_title newsArticles_title_wholeCard" data-lang="header">${newsItem.name}</h4>
-      <div class="newsArticles_texts_wholeCard">${newsItem.content}</div>
+      <div class="newsArticles_texts_wholeCard">
+        ${newsItem.content.map(onePar => `
+          <p newsArticles_text_wholeCard> 
+            ${onePar}
+          </p>
+        `).join('')}
+      </div>
+      
     </article>
   `;
   document.getElementById('back-to-news-btn').addEventListener('click', () => {
@@ -120,6 +119,7 @@ function navigate(path) {
 };
 
 function router() {
+
   const path = window.location.pathname;
   console.log(path);
 
