@@ -32,6 +32,7 @@ console.log(uniqIds);
 /* Добавить количество новостей и проверить, работает ли эта функция */ 
 news.map((newsElem, index) => {
   if (news.length === uniqIds.length) {
+    console.log("Новостей столько же, сколько заготовок для карточек");
     newsElem.id = uniqIds[index];
   } else {
     console.log("Исходных новостей больше, чем заготовок под новостные карточки");
