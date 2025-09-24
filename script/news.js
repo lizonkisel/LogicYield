@@ -119,6 +119,7 @@ function navigate(path) {
 };
 
 function router() {
+
   const path = window.location.pathname;
   console.log(path);
 
