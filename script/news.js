@@ -1,37 +1,7 @@
 import { news } from "../texts/data/news-data.js";
 import { changeLang } from "./texts.js";
 
-const getArticlesDates = () => {
-  const pureDatesArr = news.map((oneNews) => {
-    const isoDate = oneNews.date.split(".").reverse().join('-');
-    console.log(isoDate);
-    return isoDate;
-  })
-  return pureDatesArr;
-};
-
-// Генерируем уникальные id
-const generateIds = (articlesDates) => {
-  const uniqIds = articlesDates.map((date) => Math.floor(new Date(date).getTime() / 1000));
-  return uniqIds;
-};
-
-const articlesDates = getArticlesDates();
-console.log(articlesDates);
-
-const uniqIds = generateIds(articlesDates);
-// 1753660800, 1751587200, 1748822400, 1738281600, 1735516800, 1729468800, 1704067200
-
-
-/* Добавить количество новостей и проверить, работает ли эта функция */ 
-news.map((newsElem, index) => {
-  if (news.length === uniqIds.length) {
-    console.log("Новостей столько же, сколько заготовок для карточек");
-    newsElem.id = uniqIds[index];
-  } else {
-    console.log("Исходных новостей больше, чем заготовок под новостные карточки");
-  }
-});
+console.log(news);
 
 /* Отрисовываем страницу со всеми новостями */
 function renderNewsList() {
@@ -40,13 +10,13 @@ function renderNewsList() {
   const app = document.getElementById('newsArticles');
   app.classList.remove("newsArticles_card_oneNews");
   app.innerHTML = `
-    ${news.map(item => `
+    ${news.map(item =>`
       <button class="navigate-to-article-btn" data-id="${item.id}">
         <article class="newsArticles_card">
           <img class="newsArticles_img" src=${item.img_src} alt="">
           <span class="newsArticles_topic" data-lang="topic"></span>
           <h4 class="newsArticles_title" data-lang="header"></h4>
-          <span class="newsArticles_date" data-lang="date">${item.date}</span>
+          <span class="newsArticles_date" data-lang="date"></span>
         </article>
       </button>
     `).join('')}

@@ -1,5 +1,7 @@
 import { news } from "./data/news-data.js";
 
+console.log(news);
+
 /* Функция для задания ru/en текстов полям карточек с новостями */
 const setNewsFields = (fieldName) => {
 	let fieldObj = {};
@@ -9,7 +11,11 @@ const setNewsFields = (fieldName) => {
 		if (oneNews.hasOwnProperty(fieldNameRu) && oneNews.hasOwnProperty(fieldNameEn)) {
 			fieldObj = {
 				...fieldObj,
-				[oneNews.id]: {
+				// Вот это "' ' + oneNews.id" делает айдишник строкой (не числом)
+				// => предотвращает пересортировку карточек по возрастанию даты
+
+				// Подумать, может написать более элегантное решение для сортировки в обратном порядке
+				[' ' + oneNews.id]: {
 					ru: oneNews[fieldNameRu],
 					en: oneNews[fieldNameEn]
 				}
@@ -17,7 +23,11 @@ const setNewsFields = (fieldName) => {
 		} else {
 			fieldObj = {
 				...fieldObj,
-				[oneNews.id]: {
+				// Вот это "' ' + oneNews.id" делает айдишник строкой (не числом)
+				// => предотвращает пересортировку карточек по возрастанию даты
+
+				// Подумать, может написать более элегантное решение для сортировки в обратном порядке
+				[' ' + oneNews.id]: {
 					ru: oneNews[fieldName],
 					en: oneNews[fieldName]
 				}
@@ -92,5 +102,7 @@ const newsTexts = {
 		en: "Privacy policy",
 	}
 };
+
+console.log(newsTexts);
 
 export { newsTexts }
