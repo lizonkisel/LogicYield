@@ -50,8 +50,8 @@ function renderNewsList() {
       <button class="navigate-to-article-btn" data-id="${item.id}">
         <article class="newsArticles_card">
           <img class="newsArticles_img" src=${item.img_src} alt="">
-          <span class="newsArticles_topic" data-lang="topic">${item.topic}</span>
-          <h4 class="newsArticles_title" data-lang="header">${item.name}</h4>
+          <span class="newsArticles_topic" data-lang="topic">${item.topic_ru}</span>
+          <h4 class="newsArticles_title" data-lang="header">${item.header_ru}</h4>
           <span class="newsArticles_date" data-lang="date">${item.date}</span>
         </article>
       </button>
@@ -91,14 +91,14 @@ function renderNewsItem(id) {
   app.innerHTML = `
     <article class="newsArticles_wholeCard">
       <button id="back-to-news-btn" class="back-to-news-btn">← Назад к списку новостей</button>
-      <span class="newsArticles_topic newsArticles_topic_wholeCard" data-lang="topic">${newsItem.topic}</span>
+      <span class="newsArticles_topic newsArticles_topic_wholeCard" data-lang="topic">${newsItem.topic_ru}</span>
       <span class="newsArticles_date newsArticles_date_wholeCard" data-lang="date">${newsItem.date}</span>
       <div class="newsArticles_imgWrapper_wholeCard"> 
         <img class="newsArticles_img newsArticles_img_wholeCard" src=${newsItem.img_src} alt="">
       </div>
       <span class="newsArticles_imgDesc">${newsItem.img_desc}</span>
       <span class="newsArticles_imgAuthor">Фото: ${newsItem.img_author}</span>
-      <h4 class="newsArticles_title newsArticles_title_wholeCard" data-lang="header">${newsItem.name}</h4>
+      <h4 class="newsArticles_title newsArticles_title_wholeCard" data-lang="header">${newsItem.header_ru}</h4>
       <div class="newsArticles_texts_wholeCard">
         ${newsItem.content.map(onePar => `
           <p newsArticles_text_wholeCard> 
