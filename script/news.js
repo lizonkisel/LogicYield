@@ -1,16 +1,12 @@
-import { newsTexts } from "../texts/newsTexts.js";
 import { news } from "../texts/data/news-data.js";
-
-console.log(newsTexts);
+import { changeLang } from "./texts.js";
 
 const getArticlesDates = () => {
-  const allDatesArr = Object.values(newsTexts.date);
-  // Собираем массив с датами статей в ISO-формате
-    const pureDatesArr = allDatesArr.map((dateObj) => {
-      const isoDate = dateObj.ru.split(".").reverse().join('-');
-      console.log(isoDate);
-      return isoDate;
-    });
+  const pureDatesArr = news.map((oneNews) => {
+    const isoDate = oneNews.date.split(".").reverse().join('-');
+    console.log(isoDate);
+    return isoDate;
+  })
   return pureDatesArr;
 };
 
@@ -24,8 +20,6 @@ const articlesDates = getArticlesDates();
 console.log(articlesDates);
 
 const uniqIds = generateIds(articlesDates);
-console.log(uniqIds);
-
 // 1753660800, 1751587200, 1748822400, 1738281600, 1735516800, 1729468800, 1704067200
 
 
@@ -50,8 +44,8 @@ function renderNewsList() {
       <button class="navigate-to-article-btn" data-id="${item.id}">
         <article class="newsArticles_card">
           <img class="newsArticles_img" src=${item.img_src} alt="">
-          <span class="newsArticles_topic" data-lang="topic">${item.topic_ru}</span>
-          <h4 class="newsArticles_title" data-lang="header">${item.header_ru}</h4>
+          <span class="newsArticles_topic" data-lang="topic"></span>
+          <h4 class="newsArticles_title" data-lang="header"></h4>
           <span class="newsArticles_date" data-lang="date">${item.date}</span>
         </article>
       </button>
@@ -67,6 +61,10 @@ function renderNewsList() {
     });
 
   console.log("renderNewsList");
+  
+  // Вызов этой функции тут нужен для того, чтобы после отрисовки страницы автоматически
+  // подтягивался перевод на нужном языке. Иначе будет просто пустое поле (без текста)
+  changeLang();
 };
 
 /* Отрисовываем страницу с одной новостью */
@@ -83,11 +81,6 @@ function renderNewsItem(id) {
     });
     return;
   }
-  // app.innerHTML = `
-  //   <h1>${newsItem.name}</h1>
-  //   <p>${newsItem.content}</p>
-  //   <button id="back-to-news-btn" class="back-to-news-btn">Вернуться к списку</button>
-  // `;
   app.innerHTML = `
     <article class="newsArticles_wholeCard">
       <button id="back-to-news-btn" class="back-to-news-btn">← Назад к списку новостей</button>
@@ -137,3 +130,5 @@ function router() {
 
 window.onpopstate = router;
 document.addEventListener('DOMContentLoaded', router);
+
+

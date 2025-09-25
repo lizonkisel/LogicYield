@@ -56,19 +56,6 @@ function checkPagePathName() {
 checkPagePathName();
 
 // Изменение языка у текстов
-// function changeLang() {
-// 	for (const key in currentTexts) {
-//     console.log(key);
-// 		console.log(currentTexts[key]);
-// 		console.log(Object.keys(currentTexts[key]));
-// 		console.log(Object.values(currentTexts[key]));
-// 		let elem = document.querySelector(`[data-lang=${key}]`);
-// 		if (elem) {
-// 			elem.textContent = currentTexts[key][currentLang];
-// 		}
-// 	}
-// }
-
 function changeLang() {
 	for (const key in currentTexts) {
 		// Выбираем все html-элементы с заданным ключом [data-lang=${key}]
@@ -175,26 +162,4 @@ function checkBrowserLang() {
 
 console.log("navigator.language", checkBrowserLang());
 
-
-// const dotPulseTexts = {
-// 	"title": {
-// 		ru: "Продукты",
-// 		en: "Products",
-// 	},
-// 	"product-name": {
-// 		ru: "Cистема оптического контроля сыпучих материалов “DotPulse”",
-// 		en: "",
-// 	},
-//   "peculiarities-title": {
-// 		ru: "Об устройстве",
-// 		en: "About device",
-// 	},
-//   "": {
-// 		ru: "",
-// 		en: "",
-// 	},
-//   "": {
-// 		ru: "",
-// 		en: "",
-// 	},
-// }
+export { changeLang };

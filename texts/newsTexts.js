@@ -1,20 +1,6 @@
 import { news } from "./data/news-data.js";
 
-// const setDate = () => {
-// 	let dateObj = {};
-// 	for (let oneNews of news) {
-// 		dateObj = {
-// 			...dateObj,
-// 			[oneNews.id]: {
-// 				ru: oneNews.date,
-// 				en: oneNews.date,
-// 			}
-// 		}
-// 	}
-// 	console.log(dateObj);
-// 	return dateObj;
-// };
-
+/* Функция для задания ru/en текстов полям карточек с новостями */
 const setNewsFields = (fieldName) => {
 	let fieldObj = {};
 	for (let oneNews of news) {
@@ -38,7 +24,6 @@ const setNewsFields = (fieldName) => {
 			}
 		}
 	}
-	console.log(fieldObj);
 	return fieldObj;
 };
 
