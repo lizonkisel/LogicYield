@@ -6,7 +6,7 @@ import { softTexts } from "../texts/softTexts.js";
 import { aboutTexts } from "../texts/aboutTexts.js";
 import { skillsTexts } from "../texts/skillsTexts.js";
 import { projectTexts } from "../texts/projectsTexts.js";
-import { newsTexts } from "../texts/newsTexts.js";
+import { newsTexts, getNewsTexts } from "../texts/newsTexts.js";
 import { contactsTexts } from "../texts/contactsTexts.js";
 
 const langButtons = document.querySelectorAll("[data-btn]");
@@ -42,7 +42,9 @@ function checkPagePathName() {
       currentTexts = projectTexts;
       break;
 		case "/news.html":
-      currentTexts = newsTexts;
+			// По идее, такое надо сделать для всех функций
+			// Чтобы не сам объект экспортировать, а доступ к нему
+      currentTexts = getNewsTexts();
       break;
     case "/contacts.html":
     currentTexts = contactsTexts;
@@ -162,4 +164,4 @@ function checkBrowserLang() {
 
 console.log("navigator.language", checkBrowserLang());
 
-export { changeLang };
+export { changeLang, checkPagePathName };

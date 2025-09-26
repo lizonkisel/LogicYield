@@ -1,5 +1,6 @@
 import { news } from "../texts/data/news-data.js";
-import { changeLang } from "./texts.js";
+import { setOneNewsFields } from "../texts/newsTexts.js";
+import { changeLang, checkPagePathName } from "./texts.js";
 
 console.log(news);
 
@@ -51,20 +52,48 @@ function renderNewsItem(id) {
     });
     return;
   }
+
+  const oneNewsObj = {
+    "topic-oneNews": {
+      ru: `${newsItem.topic_ru}`,
+      en: `${newsItem.topic_en}`,
+    },
+    "date-oneNews": {
+      ru: `${newsItem.date}`,
+      en: `${newsItem.date}`,
+    },
+    "imgDesc-oneNews": {
+      ru: `${newsItem.img_desc}`,
+      en: `${newsItem.img_desc}`,
+    },
+    "imgAuthor-oneNews": {
+      ru: `${newsItem.img_author}`,
+      en: `${newsItem.img_author}`,
+    },
+    "header-oneNews": {
+      ru: `${newsItem.header_ru}`,
+      en: `${newsItem.header_en}`,
+    },
+  }
+
+  setOneNewsFields(oneNewsObj);
+  // как бы "считываем" новый объект newsTexts с уникальными для новости дата-полями
+  checkPagePathName();
+
   app.innerHTML = `
     <article class="newsArticles_wholeCard">
       <button id="back-to-news-btn" class="back-to-news-btn">← Назад к списку новостей</button>
-      <span class="newsArticles_topic newsArticles_topic_wholeCard" data-lang="topic">${newsItem.topic_ru}</span>
-      <span class="newsArticles_date newsArticles_date_wholeCard" data-lang="date">${newsItem.date}</span>
+      <span class="newsArticles_topic newsArticles_topic_wholeCard" data-lang="topic-oneNews"></span>
+      <span class="newsArticles_date newsArticles_date_wholeCard" data-lang="date-oneNews"></span>
       <div class="newsArticles_imgWrapper_wholeCard"> 
         <img class="newsArticles_img newsArticles_img_wholeCard" src=${newsItem.img_src} alt="">
       </div>
-      <span class="newsArticles_imgDesc">${newsItem.img_desc}</span>
-      <span class="newsArticles_imgAuthor">Фото: ${newsItem.img_author}</span>
-      <h4 class="newsArticles_title newsArticles_title_wholeCard" data-lang="header">${newsItem.header_ru}</h4>
+      <span class="newsArticles_imgDesc" data-lang="imgDesc-oneNews"></span>
+      <span class="newsArticles_imgAuthor" data-lang="imgAuthor-oneNews">Фото: </span>
+      <h4 class="newsArticles_title newsArticles_title_wholeCard" data-lang="header-oneNews"></h4>
       <div class="newsArticles_texts_wholeCard">
         ${newsItem.content.map(onePar => `
-          <p newsArticles_text_wholeCard> 
+          <p newsArticles_text_wholeCard data-lang="text-oneNews"> 
             ${onePar}
           </p>
         `).join('')}
@@ -75,6 +104,10 @@ function renderNewsItem(id) {
   document.getElementById('back-to-news-btn').addEventListener('click', () => {
     navigate('/news');
   });
+
+  // Вызов этой функции тут нужен для того, чтобы после отрисовки страницы автоматически
+  // подтягивался перевод на нужном языке. Иначе будет просто пустое поле (без текста)
+  changeLang();
 };
 
 function navigate(path) {

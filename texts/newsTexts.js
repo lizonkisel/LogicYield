@@ -1,3 +1,4 @@
+// import { checkPagePathName } from "../script/texts.js";
 import { news } from "./data/news-data.js";
 
 console.log(news);
@@ -37,7 +38,19 @@ const setNewsFields = (fieldName) => {
 	return fieldObj;
 };
 
-const newsTexts = {
+// Добавляем в объект newsTexts уникальные для новости дата-поля
+const setOneNewsFields = (oneNewsObj) => {
+	newsTexts = {
+		...newsTexts,
+		...oneNewsObj
+	};
+};
+
+const getNewsTexts = () => {
+	return newsTexts;
+};
+
+let newsTexts = {
 	"menu-item": {
 		"1": {
 			ru: "Услуги",
@@ -105,4 +118,4 @@ const newsTexts = {
 
 console.log(newsTexts);
 
-export { newsTexts }
+export { newsTexts, setOneNewsFields, getNewsTexts }
