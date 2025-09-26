@@ -10,9 +10,14 @@ const news = [
     img_author: "Иван Иванов",
     img_src: "../assets/img/news/Lisbon_title.jpg",
     content: [
-      'azaza',
-      'Это подробное описание первой новости. Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-      'fdkjfdlk'
+      {
+        ru: "азаза",
+        en: "azaza",
+      },
+      {
+        ru: 'Это подробное описание первой новости. Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+        en: 'fdkjfdlk'
+      }
     ],
   },
   {
@@ -25,10 +30,15 @@ const news = [
     img_desc: "Иван Иванов",
     img_author: "Иван Иванов",
     img_src: "../assets/img/news/EDM_title.jpeg",
-        content: [
-      'azaza',
-      'Это подробное описание второй новости. Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-      'fdkjfdlk'
+    content: [
+      {
+        ru: "азаза",
+        en: "azaza",
+      },
+      {
+        ru: 'Это подробное описание второй новости. Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+        en: 'fdkjfdlk'
+      }
     ],
   },
   {
@@ -41,10 +51,15 @@ const news = [
     img_desc: "Иван Иванов",
     img_author: "Иван Иванов",
     img_src: "../assets/img/news/Belgrade_title.jpg",
-        content: [
-      'azaza',
-      'Это подробное описание третьей новости. Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-      'fdkjfdlk'
+    content: [
+      {
+        ru: "азаза",
+        en: "azaza",
+      },
+      {
+        ru: 'Это подробное описание третьей новости. Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+        en: 'fdkjfdlk'
+      }
     ],
   },
   {
@@ -57,10 +72,15 @@ const news = [
     img_desc: "Иван Иванов",
     img_author: "Иван Иванов",
     img_src: "../assets/img/news/Belgrade_title.jpg",
-        content: [
-      'azaza',
-      'Это подробное описание четвёртой новости. Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-      'fdkjfdlk'
+    content: [
+      {
+        ru: "азаза",
+        en: "azaza",
+      },
+      {
+        ru: 'Это подробное описание четвёртой новости. Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+        en: 'fdkjfdlk'
+      }
     ],
   },
   {
@@ -73,10 +93,15 @@ const news = [
     img_desc: "Иван Иванов",
     img_author: "Иван Иванов",
     img_src: "../assets/img/news/Belgrade_title.jpg",
-        content: [
-      'azaza',
-      'Это подробное описание пятой новости. Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-      'fdkjfdlk'
+    content: [
+      {
+        ru: "азаза",
+        en: "azaza",
+      },
+      {
+        ru: 'Это подробное описание пятой новости. Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+        en: 'fdkjfdlk'
+      }
     ],
   },
   {
@@ -89,10 +114,15 @@ const news = [
     img_desc: "Иван Иванов",
     img_author: "Иван Иванов",
     img_src: "../assets/img/news/APMAS_title.jpg",
-        content: [
-      'azaza',
-      'Это подробное описание шестой новости. Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-      'fdkjfdlk'
+    content: [
+      {
+        ru: "азаза",
+        en: "azaza",
+      },
+      {
+        ru: 'Это подробное описание шестой новости. Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+        en: 'fdkjfdlk'
+      }
     ],
   },
 ];

@@ -38,6 +38,21 @@ function renderNewsList() {
   changeLang();
 };
 
+const getContentField = (content) => {
+  let contentObj = {};
+  content.map((onePar, index) => {
+    contentObj = {
+        ...contentObj,
+      [' ' + index]: {
+            ru: onePar.ru,
+            en: onePar.en
+          }
+    }
+  });
+  console.log(contentObj);
+  return contentObj;
+}
+
 /* Отрисовываем страницу с одной новостью */
 function renderNewsItem(id) {
   const title = document.getElementById('news-title');
@@ -74,6 +89,7 @@ function renderNewsItem(id) {
       ru: `${newsItem.header_ru}`,
       en: `${newsItem.header_en}`,
     },
+    "text-oneNews": getContentField(newsItem.content)
   }
 
   setOneNewsFields(oneNewsObj);
@@ -94,7 +110,6 @@ function renderNewsItem(id) {
       <div class="newsArticles_texts_wholeCard">
         ${newsItem.content.map(onePar => `
           <p newsArticles_text_wholeCard data-lang="text-oneNews"> 
-            ${onePar}
           </p>
         `).join('')}
       </div>
