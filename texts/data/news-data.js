@@ -83,7 +83,7 @@ const news = [
     date: "31.01.2025",
     img_desc: "Иван Иванов",
     img_author: "Иван Иванов",
-    img_src: "../assets/img/news/Belgrade_title.jpg",
+    img_src: "../assets/img/news/Coop-Ammoni_title.jpg",
     content: [
       {
         ru: "В телеграм-канале АО «Аммоний» - ООО «Менделеевсказот» и на ресурсе FertilizerDaily вышли статьи о внедрении системы оптического контроля сыпучих материалов «DotPulse» в цехе аммиачной селитры АО «Аммоний», г. Менделеевск, Республика Татарстан.",
@@ -112,7 +112,7 @@ const news = [
     date: "30.12.2024",
     img_desc: "Иван Иванов",
     img_author: "Иван Иванов",
-    img_src: "../assets/img/news/Belgrade_title.jpg",
+    img_src: "../assets/img/news/First-sale_title.jpg",
     content: [
       {
         ru: "Мы долго шли к этому и, вот, свершилось!",
