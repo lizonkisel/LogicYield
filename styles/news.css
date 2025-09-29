@@ -83,11 +83,11 @@
 }
 
 .newsArticles_topic_wholeCard {
-  font-size: 24px;
+  font-size: 16px;
 }
 
 .newsArticles_date_wholeCard {
-  font-size: 16px;
+  font-size: 12px;
 }
 
 .newsArticles_imgWrapper_wholeCard {
@@ -126,12 +126,14 @@
 }
 
 .newsArticles_texts_wholeCard {
-  font-size: 24px;
+  font-size: 16px;
   font-weight: 400;
 
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 20px;
+
+  padding: 24px 0 0 0;
 }
 
 .newsArticles_text_wholeCard {
