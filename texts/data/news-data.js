@@ -6,8 +6,10 @@ const news = [
     topic_ru: "Образование и повышение квалификации",
     topic_en: "Education and skill boosting",
     date: "28.07.2025",
-    img_desc: "Иван Иванов",
-    img_author: "Иван Иванов",
+    img_desc_ru: "Общее фото участников LxMLS 2025 Summer School",
+    img_desc_en: "Group photo of LxMLS 2025 Summer School participants",
+    img_author_ru: "Instituto Superior Técnico",
+    img_author_en: "Instituto Superior Técnico",
     img_src: "../assets/img/news/Lisbon_title.jpg",
     content: [
       {
@@ -27,8 +29,10 @@ const news = [
     topic_ru: "Выставки и конференции",
     topic_en: "Exhibitions and conferences",
     date: "04.07.2025",
-    img_desc: "Иван Иванов",
-    img_author: "Иван Иванов",
+    img_desc_ru: "Дмитрий Юновидов и председатель секции д.т.н. Нос О.В.",
+    img_desc_en: "Dmitrii Iunovidov and section chaiman O.V. Nos, Doctor of Technical Sciences",
+    img_author_ru: "Вероника Вишневская",
+    img_author_en: "Veronika Vishnevskaya",
     img_src: "../assets/img/news/EDM_title.jpeg",
     content: [
       {
@@ -60,8 +64,10 @@ const news = [
     topic_ru: "Выставки и конференции",
     topic_en: "Exhibitions and conferences",
     date: "02.06.2025",
-    img_desc: "Иван Иванов",
-    img_author: "Иван Иванов",
+    img_desc_ru: "Дмитрий Юновидов",
+    img_desc_en: "Dmitrii Iunovidov",
+    img_author_ru: "Дмитрий Юновидов",
+    img_author_en: "Dmitrii Iunovidov",
     img_src: "../assets/img/news/Belgrade_title.jpg",
     content: [
       {
@@ -81,8 +87,10 @@ const news = [
     topic_ru: "Продукты и технологии",
     topic_en: "Products and technologies",
     date: "31.01.2025",
-    img_desc: "Иван Иванов",
-    img_author: "Иван Иванов",
+    img_desc_ru: "Устройство «DotPulse» в рабочих условиях",
+    img_desc_en: "The «DotPulse» device in working conditions",
+    img_author_ru: "Валерий Юновидов",
+    img_author_en: "Valerii Iunovidov",
     img_src: "../assets/img/news/Coop-Ammoni_title.jpg",
     content: [
       {
@@ -110,8 +118,10 @@ const news = [
     topic_ru: "Продукты и технологии",
     topic_en: "Products and technologies",
     date: "30.12.2024",
-    img_desc: "Иван Иванов",
-    img_author: "Иван Иванов",
+    img_desc_ru: "Процесс осмотра устройства «DotPulse»",
+    img_desc_en: "The process of inspecting the «DotPulse» device",
+    img_author_ru: "Валерий Юновидов",
+    img_author_en: "Valerii Iunovidov",
     img_src: "../assets/img/news/First-sale_title.jpg",
     content: [
       {
@@ -135,8 +145,10 @@ const news = [
     topic_ru: "Выставки и конференции",
     topic_en: "Exhibitions and conferences",
     date: "21.10.2024",
-    img_desc: "Иван Иванов",
-    img_author: "Иван Иванов",
+    img_desc_ru: "Елизавета Юновидова на информационном стенде ООО «Лоджик Илд»",
+    img_desc_en: "Elizaveta Iunovidova at the information stand of «Logic Yield» LLC",
+    img_author_ru: "Вероника Хасанова",
+    img_author_en: "Veronika Khasanova",
     img_src: "../assets/img/news/APMAS_title.jpg",
     content: [
       {

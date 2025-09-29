@@ -75,12 +75,12 @@ function renderNewsItem(id) {
       en: `${newsItem.date}`,
     },
     "imgDesc-oneNews": {
-      ru: `${newsItem.img_desc}`,
-      en: `${newsItem.img_desc}`,
+      ru: `${newsItem.img_desc_ru}`,
+      en: `${newsItem.img_desc_en}`,
     },
     "imgAuthor-oneNews": {
-      ru: `${newsItem.img_author}`,
-      en: `${newsItem.img_author}`,
+      ru: `Фото: ${newsItem.img_author_ru}`,
+      en: `Photo: ${newsItem.img_author_en}`,
     },
     "header-oneNews": {
       ru: `${newsItem.header_ru}`,
