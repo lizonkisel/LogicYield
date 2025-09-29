@@ -128,7 +128,7 @@ const news = [
 ];
 
 // Переводим даты новостей в ISO-формат
-const getArticlesDates = () => {
+const setISODates = () => {
   const pureDatesArr = news.map((oneNews) => {
     const isoDate = oneNews.date.split(".").reverse().join('-');
     console.log(isoDate);
@@ -143,7 +143,7 @@ const generateIds = (articlesDates) => {
   return uniqIds;
 };
 
-const articlesDates = getArticlesDates();
+const articlesDates = setISODates();
 const uniqIds = generateIds(articlesDates);
 
 // 1753660800, 1751587200, 1748822400, 1738281600, 1735516800, 1729468800, 1704067200
@@ -152,7 +152,5 @@ const uniqIds = generateIds(articlesDates);
 news.forEach((oneNews, index) => {
   oneNews.id = uniqIds[index];
 });
-
-console.log(news);
 
 export { news };

@@ -6,7 +6,7 @@ import { softTexts } from "../texts/softTexts.js";
 import { aboutTexts } from "../texts/aboutTexts.js";
 import { skillsTexts } from "../texts/skillsTexts.js";
 import { projectTexts } from "../texts/projectsTexts.js";
-import { newsTexts, getNewsTexts } from "../texts/newsTexts.js";
+import { getNewsTexts } from "../texts/newsTexts.js";
 import { contactsTexts } from "../texts/contactsTexts.js";
 
 const langButtons = document.querySelectorAll("[data-btn]");

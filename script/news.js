@@ -2,8 +2,6 @@ import { news } from "../texts/data/news-data.js";
 import { setOneNewsFields } from "../texts/newsTexts.js";
 import { changeLang, checkPagePathName } from "./texts.js";
 
-console.log(news);
-
 /* Отрисовываем страницу со всеми новостями */
 function renderNewsList() {
   const title = document.getElementById('news-title');
@@ -30,15 +28,15 @@ function renderNewsList() {
         navigate(`/news/${id}`);
       });
     });
-
-  console.log("renderNewsList");
   
   // Вызов этой функции тут нужен для того, чтобы после отрисовки страницы автоматически
   // подтягивался перевод на нужном языке. Иначе будет просто пустое поле (без текста)
   changeLang();
 };
 
-const getContentField = (content) => {
+// Устанавляивает текст параграфов для описания одной новости
+// на ru/en. Вне зависимости от количества параграфов
+const setContentField = (content) => {
   let contentObj = {};
   content.map((onePar, index) => {
     contentObj = {
@@ -49,7 +47,6 @@ const getContentField = (content) => {
           }
     }
   });
-  console.log(contentObj);
   return contentObj;
 }
 
@@ -89,7 +86,7 @@ function renderNewsItem(id) {
       ru: `${newsItem.header_ru}`,
       en: `${newsItem.header_en}`,
     },
-    "text-oneNews": getContentField(newsItem.content)
+    "text-oneNews": setContentField(newsItem.content)
   }
 
   setOneNewsFields(oneNewsObj);

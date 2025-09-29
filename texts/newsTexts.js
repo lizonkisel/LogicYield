@@ -1,7 +1,4 @@
-// import { checkPagePathName } from "../script/texts.js";
 import { news } from "./data/news-data.js";
-
-console.log(news);
 
 /* Функция для задания ru/en текстов полям карточек с новостями */
 const setNewsFields = (fieldName) => {
@@ -118,4 +115,4 @@ let newsTexts = {
 
 console.log(newsTexts);
 
-export { newsTexts, setOneNewsFields, getNewsTexts }
+export { setOneNewsFields, getNewsTexts }
