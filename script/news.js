@@ -102,7 +102,7 @@ function renderNewsItem(id) {
         <img class="newsArticles_img newsArticles_img_wholeCard" src=${newsItem.img_src} alt="">
       </div>
       <span class="newsArticles_imgDesc" data-lang="imgDesc-oneNews"></span>
-      <span class="newsArticles_imgAuthor" data-lang="imgAuthor-oneNews">Фото: </span>
+      <a class="newsArticles_imgAuthor" data-lang="imgAuthor-oneNews" href=${newsItem.img_author_link} rel="noopener noreferrer" target=${newsItem.img_author_openType}></a>
       <h4 class="newsArticles_title newsArticles_title_wholeCard" data-lang="header-oneNews"></h4>
       <div class="newsArticles_texts_wholeCard">
         ${newsItem.content.map(onePar => `

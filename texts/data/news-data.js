@@ -10,6 +10,8 @@ const news = [
     img_desc_en: "Group photo of LxMLS 2025 Summer School participants",
     img_author_ru: "Instituto Superior Técnico",
     img_author_en: "Instituto Superior Técnico",
+    img_author_link: "https://tecnico.ulisboa.pt/en/",
+    img_author_openType: "_blank",
     img_src: "../assets/img/news/Lisbon_title.jpg",
     content: [
       {
@@ -33,6 +35,8 @@ const news = [
     img_desc_en: "Dmitrii Iunovidov and section chaiman O.V. Nos, Doctor of Technical Sciences",
     img_author_ru: "Вероника Вишневская",
     img_author_en: "Veronika Vishnevskaya",
+    img_author_link: "https://vishnevskaia.ru/me",
+    img_author_openType: "_blank",
     img_src: "../assets/img/news/EDM_title.jpeg",
     content: [
       {
@@ -68,6 +72,8 @@ const news = [
     img_desc_en: "Dmitrii Iunovidov",
     img_author_ru: "Дмитрий Юновидов",
     img_author_en: "Dmitrii Iunovidov",
+    img_author_link: "javascript:void(0);",
+    img_author_openType: "_self",
     img_src: "../assets/img/news/Belgrade_title.jpg",
     content: [
       {
@@ -91,6 +97,8 @@ const news = [
     img_desc_en: "The «DotPulse» device in working conditions",
     img_author_ru: "Валерий Юновидов",
     img_author_en: "Valerii Iunovidov",
+    img_author_link: "javascript:void(0);",
+    img_author_openType: "_self",
     img_src: "../assets/img/news/Coop-Ammoni_title.jpg",
     content: [
       {
@@ -122,6 +130,8 @@ const news = [
     img_desc_en: "The process of inspecting the «DotPulse» device",
     img_author_ru: "Валерий Юновидов",
     img_author_en: "Valerii Iunovidov",
+    img_author_link: "javascript:void(0);",
+    img_author_openType: "_self",
     img_src: "../assets/img/news/First-sale_title.jpg",
     content: [
       {
@@ -149,6 +159,8 @@ const news = [
     img_desc_en: "Elizaveta Iunovidova at the information stand of «Logic Yield» LLC",
     img_author_ru: "Вероника Хасанова",
     img_author_en: "Veronika Khasanova",
+    img_author_link: "javascript:void(0);",
+    img_author_openType: "_self",
     img_src: "../assets/img/news/APMAS_title.jpg",
     content: [
       {
