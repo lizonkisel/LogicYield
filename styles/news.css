@@ -7,6 +7,8 @@
   justify-items: center;
 
   gap: 120px 60px;
+
+  padding: 0 0 80px 0;
 }
 
 .container {
@@ -19,13 +21,18 @@
   justify-content: space-between;
   gap: 20px;
   padding: 40px 32px;
+  box-sizing: content-box;
   border: 3px solid #3D8E30;
   border-radius: 20px;
-  width: min(25vw, 600px);
+  width: min(20vw, 600px);
   /* box-shadow: 20px 20px 8px 0px #B1EC52; */
   box-shadow: 
     17px 17px 8px 0 #111111,
     20px 20px 8px 0 #b1ec52;
+  
+  color: #ffffff;
+  text-align: left;
+  font-family: "Open Sans", sans-serif;
 }
 
 .newsArticles_card_odd {
@@ -55,4 +62,100 @@
   font-size: 12px;
   font-weight: 300;
   margin: 10px 0 0 0;
+}
+
+/* Страничка с одной новостью */
+
+.newsArticles_card_oneNews {
+  display: flex;
+}
+
+.newsArticles_wholeCard {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+
+  color: #ffffff;
+  text-align: left;
+  font-family: "Open Sans", sans-serif;
+
+  padding: 0 16vw 40px 16vw;
+}
+
+.newsArticles_topic_wholeCard {
+  font-size: 16px;
+}
+
+.newsArticles_date_wholeCard {
+  font-size: 12px;
+}
+
+.newsArticles_imgWrapper_wholeCard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(61, 142, 48, .18);
+
+  max-width: 54vw;
+  
+  border-radius: 20px;
+  padding: 2vw 0;
+}
+
+.newsArticles_img_wholeCard {
+  max-width: 70%;
+  max-height: 56vh;
+  height: min-content;
+
+  border-radius: 0;
+}
+
+.newsArticles_imgDesc {
+  font-size: 12px;
+  font-weight: 300;
+}
+
+.newsArticles_imgAuthor {
+  font-size: 12px;
+  font-weight: 300;
+  color: #ffffff;
+}
+
+.newsArticles_title_wholeCard {
+  font-size: 32px;
+  height: auto;
+}
+
+.newsArticles_texts_wholeCard {
+  font-size: 16px;
+  font-weight: 400;
+
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  padding: 24px 0 0 0;
+}
+
+.newsArticles_text_wholeCard {
+
+}
+
+.back-to-news-btn {
+  color: #3D8E30;
+  font-weight: 600;
+  font-size: 12px;
+  align-self: flex-start;
+
+  position: fixed;
+  /* Сделали отступ чуть больше, чем top padding для main: 113px */
+  top: 120px;
+  left: 5%;
+
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+.back-to-news-btn:hover {
+  font-size: 16px;
 }

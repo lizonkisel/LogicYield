@@ -1,3 +1,35 @@
+// import SPARouter from "https://cdn.jsdelivr.net/npm/@kodnificent/sparouter@1.1.0/+esm"; // if you are hosting locally
+// const options = {
+// historyMode : true // set this to true if you use the HTML5 history mode API
+// }
+// const router = new SPARouter(options);
+
+// router.get("/", function(req, router){
+
+// console.log(`Welcome to my home page! The request url is ${req.url}`);
+// //outputs: Welcome to my home page! The request url is /
+
+// }).setName("home");
+
+// router.get("/user/{username}", function(req, router){
+
+// console.log(`Showing profile for ${req.param.username}. To go back home click <a href="${router.pathFor("home")}">here</a>`);
+// // if url is /user/victor
+// //ouputs: Showing profile for victor. To go back home click <a href="/">here</a> 
+
+// }).setName("user-profile");
+
+// router.notFoundHandler(function(){
+
+// console.log("oops! the page you are looking for is probably eaten by a snake");
+// // if user navigates to /wrong-page
+// //outputs: oops! the page you are looking for is probably eaten by a snake
+
+// });
+// router.init();
+
+
+
 window.addEventListener("DOMContentLoaded", () => {
   const navIcon = document.querySelector(".menu__icon");
   const navMenu = document.querySelector(".header__nav");

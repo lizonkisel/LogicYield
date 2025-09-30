@@ -6,7 +6,7 @@ import { softTexts } from "../texts/softTexts.js";
 import { aboutTexts } from "../texts/aboutTexts.js";
 import { skillsTexts } from "../texts/skillsTexts.js";
 import { projectTexts } from "../texts/projectsTexts.js";
-import { newsTexts } from "../texts/newsTexts.js";
+import { getNewsTexts } from "../texts/newsTexts.js";
 import { contactsTexts } from "../texts/contactsTexts.js";
 
 const langButtons = document.querySelectorAll("[data-btn]");
@@ -42,7 +42,9 @@ function checkPagePathName() {
       currentTexts = projectTexts;
       break;
 		case "/news.html":
-      currentTexts = newsTexts;
+			// По идее, такое надо сделать для всех функций
+			// Чтобы не сам объект экспортировать, а доступ к нему
+      currentTexts = getNewsTexts();
       break;
     case "/contacts.html":
     currentTexts = contactsTexts;
@@ -56,19 +58,6 @@ function checkPagePathName() {
 checkPagePathName();
 
 // Изменение языка у текстов
-// function changeLang() {
-// 	for (const key in currentTexts) {
-//     console.log(key);
-// 		console.log(currentTexts[key]);
-// 		console.log(Object.keys(currentTexts[key]));
-// 		console.log(Object.values(currentTexts[key]));
-// 		let elem = document.querySelector(`[data-lang=${key}]`);
-// 		if (elem) {
-// 			elem.textContent = currentTexts[key][currentLang];
-// 		}
-// 	}
-// }
-
 function changeLang() {
 	for (const key in currentTexts) {
 		// Выбираем все html-элементы с заданным ключом [data-lang=${key}]
@@ -175,26 +164,4 @@ function checkBrowserLang() {
 
 console.log("navigator.language", checkBrowserLang());
 
-
-// const dotPulseTexts = {
-// 	"title": {
-// 		ru: "Продукты",
-// 		en: "Products",
-// 	},
-// 	"product-name": {
-// 		ru: "Cистема оптического контроля сыпучих материалов “DotPulse”",
-// 		en: "",
-// 	},
-//   "peculiarities-title": {
-// 		ru: "Об устройстве",
-// 		en: "About device",
-// 	},
-//   "": {
-// 		ru: "",
-// 		en: "",
-// 	},
-//   "": {
-// 		ru: "",
-// 		en: "",
-// 	},
-// }
+export { changeLang, checkPagePathName };
