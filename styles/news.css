@@ -248,7 +248,7 @@
   }
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 900px) {
   .newsArticles {
     grid-template-columns: 1fr;
     gap: 80px;
@@ -314,8 +314,4 @@
     gap: 12px;
     padding: 8px 0 0 0;
 }
-}
-
-@media screen and (max-width: 900px) {
-
 }
