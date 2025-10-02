@@ -113,6 +113,4 @@ let newsTexts = {
 	}
 };
 
-console.log(newsTexts);
-
 export { setOneNewsFields, getNewsTexts }

@@ -179,7 +179,6 @@ const news = [
 const setISODates = () => {
   const pureDatesArr = news.map((oneNews) => {
     const isoDate = oneNews.date.split(".").reverse().join('-');
-    console.log(isoDate);
     return isoDate;
   })
   return pureDatesArr;

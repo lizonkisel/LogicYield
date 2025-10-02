@@ -128,9 +128,7 @@ function navigate(path) {
 };
 
 function router() {
-
   const path = window.location.pathname;
-  console.log(path);
 
   // Теперь главная страница - это /news
   if (path === '/news' || path === '/news/' || path === '/news.html') {
