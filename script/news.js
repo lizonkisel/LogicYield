@@ -105,10 +105,19 @@ function renderNewsItem(id) {
       <a class="newsArticles_imgAuthor" data-lang="imgAuthor-oneNews" href=${newsItem.img_author_link} rel="noopener noreferrer" target=${newsItem.img_author_openType}></a>
       <h4 class="newsArticles_title newsArticles_title_wholeCard" data-lang="header-oneNews"></h4>
       <div class="newsArticles_texts_wholeCard">
-        ${newsItem.content.map(onePar => `
-          <p newsArticles_text_wholeCard data-lang="text-oneNews"> 
-          </p>
-        `).join('')}
+        ${newsItem.content.map(onePar => {
+          if (onePar.type === "link") {
+             return `
+              <a class="newsArticles_link_wholeCard" href="${onePar.en}" target="_blank" data-lang="text-oneNews"> 
+              </a>
+            `
+          } else {
+            return `
+              <p class="newsArticles_text_wholeCard" data-lang="text-oneNews"> 
+              </p>
+            `
+          }
+        }).join('')}
       </div>
       
     </article>
@@ -128,9 +137,7 @@ function navigate(path) {
 };
 
 function router() {
-
   const path = window.location.pathname;
-  console.log(path);
 
   // Теперь главная страница - это /news
   if (path === '/news' || path === '/news/' || path === '/news.html') {
