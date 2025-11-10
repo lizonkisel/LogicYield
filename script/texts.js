@@ -19,6 +19,7 @@ let currentTexts = {};
 
 // Проверка пути страницы сайта
 function checkPagePathName() {
+	console.log(currentPathName);
 	switch (currentPathName) {
 		case "/products.html":
 			currentTexts = dotPulseTexts;
@@ -41,6 +42,9 @@ function checkPagePathName() {
     case "/project.html":
       currentTexts = projectTexts;
       break;
+		case "/news":
+			currentTexts = getNewsTexts();
+      break;
 		case "/news.html":
 			// По идее, такое надо сделать для всех функций
 			// Чтобы не сам объект экспортировать, а доступ к нему
@@ -51,6 +55,7 @@ function checkPagePathName() {
     break;
 
 		default:
+			console.log('default texts');
 			currentTexts = indexTexts;
 			break;
 	}
