@@ -1,6 +1,6 @@
-import { news } from "../texts/data/news-data.js";
-import { setOneNewsFields } from "../texts/newsTexts.js";
-import { changeLang, checkPagePathName } from "./texts.js";
+import { news } from "/texts/data/news-data.js";
+import { setOneNewsFields } from "/texts/newsTexts.js";
+import { changeLang, checkPagePathName } from "/script/texts.js";
 
 console.log('Мы в файле news.js');
 
