@@ -2,8 +2,11 @@ import { news } from "../texts/data/news-data.js";
 import { setOneNewsFields } from "../texts/newsTexts.js";
 import { changeLang, checkPagePathName } from "./texts.js";
 
+console.log('Мы в файле news.js');
+
 /* Отрисовываем страницу со всеми новостями */
 function renderNewsList() {
+  console.log('Отрисовываем страницу со всеми новостями');
   const title = document.getElementById('news-title');
   title.classList.remove("news__title_invisible");
   const app = document.getElementById('newsArticles');
@@ -52,6 +55,7 @@ const setContentField = (content) => {
 
 /* Отрисовываем страницу с одной новостью */
 function renderNewsItem(id) {
+  console.log('Отрисовываем страницу с одной новостью');
   const title = document.getElementById('news-title');
   title.classList.add("news__title_invisible");
   const app = document.getElementById('newsArticles');
