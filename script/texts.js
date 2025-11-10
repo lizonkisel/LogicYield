@@ -51,6 +51,7 @@ function checkPagePathName() {
     break;
 
 		default:
+			console.log('default texts');
 			currentTexts = indexTexts;
 			break;
 	}
