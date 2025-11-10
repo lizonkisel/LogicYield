@@ -41,7 +41,7 @@ function checkPagePathName() {
     case "/project.html":
       currentTexts = projectTexts;
       break;
-		case "/news.html":
+		case "/news.html" || "/news":
 			// По идее, такое надо сделать для всех функций
 			// Чтобы не сам объект экспортировать, а доступ к нему
       currentTexts = getNewsTexts();
