@@ -43,12 +43,26 @@ function calcScreenSize() {
         spaceBetween: 30,
         loop: true,
    
-        effect: 'cards',
-        cardsEffect: {
-            perSlideOffset: 4,
-            perSlideRotate: 3,
-            rotate: true,
-            slideShadows: true,
+        // effect: 'cards',
+        // cardsEffect: {
+        //     perSlideOffset: 4,
+        //     perSlideRotate: 3,
+        //     rotate: true,
+        //     slideShadows: true,
+        // },
+        effect: 'creative',
+        creativeEffect: {
+            limitProgress: 2,
+            prev: {
+                translate: ["-110%", 0, 0],
+                opacity: 0.3,
+                scale: .75
+            },
+            next: {
+                translate: ["110%", 0, 0],
+                opacity: 0.3,
+                scale: .75
+            }
         },
     
         speed: 800,

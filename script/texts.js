@@ -6,11 +6,12 @@ import { softTexts } from "../texts/softTexts.js";
 import { aboutTexts } from "../texts/aboutTexts.js";
 import { skillsTexts } from "../texts/skillsTexts.js";
 import { projectTexts } from "../texts/projectsTexts.js";
+import { getNewsTexts } from "../texts/newsTexts.js";
 import { contactsTexts } from "../texts/contactsTexts.js";
 
 const langButtons = document.querySelectorAll("[data-btn]");
 const allLangs = ["ru", "en"];
-const currentPathName = window.location.pathname;
+// const currentPathName = window.location.pathname;
 let currentLang =
 	localStorage.getItem("language") || checkBrowserLang() || "en";
 let currentTexts = {};
@@ -18,6 +19,8 @@ let currentTexts = {};
 
 // Проверка пути страницы сайта
 function checkPagePathName() {
+	const currentPathName = window.location.pathname;
+	console.log(currentPathName);
 	switch (currentPathName) {
 		case "/products.html":
 			currentTexts = dotPulseTexts;
@@ -40,31 +43,40 @@ function checkPagePathName() {
     case "/project.html":
       currentTexts = projectTexts;
       break;
+		// case "/news":
+		// 	currentTexts = getNewsTexts();
+    //   break;
+		// case "/news.html":
+		// 	// По идее, такое надо сделать для всех функций
+		// 	// Чтобы не сам объект экспортировать, а доступ к нему
+    //   currentTexts = getNewsTexts();
+    //   break;
     case "/contacts.html":
     currentTexts = contactsTexts;
     break;
 
-		default:
-			currentTexts = indexTexts;
-			break;
+		// --- ОБНОВЛЕННЫЙ БЛОК: Маршрутизация новостей и главная страница ---
+    default:
+      if (currentPathName === '/news' || currentPathName === '/news.html' || currentPathName.startsWith('/news/')) {
+        // Ловит: /news, /news.html, /news/12345
+        currentTexts = getNewsTexts();
+      } else {
+        // Ловит все остальные, включая / и 404
+        console.log('default texts');
+        currentTexts = indexTexts;
+      }
+      break;
+    // ------------------------------------------------------------------
+
+		// default:
+		// 	console.log('default texts');
+		// 	currentTexts = indexTexts;
+		// 	break;
 	}
 }
 checkPagePathName();
 
 // Изменение языка у текстов
-// function changeLang() {
-// 	for (const key in currentTexts) {
-//     console.log(key);
-// 		console.log(currentTexts[key]);
-// 		console.log(Object.keys(currentTexts[key]));
-// 		console.log(Object.values(currentTexts[key]));
-// 		let elem = document.querySelector(`[data-lang=${key}]`);
-// 		if (elem) {
-// 			elem.textContent = currentTexts[key][currentLang];
-// 		}
-// 	}
-// }
-
 function changeLang() {
 	for (const key in currentTexts) {
 		// Выбираем все html-элементы с заданным ключом [data-lang=${key}]
@@ -171,26 +183,4 @@ function checkBrowserLang() {
 
 console.log("navigator.language", checkBrowserLang());
 
-
-// const dotPulseTexts = {
-// 	"title": {
-// 		ru: "Продукты",
-// 		en: "Products",
-// 	},
-// 	"product-name": {
-// 		ru: "Cистема оптического контроля сыпучих материалов “DotPulse”",
-// 		en: "",
-// 	},
-//   "peculiarities-title": {
-// 		ru: "Об устройстве",
-// 		en: "About device",
-// 	},
-//   "": {
-// 		ru: "",
-// 		en: "",
-// 	},
-//   "": {
-// 		ru: "",
-// 		en: "",
-// 	},
-// }
+export { changeLang, checkPagePathName };

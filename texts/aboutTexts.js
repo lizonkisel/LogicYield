@@ -17,6 +17,10 @@ const aboutTexts = {
 			en: "Team",
 		},
 		"5": {
+			ru: "Новости",
+			en: "News",
+		},
+		"6": {
 			ru: "Контакты",
 			en: "Contacts",
 		}
@@ -98,8 +102,19 @@ const aboutTexts = {
 	"about-tagline": {
 		ru: "Надеемся на сотрудничество и готовы к новым вызовам!",
 		en: "We look forward to working together and are excited to take on new challenges!"
+	},
+	"legal-text": {
+		ru: "Продолжая использовать сайт, Вы даете согласие ООО «ЛОДЖИК ИЛД» (ИНН 1686015257) на обработку файлов cookies и пользовательских данных, собираемых посредством агрегаторов статистики посетителей веб-сайтов, в целях ведения статистики посещений сайта в соответствии с ",
+		en: "By continuing to use the website, you consent to LLC «Logic Yield» (TIN 1686015257) processing cookies and user data collected through website visitor statistics aggregators for the purpose of compiling website visit statistics in accordance with",
+	},
+	"policy-name": {
+		ru: "Политикой обработки персональных данных",
+		en: "Privacy policy",
+	},
+	"policy-button": {
+		ru: "Согласен",
+		en: "Agree",
 	}
-
 }
 
 export { aboutTexts }
