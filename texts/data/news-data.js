@@ -202,6 +202,147 @@ const news = [
       }
     ],
   },
+  
+  {
+    id: "7",
+    header_ru: "Презентация промышленного Copilot на OpenTalks.AI (Белград, Сербия)",
+    header_en: "Presenting our Industrial Copilot at OpenTalks.AI (Belgrade, Serbia)",
+    topic_ru: "Выставки и конференции",
+    topic_en: "Exhibitions and conferences",
+    date: "19.02.2026",
+    img_desc_ru: "",
+    img_desc_en: "",
+    img_author_ru: "opentalks.ai",
+    img_author_en: "opentalks.ai",
+    img_author_link: "https://opentalks.ai/photo2026#!/tab/1971152111-2",
+    img_author_openType: "_self",
+    img_src: "../assets/img/news/OpenAI-2026_title.jpg",
+    content: [
+      {
+        type: "text",
+        ru: "ааавдав",
+        en: "яфяф",
+      },
+      {
+        type: "text",
+        ru: "авваав",
+        en: "ваавв",
+      },
+    ],
+  },
+
+  {
+    id: "8",
+    header_ru: "Поставка устройства «DotPulse» на ПАО «Акрон»",
+    header_en: "",
+    topic_ru: "Продукты и технологии",
+    topic_en: "Products and technologies",
+    date: "24.04.2026",
+    img_desc_ru: "",
+    img_desc_en: "",
+    img_author_ru: "",
+    img_author_en: "",
+    img_author_link: "",
+    img_author_openType: "_self",
+    img_src: "../assets/img/news/APMAS_title.jpg",
+    content: [
+      {
+        type: "text",
+        ru: "Корпоративные продажи — это марафон. Наш цикл занял ровно 9 месяцев: от старта опытно-промышленных испытаний до полного закрытия коммерческого договора.",
+        en: "",
+      },
+      {
+        type: "text",
+        ru: "Наш инженер-наладчик Валерий Юрьевич успешно провел монтаж, подключение и инструктаж персонала. Устройство введено в эксплуатацию и полностью соответствует техническому заданию.",
+        en: "",
+      },
+      {
+        type: "text",
+        ru: "А мы продолжаем дальнейшее масштабирование, готовы к новым совместным проектам с ведущими предприятиями отрасли",
+        en: "",
+      },
+      
+    ],
+  },
+
+  {
+    id: "9",
+    header_ru: "Акселератор",
+    header_en: "",
+    topic_ru: "Образование и повышение квалификации",
+    topic_en: "Education and skill boosting",
+    date: "",
+    img_desc_ru: "",
+    img_desc_en: "",
+    img_author_ru: "",
+    img_author_en: "",
+    img_author_link: "",
+    img_author_openType: "_self",
+    img_src: "../assets/img/news/Limb_title.png",
+    content: [
+      {
+        type: "text",
+        ru: "",
+        en: "",
+      },
+      {
+        type: "text",
+        ru: "",
+        en: "",
+      },
+    ],
+  },
+
+    {
+    id: "10",
+    header_ru: "Выступление на Open Data Science (ODS) в Белграде",
+    header_en: "Speaking at Open Data Science (ODS) Belgrade",
+    topic_ru: "Выставки и конференции",
+    topic_en: "Exhibitions and conferences",
+    date: "31.05.2026",
+    img_desc_ru: "",
+    img_desc_en: "",
+    img_author_ru: "",
+    img_author_en: "",
+    img_author_link: "",
+    img_author_openType: "_self",
+    img_src: "../assets/img/news/ODS-2026_title.jpg",
+    content: [
+      {
+        type: "text",
+        ru: "Мы выступили на масштабной конференции ODS в Белграде, где показали эволюцию наших промышленных датасетов и ML-подходов. Это важный шаг в нашей международной экспансии, доказывающий, что наши инженерные решения выдерживают критику лучших дата-саентистов мира.",
+        en: "We took the stage at the fantastic ODS conference in Belgrade. We showcased how our industrial datasets and ML approaches are evolving. It is a great step forward for our global expansion, proving that our engineering solutions hold up to the scrutiny of the best data scientists in the world.",
+      }
+    ],
+  },
+
+    {
+    id: "11",
+    header_ru: "Награда Gold Reviewer на ICML 2026",
+    header_en: "ICML 2026 Gold Reviewer Award",
+    topic_ru: "Выставки и конференции",
+    topic_en: "Exhibitions and conferences",
+    date: "13.05.2026",
+    img_desc_ru: "",
+    img_desc_en: "",
+    img_author_ru: "",
+    img_author_en: "",
+    img_author_link: "",
+    img_author_openType: "_self",
+    img_src: "../assets/img/news/APMAS_title.jpg",
+    content: [
+      {
+        type: "text",
+        ru: "Научное рецензирование — основа прогресса. И хотя наша статья не прошла строгий отбор на ICML 2026, наш  сотрудник Дмитрий Юновидов прорецензировал множество работ для этой топовой конференции и получил награду GOLD REVIEWER! Благодаря этому его пригласили бесплатно посетить конференцию в Сеуле, Республика Корея.",
+        en: "Peer review is the backbone of scientific progress. While our own paper didn't pass the rigorous selection for ICML 2026, Dmitrii reviewed numerous papers for this top-tier conference and was honored with the GOLD REVIEWER award! As a result, he was invited to attend the conference in Seoul, Republic of Korea for free.",
+      },
+      {
+        type: "text",
+        ru: "Рады за Дмитрия, желаем продуктивной работы и обретения новых полезных связей на полях конференции.",
+        en: "",
+      },
+    ],
+  }
 ];
 
 // Переводим даты новостей в ISO-формат
