@@ -1,6 +1,153 @@
 const news = [
+
   {
-    id: '1',
+    id: "1",
+    header_ru: "Выступление на Open Data Science (ODS) в Белграде",
+    header_en: "Speaking at Open Data Science (ODS) Belgrade",
+    topic_ru: "Выставки и конференции",
+    topic_en: "Exhibitions and conferences",
+    date: "31.05.2026",
+    img_desc_ru: "",
+    img_desc_en: "",
+    img_author_ru: "сообщество ODS Сербия",
+    img_author_en: "community ODS Serbia",
+    img_author_link: "https://www.linkedin.com/company/ods-serbia/posts/",
+    img_author_openType: "_self",
+    img_src: "../assets/img/news/ODS-2026_title.jpg",
+    content: [
+      {
+        type: "text",
+        ru: "Мы выступили на масштабной конференции ODS в Белграде, где показали эволюцию наших промышленных датасетов и ML-подходов. Это важный шаг в нашей международной экспансии, доказывающий, что наши инженерные решения выдерживают критику лучших дата-саентистов мира.",
+        en: "We took the stage at the fantastic ODS conference in Belgrade. We showcased how our industrial datasets and ML approaches are evolving. It is a great step forward for our global expansion, proving that our engineering solutions hold up to the scrutiny of the best data scientists in the world.",
+      },
+      {
+        type: "text",
+        ru: "",
+        en: "",
+      },
+    ],
+  },
+
+  {
+    id: "2",
+    header_ru: "Мы в топе проектов «Лимба»!",
+    header_en: "We hit the top rankings at the Limb Accelerator! 🚀",
+    topic_ru: "Образование и повышение квалификации",
+    topic_en: "Education and skill boosting",
+    date: "18.05.2026",
+    img_desc_ru: "Сертификат на имя Юновидовой Елизаветы",
+    img_desc_en: "Certificate awarded to Elizaveta Yunovidova",
+    img_author_ru: "Лимб",
+    img_author_en: "Limbo",
+    img_author_link: "https://limbo.place/",
+    img_author_openType: "_self",
+    img_src: "../assets/img/news/Limb_title.jpg",
+    content: [
+      {
+        type: "text",
+        ru: "Наша команда вошла в топ проектов второго банча акселератора Лимб.",
+        en: "Our team is thrilled to be named among the top projects of Limb's Batch 2!",
+      },
+      {
+        type: "text",
+        ru: "Мы поработали с топовыми менторами индустрии, питчились десятки раз. Теперь у нас есть классный дата-рум, и мы готовы к привлечению инвстиций и масштабированию как VC стартап",
+        en: "We’ve spent the last weeks working with tier-1 industry mentors and sharpening our pitch through dozens of sessions. Now, with a rock-solid data room ready, we are fully locked and loaded to raise our next round and scale as a VC-backed startup.",
+      },
+    ],
+  },
+
+  {
+    id: "3",
+    header_ru: "Награда Gold Reviewer на ICML 2026",
+    header_en: "ICML 2026 Gold Reviewer Award",
+    topic_ru: "Выставки и конференции",
+    topic_en: "Exhibitions and conferences",
+    date: "13.05.2026",
+    img_desc_ru: "Письмо от программного комитета ICML 2026",
+    img_desc_en: "Letter from ICML 2026 Program Chairs",
+    img_author_ru: "Дмитрий Юновидов",
+    img_author_en: "Dmitrii Iunovidov",
+    img_author_link: "https://www.linkedin.com/posts/dmitrii-iunovidov_icml2026-machinelearning-edgeai-activity-7460607166714970112-EIQS?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEJwNjgBTslJimZfd_5kTDff8BlQs8jNttU",
+    img_author_openType: "_self",
+    img_src: "../assets/img/news/ICML_title.jpg",
+    content: [
+      {
+        type: "text",
+        ru: "Научное рецензирование — основа прогресса. И хотя наша статья не прошла строгий отбор на ICML 2026, наш  сотрудник Дмитрий Юновидов прорецензировал множество работ для этой топовой конференции и получил награду GOLD REVIEWER! Благодаря этому его пригласили бесплатно посетить конференцию в Сеуле, Республика Корея.",
+        en: "Peer review is the backbone of scientific progress. While our own paper didn't pass the rigorous selection for ICML 2026, Dmitrii reviewed numerous papers for this top-tier conference and was honored with the GOLD REVIEWER award! As a result, he was invited to attend the conference in Seoul, Republic of Korea for free.",
+      },
+      {
+        type: "text",
+        ru: "Рады за Дмитрия, желаем продуктивной работы и обретения новых полезных связей на полях конференции!",
+        en: "We are thrilled for Dmitry and wish him a productive time and valuable new connections on the sidelines of the conference!",
+      },
+    ],
+  },
+
+  {
+    id: "4",
+    header_ru: "Поставка устройства «DotPulse» на ПАО «Акрон»",
+    header_en: "«DotPulse» device commissioned at PJSC Acron",
+    topic_ru: "Продукты и технологии",
+    topic_en: "Products and technologies",
+    date: "24.04.2026",
+    img_desc_ru: "",
+    img_desc_en: "",
+    img_author_ru: "Валерий Юновидов",
+    img_author_en: "Valerii Iunovidov",
+    img_author_link: "javascript:void(0);",
+    img_author_openType: "_self",
+    img_src: "../assets/img/news/APMAS_title.jpg",
+    content: [
+      {
+        type: "text",
+        ru: "Корпоративные продажи — это марафон. Наш цикл занял ровно 9 месяцев: от старта опытно-промышленных испытаний до полного закрытия коммерческого договора.",
+        en: "B2B sales are a marathon. Our cycle took exactly 9 months—from the start of field trials to the official closing of the commercial deal.",
+      },
+      {
+        type: "text",
+        ru: "Наш инженер-наладчик Валерий Юрьевич успешно провел монтаж, подключение и инструктаж персонала. Устройство введено в эксплуатацию и полностью соответствует техническому заданию.",
+        en: "Our field engineer, Valery Yurievich, successfully handled the installation, connection, and staff briefing. The device is now fully operational and meets all technical requirements.",
+      },
+      {
+        type: "text",
+        ru: "А мы продолжаем дальнейшее масштабирование, готовы к новым совместным проектам с ведущими предприятиями отрасли",
+        en: "Moving forward, we are scaling up and look forward to new joint projects with leading companies in the industry.",
+      },
+      
+    ],
+  },
+
+  {
+    id: "5",
+    header_ru: "Презентация промышленного Copilot на OpenTalks.AI (Белград, Сербия)",
+    header_en: "Presenting our Industrial Copilot at OpenTalks.AI (Belgrade, Serbia)",
+    topic_ru: "Выставки и конференции",
+    topic_en: "Exhibitions and conferences",
+    date: "19.02.2026",
+    img_desc_ru: "",
+    img_desc_en: "",
+    img_author_ru: "opentalks.ai",
+    img_author_en: "opentalks.ai",
+    img_author_link: "https://opentalks.ai/photo2026#!/tab/1971152111-2",
+    img_author_openType: "_self",
+    img_src: "../assets/img/news/OpenAI-2026_title.jpg",
+    content: [
+      {
+        type: "text",
+        ru: "На конференции OpenTalks.AI в Белграде мы представили нашу систему Copilot и тренажер для операторов производств.",
+        en: "We presented our Copilot system and industrial operator simulator at the OpenTalks.AI conference in Belgrade.",
+      },
+      {
+        type: "text",
+        ru: "Мы рады видеть огромный интерес со стороны Института ИИ, венчурных инвесторов и исследователей. Продолжаем внедрять передовые ИИ-решения непосредственно для помощи операторам в цехах.",
+        en: "It’s great to see huge interest from the AI Institute, VCs, and researchers. We’re moving forward with bringing advanced AI solutions straight to the shop floor to support production operators.",
+      },
+    ],
+  },
+
+  {
+    id: '6',
     header_ru: "Участие в Летней школе LxMLS 2025 (Португалия, Лиссабон)",
     header_en: "Participation in the LxMLS 2025 Summer School (Lisbon, Portugal)",
     topic_ru: "Образование и повышение квалификации",
@@ -28,7 +175,7 @@ const news = [
     ],
   },
   {
-    id: "2",
+    id: "7",
     header_ru: "Участие в конференции EDM (Республика Алтай, Россия)",
     header_en: "Participation in the EDM conference (Republic of Altai, Russia)",
     topic_ru: "Выставки и конференции",
@@ -70,7 +217,7 @@ const news = [
     ],
   },
   {
-    id: "3",
+    id: "8",
     header_ru: "Выступление на Data Fest (Сербия, Белград)",
     header_en: "Oral presentation at Data Fest (Belgrade, Serbia)",
     topic_ru: "Выставки и конференции",
@@ -102,7 +249,7 @@ const news = [
     ],
   },
   {
-    id: "4",
+    id: "9",
     header_ru: "Публикация статьи о сотрудничестве с АО «Аммоний»",
     header_en: "Publication of an article on cooperation with Ammonium JSC",
     topic_ru: "Продукты и технологии",
@@ -144,7 +291,7 @@ const news = [
     ],
   },
   {
-    id: "5",
+    id: "10",
     header_ru: "Первая продажа устройства «DotPulse»",
     header_en: "First sale of the «DotPulse» device",
     topic_ru: "Продукты и технологии",
@@ -176,7 +323,7 @@ const news = [
     ],
   },
   {
-    id: "6",
+    id: "11",
     header_ru: "Участие в конференции APMAS 2024 (Турция, Олюдениз)",
     header_en: "Participation in the APMAS 2024 conference (Turkey, Oludeniz)",
     topic_ru: "Выставки и конференции",
@@ -200,147 +347,6 @@ const news = [
         ru: 'В рамках мероприятия были представлен девайс "DotPulse", удалось обменяться опытом и обрести новые профессиональные связи в сфере нейронных сетей и промышленного производства.',
         en: 'The event featured the presentation of the "DotPulse" device, and provided an opportunity to exchange experiences and establish new professional connections in the field of neural networks and industrial production.'
       }
-    ],
-  },
-  
-  {
-    id: "7",
-    header_ru: "Презентация промышленного Copilot на OpenTalks.AI (Белград, Сербия)",
-    header_en: "Presenting our Industrial Copilot at OpenTalks.AI (Belgrade, Serbia)",
-    topic_ru: "Выставки и конференции",
-    topic_en: "Exhibitions and conferences",
-    date: "19.02.2026",
-    img_desc_ru: "",
-    img_desc_en: "",
-    img_author_ru: "opentalks.ai",
-    img_author_en: "opentalks.ai",
-    img_author_link: "https://opentalks.ai/photo2026#!/tab/1971152111-2",
-    img_author_openType: "_self",
-    img_src: "../assets/img/news/OpenAI-2026_title.jpg",
-    content: [
-      {
-        type: "text",
-        ru: "ааавдав",
-        en: "яфяф",
-      },
-      {
-        type: "text",
-        ru: "авваав",
-        en: "ваавв",
-      },
-    ],
-  },
-
-  {
-    id: "8",
-    header_ru: "Поставка устройства «DotPulse» на ПАО «Акрон»",
-    header_en: "",
-    topic_ru: "Продукты и технологии",
-    topic_en: "Products and technologies",
-    date: "24.04.2026",
-    img_desc_ru: "",
-    img_desc_en: "",
-    img_author_ru: "",
-    img_author_en: "",
-    img_author_link: "",
-    img_author_openType: "_self",
-    img_src: "../assets/img/news/APMAS_title.jpg",
-    content: [
-      {
-        type: "text",
-        ru: "Корпоративные продажи — это марафон. Наш цикл занял ровно 9 месяцев: от старта опытно-промышленных испытаний до полного закрытия коммерческого договора.",
-        en: "",
-      },
-      {
-        type: "text",
-        ru: "Наш инженер-наладчик Валерий Юрьевич успешно провел монтаж, подключение и инструктаж персонала. Устройство введено в эксплуатацию и полностью соответствует техническому заданию.",
-        en: "",
-      },
-      {
-        type: "text",
-        ru: "А мы продолжаем дальнейшее масштабирование, готовы к новым совместным проектам с ведущими предприятиями отрасли",
-        en: "",
-      },
-      
-    ],
-  },
-
-  {
-    id: "9",
-    header_ru: "Акселератор",
-    header_en: "",
-    topic_ru: "Образование и повышение квалификации",
-    topic_en: "Education and skill boosting",
-    date: "",
-    img_desc_ru: "",
-    img_desc_en: "",
-    img_author_ru: "",
-    img_author_en: "",
-    img_author_link: "",
-    img_author_openType: "_self",
-    img_src: "../assets/img/news/Limb_title.png",
-    content: [
-      {
-        type: "text",
-        ru: "",
-        en: "",
-      },
-      {
-        type: "text",
-        ru: "",
-        en: "",
-      },
-    ],
-  },
-
-    {
-    id: "10",
-    header_ru: "Выступление на Open Data Science (ODS) в Белграде",
-    header_en: "Speaking at Open Data Science (ODS) Belgrade",
-    topic_ru: "Выставки и конференции",
-    topic_en: "Exhibitions and conferences",
-    date: "31.05.2026",
-    img_desc_ru: "",
-    img_desc_en: "",
-    img_author_ru: "",
-    img_author_en: "",
-    img_author_link: "",
-    img_author_openType: "_self",
-    img_src: "../assets/img/news/ODS-2026_title.jpg",
-    content: [
-      {
-        type: "text",
-        ru: "Мы выступили на масштабной конференции ODS в Белграде, где показали эволюцию наших промышленных датасетов и ML-подходов. Это важный шаг в нашей международной экспансии, доказывающий, что наши инженерные решения выдерживают критику лучших дата-саентистов мира.",
-        en: "We took the stage at the fantastic ODS conference in Belgrade. We showcased how our industrial datasets and ML approaches are evolving. It is a great step forward for our global expansion, proving that our engineering solutions hold up to the scrutiny of the best data scientists in the world.",
-      }
-    ],
-  },
-
-    {
-    id: "11",
-    header_ru: "Награда Gold Reviewer на ICML 2026",
-    header_en: "ICML 2026 Gold Reviewer Award",
-    topic_ru: "Выставки и конференции",
-    topic_en: "Exhibitions and conferences",
-    date: "13.05.2026",
-    img_desc_ru: "",
-    img_desc_en: "",
-    img_author_ru: "",
-    img_author_en: "",
-    img_author_link: "",
-    img_author_openType: "_self",
-    img_src: "../assets/img/news/APMAS_title.jpg",
-    content: [
-      {
-        type: "text",
-        ru: "Научное рецензирование — основа прогресса. И хотя наша статья не прошла строгий отбор на ICML 2026, наш  сотрудник Дмитрий Юновидов прорецензировал множество работ для этой топовой конференции и получил награду GOLD REVIEWER! Благодаря этому его пригласили бесплатно посетить конференцию в Сеуле, Республика Корея.",
-        en: "Peer review is the backbone of scientific progress. While our own paper didn't pass the rigorous selection for ICML 2026, Dmitrii reviewed numerous papers for this top-tier conference and was honored with the GOLD REVIEWER award! As a result, he was invited to attend the conference in Seoul, Republic of Korea for free.",
-      },
-      {
-        type: "text",
-        ru: "Рады за Дмитрия, желаем продуктивной работы и обретения новых полезных связей на полях конференции.",
-        en: "",
-      },
     ],
   }
 ];
