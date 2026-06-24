@@ -40,12 +40,16 @@ const indexTexts = {
 		}
 	},
   "title": {
-		ru: "Создаём оптические приборы,",
-		en: "We create optical devices,",
+		// ru: "Создаём оптические приборы,",
+		// en: "We create optical devices,",
+		ru: "Промышленные IT-решения на основе машинного зрения и искусственного интеллекта",
+		en: "Industrial IT solutions powered by CV and AI",
 	},
   "subtitle": {
-		ru: "вдохновляясь индустрией",
-		en: "inspired by the industry",
+		// ru: "вдохновляясь индустрией",
+		// en: "inspired by the industry",
+		ru: "Разработано инженерами для инженеров",
+		en: "Built by engineers for engineers",
 	},
 	"start-btn": {
 		ru: "Познакомиться",

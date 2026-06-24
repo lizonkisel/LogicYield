@@ -290,13 +290,13 @@ a {
 }
 
 .index__title {
-  font-size: 32px;
+  font-size: 24px;
   font-weight: 400;
   text-align: center;
 }
 
 .index__subtitle {
-  font-size: 24px;
+  font-size: 16px;
   font-weight: 400;
   color:#3D8E30;
   text-align: center;
@@ -541,11 +541,11 @@ tr {
   }
 
   .index__title {
-    font-size: 40px;
+    font-size: 28px;
   }
 
   .index__subtitle {
-    font-size: 32px;
+    font-size: 20px;
   }
 
   .title {
@@ -557,7 +557,7 @@ tr {
   }
 }
 
-@media screen and (00px) {
+@media screen and (max-width: 1200px) {
   .header {
     padding: 20px 40px 20px 40px;
   }
