@@ -59,21 +59,25 @@ const aboutTexts = {
 	},
   "about-desc": {
 		"1": {
-			ru: "Наша компания родилась из идеи о внедрении оптического зрения в промышленность минеральных удобрений. Наши ведущие сотрудники более 10 лет проработали на промышленных предприятиях, на каждодневной основе сталкиваясь с их проблемами и насущными требованиями. Логичным итогом нашего опыта стало создание собственной компании.",
-			en: "Our company was born from the idea of introducing optical vision into the mineral fertilizer industry. Our leading employees have worked in industrial enterprises for over 10 years, facing their daily problems and urgent needs. The logical outcome of our experience was the creation of our own company."
-		},
-		"2": {
-			ru: "ООО “Лоджик Илд” начало свою работу в 2022 году. За 2022-2023 гг. мы привлекли более 10 млн рублей инвестиций, провели промышленные испытания на ряде предприятий-производителей минеральных удобрений.",
-			en: "LLC “Logic Yield” started its work in 2022. In 2022-2023, we attracted more than 10 million rubles in investments and conducted industrial tests at a number of mineral fertilizer production facilities."
-		},
+      "ru": "Наша компания родилась из идеи внедрить оптическое зрение в производство минеральных удобрений. Ведущие сотрудники более 10 лет проработали на промышленных предприятиях. Они каждый день решали реальные проблемы и закрывали насущные потребности заводов. Логичным итогом этого опыта стало создание собственной компании, которая точно знает боли индустрии.",
+      "en": "Our company was born from the idea of introducing machine vision into the mineral fertilizer industry. Our leading employees have worked at industrial enterprises for over 10 years. They solved real problems and met the urgent needs of the plants on a daily basis. The logical outcome of this experience was the creation of our own company, which truly understands the industry's pain points."
+    },
+    "2": {
+      "ru": "ООО «Лоджик Илд» начало свою работу в 2022 году. Всего за пару лет мы привлекли более 10 млн рублей инвестиций. Успешно провели несколько раундов промышленных испытаний наших устройств на заводах - всё для того, чтобы на практике доказать заказчику эффективность предлагаемых решений.",
+      "en": "LLC \"Logic Yield\" started its operations in 2022. In just a couple of years, we attracted more than 10 million rubles in investments. We successfully conducted several rounds of industrial testing of our devices at production facilities—all to practically prove the efficiency of our solutions to the customer."
+    },
 		"3": {
-			ru: "На каждом из заводов мы сталкиваемся с исключительными особенностями производственных линий, с уникальными запросами заказчика. Данные условия мотивируют нас планомерно совершенствовать качество и скорость работы нашего ПО, делать ПАК более модульными и устойчивыми к производственным условиям.",
-			en: "At each plant, we encounter unique features of production lines and unique customer requests. These conditions motivate us to systematically improve the quality and speed of our software, make the software package more modular and resilient to production conditions."
+			"ru": "К 2026 году наши устройства работают по коммерческим контрактам уже на двух предприятиях: АО \"Аммоний\" и ПАО \"Акрон\". ПАК полностью интегрированы в процессы и беспрерывно работают в онлайн-режиме.",
+			"en": "By 2026, our devices are operating under commercial contracts at two enterprises: JSC \"Ammonium\" and PJSC \"Acron\". The hardware and software systems are fully integrated into the processes and operate continuously online.",
 		},
-		"4": {
-			ru: "До конца 2024 года мы планируем запустить несколько наших устройств в качестве автономных модулей на производственных линиях двух предприятий России.",
-			en: "By the end of 2024, we aim to deploy several of our devices as autonomous modules on the production lines of two Russian facilities."
-		}
+    "4": {
+      "ru": "На каждом заводе мы встречаем уникальные производственные линии и особые запросы заказчика. Такие нестандартные условия мотивируют нас развиваться. Мы планомерно повышаем скорость и качество нашего ПО, делаем ПАК максимально устойчивыми к любым производственным реалиям.",
+      "en": "At every plant, we encounter unique production lines and specific customer requests. Such non-standard conditions motivate us to evolve. We systematically improve the speed and quality of our software, making our hardware and software systems highly resilient to any production realities."
+    },
+    "5": {
+      "ru": "До конца 2026 года мы планируем провести пилот нашего нового решения. Это когнитивный хаб для помощи операторам в управлении технологическими процессами. Если перед вами стоит задача снизить производственные потери и стабилизировать качество - свяжитесь с нами для обсуждения потенциала запуска совместного пилотного проекта.",
+      "en": "By the end of 2026, we plan to launch a pilot of our new solution. It is a cognitive hub designed to assist operators in managing technological processes. If you are facing the task of reducing production losses and stabilizing quality, contact us to discuss the potential of launching a joint pilot project."
+    }
 	},
 	"about-subtitle": {
 		"1": {
