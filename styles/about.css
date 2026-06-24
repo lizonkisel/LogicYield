@@ -9,7 +9,6 @@
   /* overflow-y: auto; */
   scrollbar-color: #3D8E30 #111111;
   scrollbar-width: thin;
-  /* width: 100%; */
   max-width: 80%;
 
   display: grid;
@@ -228,6 +227,10 @@
     flex-direction: column;
     gap: 28px;
     margin: 12px 0 0 0;
+  }
+
+  .about__desc {
+    grid-template-columns: repeat(1, 1fr);
   }
 
   /* .about__desc, .about__publications{
