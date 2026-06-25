@@ -97,7 +97,7 @@ const news = [
     img_author_en: "Valerii Iunovidov",
     img_author_link: "javascript:void(0);",
     img_author_openType: "_self",
-    img_src: "../assets/img/news/APMAS_title.jpg",
+    img_src: "../assets/img/news/Acron-2026_title.jpg",
     content: [
       {
         type: "text",
